@@ -25,5 +25,14 @@ namespace Mutualite.BO
             DateTontine = dateTontine;
             Penalite = penalite;
         }
+        public override bool Equals(object obj)
+        {
+            return obj is Reunion product &&
+                   NomReunion.Equals(product.NomReunion, StringComparison.OrdinalIgnoreCase);
+        }
+        public override int GetHashCode()
+        {
+            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(NomReunion);
+        }
     }
 }

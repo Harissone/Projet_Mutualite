@@ -10,7 +10,7 @@ namespace Mutualite.BLL
 {
     public class LoginBLO
     {
-        LoginDAO loginRepo;
+        /*LoginDAO loginRepo;
         public LoginBLO(string dbFolder)
         {
             loginRepo = new LoginDAO(dbFolder);
@@ -38,6 +38,6 @@ namespace Mutualite.BLL
         public void EdiLogin(Login oldLogin, Login newLogin)
         {
             loginRepo.Set(oldLogin, newLogin);
-        }
+        }*/
     }
 }

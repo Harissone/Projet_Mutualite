@@ -13,7 +13,7 @@ namespace Mutualite.DAL
     public class ReunionDAO
     {
         private static List<Reunion> reunions;
-        private const string FILE_NAME = @"products.json";
+        private const string FILE_NAME = @"reunion.json";
         private readonly string dbFolder;
         private FileInfo file;
         public ReunionDAO(string dbFolder)
@@ -77,6 +77,10 @@ namespace Mutualite.DAL
         public IEnumerable<Reunion> Find()
         {
             return new List<Reunion>(reunions);
+        }
+        public IEnumerable<Reunion> Find(Func<Reunion, bool> predicate)
+        {
+            return new List<Reunion>(reunions.Where(predicate).ToArray());
         }
     }
 }

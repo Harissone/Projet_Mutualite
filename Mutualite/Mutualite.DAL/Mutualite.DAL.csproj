@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EcheanceDAO.cs" />
+    <Compile Include="EvenementDAO.cs" />
     <Compile Include="LoginDAO.cs" />
+    <Compile Include="MembreDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReunionDAO.cs" />
