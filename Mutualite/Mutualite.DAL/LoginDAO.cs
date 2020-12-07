@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mutualite.DLL
+namespace Mutualite.DAL
 {
-    class Program
+    public class LoginDAO
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }

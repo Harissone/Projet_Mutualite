@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Mutualite.DLL")]
+[assembly: AssemblyTitle("Mutualite.DAL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Mutualite.DLL")]
+[assembly: AssemblyProduct("Mutualite.DAL")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8d012ab8-17be-4474-bc72-73ec1f5072e1")]
+[assembly: Guid("1ef9af56-54df-475e-8de2-20d2d60e4097")]
 
 // Version information for an assembly consists of the following four values:
 //

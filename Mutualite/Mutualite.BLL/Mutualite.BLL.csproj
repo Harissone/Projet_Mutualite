@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginBLO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReunionBLO.cs" />
+    <Compile Include="UserBLO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mutualite.BO\Mutualite.BO.csproj">
+      <Project>{ea1dc139-a0b8-44fb-902f-2b2a3cc3a3fd}</Project>
+      <Name>Mutualite.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mutualite.DAL\Mutualite.DAL.csproj">
+      <Project>{1ef9af56-54df-475e-8de2-20d2d60e4097}</Project>
+      <Name>Mutualite.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

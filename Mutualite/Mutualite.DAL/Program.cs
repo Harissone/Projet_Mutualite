@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mutualite.DLL
+namespace Mutualite.DAL
 {
-    public class UserDAO
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

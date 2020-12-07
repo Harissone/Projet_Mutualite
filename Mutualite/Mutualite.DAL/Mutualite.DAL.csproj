@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D012AB8-17BE-4474-BC72-73EC1F5072E1}</ProjectGuid>
+    <ProjectGuid>{1EF9AF56-54DF-475E-8DE2-20D2D60E4097}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Mutualite.DLL</RootNamespace>
-    <AssemblyName>Mutualite.DLL</AssemblyName>
+    <RootNamespace>Mutualite.DAL</RootNamespace>
+    <AssemblyName>Mutualite.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Cour Multicouche\McExample\McExample.DAL\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReunionDAO.cs" />
     <Compile Include="UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mutualite.BO\Mutualite.BO.csproj">
+      <Project>{ea1dc139-a0b8-44fb-902f-2b2a3cc3a3fd}</Project>
+      <Name>Mutualite.BO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
