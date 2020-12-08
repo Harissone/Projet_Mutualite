@@ -12,7 +12,7 @@ namespace Mutualite.DAL
 {
     public class UserDAO
     {
-        private static List<User> users;
+        public static List<User> users;
         private const string FILE_NAME = @"user.json";
         private readonly string dbFolder;
         private FileInfo file;

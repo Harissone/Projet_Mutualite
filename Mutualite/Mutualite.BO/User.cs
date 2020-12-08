@@ -14,9 +14,19 @@ namespace Mutualite.BO
         {
             ConfirmPassword = confirmPassword;
         }
+        public override bool Equals(object obj)
+        {
+            return obj is User product &&
+                   Username.Equals(product.Username, StringComparison.OrdinalIgnoreCase);
+        }
 
-       
+        public override int GetHashCode()
+        {
+            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Username);
+        }
 
-       
+
+
+
     }
 }

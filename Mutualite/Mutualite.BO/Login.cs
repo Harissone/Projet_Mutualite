@@ -12,6 +12,7 @@ namespace Mutualite.BO
         public string Password { get; set; }
 
         public Login(string username, string password)
+            
         {
             Username = username;
             Password = password;

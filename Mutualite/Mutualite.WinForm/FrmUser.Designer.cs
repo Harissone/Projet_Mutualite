@@ -29,7 +29,6 @@ namespace Mutualite.WinForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -37,16 +36,9 @@ namespace Mutualite.WinForm
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtLogin = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Mutualite.WinForm.Properties.Resources.User;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 190);
-            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -73,6 +65,7 @@ namespace Mutualite.WinForm
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(215, 19);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
@@ -113,18 +106,44 @@ namespace Mutualite.WinForm
             this.txtLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtLogin.Location = new System.Drawing.Point(107, 388);
+            this.txtLogin.Location = new System.Drawing.Point(36, 388);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(75, 30);
             this.txtLogin.TabIndex = 7;
             this.txtLogin.Text = "Login";
             this.txtLogin.UseVisualStyleBackColor = false;
+            this.txtLogin.Click += new System.EventHandler(this.txtLogin_Click);
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.BackColor = System.Drawing.Color.Indigo;
+            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSignUp.Location = new System.Drawing.Point(176, 388);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(75, 30);
+            this.btnSignUp.TabIndex = 8;
+            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Mutualite.WinForm.Properties.Resources.User;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 190);
+            this.panel1.TabIndex = 0;
             // 
             // FrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 450);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
@@ -137,6 +156,7 @@ namespace Mutualite.WinForm
             this.Name = "FrmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUser";
+            this.Load += new System.EventHandler(this.FrmUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +172,6 @@ namespace Mutualite.WinForm
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button txtLogin;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }
