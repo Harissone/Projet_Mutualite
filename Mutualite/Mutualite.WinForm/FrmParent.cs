@@ -16,5 +16,70 @@ namespace Mutualite.WinForm
         {
             InitializeComponent();
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            guna2PanelContainer.Controls.Add(childForm);
+            guna2PanelContainer.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonParametre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonSeance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonEcheance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonEvenement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonReunion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void guna2ButtonAcceuil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmAccount();
+            f.Show();
+        }
+
+        private void FrmParent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
