@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaisseBLO.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CotisationBLO.cs" />
+    <Compile Include="CycleBLO.cs" />
     <Compile Include="EcheanceBLO.cs" />
     <Compile Include="EvenementBLO.cs" />
     <Compile Include="LoginBLO.cs" />
@@ -50,6 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReunionBLO.cs" />
+    <Compile Include="TypingException.cs" />
     <Compile Include="UserBLO.cs" />
   </ItemGroup>
   <ItemGroup>

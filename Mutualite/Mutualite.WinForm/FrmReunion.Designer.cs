@@ -1,4 +1,5 @@
-﻿namespace Mutualite.WinForm
+﻿
+namespace Mutualite.WinForm
 {
     partial class FrmReunion
     {
@@ -28,318 +29,307 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAnnuler = new System.Windows.Forms.Button();
-            this.btnCreer = new System.Windows.Forms.Button();
-            this.rtbDescriptionTontine = new System.Windows.Forms.RichTextBox();
-            this.lblMontantTontine = new System.Windows.Forms.Label();
-            this.txtMontantTontine = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lblTypeTontine = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.txtTypeTontine = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblDescriptionTontine = new System.Windows.Forms.Label();
-            this.lblNomReunion = new System.Windows.Forms.Label();
-            this.txtNomReunion = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtPenalite = new System.Windows.Forms.TextBox();
-            this.lblPenalite = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.guna2HtmlLabelNomReunion = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtNomReunion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabelCreationTontine = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2GradientCreer = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLblDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtPenaliter = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLblMontant = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtMontant = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ComboBoxTypeReunion = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLblTypeTontine = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabelDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtDescription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnAnnuler
+            // guna2HtmlLabelNomReunion
             // 
-            this.btnAnnuler.BackColor = System.Drawing.Color.IndianRed;
-            this.btnAnnuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAnnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnuler.Location = new System.Drawing.Point(469, 948);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(241, 52);
-            this.btnAnnuler.TabIndex = 44;
-            this.btnAnnuler.Text = "Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.guna2HtmlLabelNomReunion.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabelNomReunion.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabelNomReunion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabelNomReunion.Location = new System.Drawing.Point(43, 48);
+            this.guna2HtmlLabelNomReunion.Name = "guna2HtmlLabelNomReunion";
+            this.guna2HtmlLabelNomReunion.Size = new System.Drawing.Size(30, 19);
+            this.guna2HtmlLabelNomReunion.TabIndex = 0;
+            this.guna2HtmlLabelNomReunion.Text = "Titre";
             // 
-            // btnCreer
+            // guna2TxtNomReunion
             // 
-            this.btnCreer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnCreer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreer.Location = new System.Drawing.Point(144, 948);
-            this.btnCreer.Name = "btnCreer";
-            this.btnCreer.Size = new System.Drawing.Size(241, 52);
-            this.btnCreer.TabIndex = 43;
-            this.btnCreer.Text = "Creer";
-            this.btnCreer.UseVisualStyleBackColor = false;
+            this.guna2TxtNomReunion.BorderRadius = 20;
+            this.guna2TxtNomReunion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtNomReunion.DefaultText = "";
+            this.guna2TxtNomReunion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtNomReunion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtNomReunion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtNomReunion.DisabledState.Parent = this.guna2TxtNomReunion;
+            this.guna2TxtNomReunion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtNomReunion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtNomReunion.FocusedState.Parent = this.guna2TxtNomReunion;
+            this.guna2TxtNomReunion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtNomReunion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtNomReunion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtNomReunion.HoverState.Parent = this.guna2TxtNomReunion;
+            this.guna2TxtNomReunion.Location = new System.Drawing.Point(34, 73);
+            this.guna2TxtNomReunion.Name = "guna2TxtNomReunion";
+            this.guna2TxtNomReunion.PasswordChar = '\0';
+            this.guna2TxtNomReunion.PlaceholderText = "";
+            this.guna2TxtNomReunion.SelectedText = "";
+            this.guna2TxtNomReunion.ShadowDecoration.Parent = this.guna2TxtNomReunion;
+            this.guna2TxtNomReunion.Size = new System.Drawing.Size(200, 36);
+            this.guna2TxtNomReunion.TabIndex = 0;
             // 
-            // rtbDescriptionTontine
+            // guna2HtmlLabelCreationTontine
             // 
-            this.rtbDescriptionTontine.BackColor = System.Drawing.SystemColors.Menu;
-            this.rtbDescriptionTontine.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbDescriptionTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbDescriptionTontine.Location = new System.Drawing.Point(36, 361);
-            this.rtbDescriptionTontine.Name = "rtbDescriptionTontine";
-            this.rtbDescriptionTontine.Size = new System.Drawing.Size(354, 91);
-            this.rtbDescriptionTontine.TabIndex = 41;
-            this.rtbDescriptionTontine.Text = "";
+            this.guna2HtmlLabelCreationTontine.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabelCreationTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabelCreationTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabelCreationTontine.Location = new System.Drawing.Point(50, 21);
+            this.guna2HtmlLabelCreationTontine.Name = "guna2HtmlLabelCreationTontine";
+            this.guna2HtmlLabelCreationTontine.Size = new System.Drawing.Size(245, 27);
+            this.guna2HtmlLabelCreationTontine.TabIndex = 2;
+            this.guna2HtmlLabelCreationTontine.Text = "CREATION D\'UNE TONTINE";
             // 
-            // lblMontantTontine
+            // guna2ShadowPanel1
             // 
-            this.lblMontantTontine.AutoSize = true;
-            this.lblMontantTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontantTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblMontantTontine.Location = new System.Drawing.Point(493, 361);
-            this.lblMontantTontine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMontantTontine.Name = "lblMontantTontine";
-            this.lblMontantTontine.Size = new System.Drawing.Size(163, 25);
-            this.lblMontantTontine.TabIndex = 40;
-            this.lblMontantTontine.Text = "MontantTontine";
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2GradientCreer);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblDate);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtPenaliter);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblMontant);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtMontant);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2ComboBoxTypeReunion);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblTypeTontine);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelDescription);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtDescription);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelNomReunion);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtNomReunion);
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(40, 71);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 487);
+            this.guna2ShadowPanel1.TabIndex = 3;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
-            // txtMontantTontine
+            // guna2GradientCreer
             // 
-            this.txtMontantTontine.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMontantTontine.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMontantTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMontantTontine.Location = new System.Drawing.Point(503, 394);
-            this.txtMontantTontine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMontantTontine.Name = "txtMontantTontine";
-            this.txtMontantTontine.Size = new System.Drawing.Size(353, 23);
-            this.txtMontantTontine.TabIndex = 39;
+            this.guna2GradientCreer.Animated = true;
+            this.guna2GradientCreer.BorderRadius = 20;
+            this.guna2GradientCreer.CheckedState.Parent = this.guna2GradientCreer;
+            this.guna2GradientCreer.CustomImages.Parent = this.guna2GradientCreer;
+            this.guna2GradientCreer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientCreer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientCreer.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCreer.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientCreer.HoverState.Parent = this.guna2GradientCreer;
+            this.guna2GradientCreer.Location = new System.Drawing.Point(201, 417);
+            this.guna2GradientCreer.Name = "guna2GradientCreer";
+            this.guna2GradientCreer.ShadowDecoration.Parent = this.guna2GradientCreer;
+            this.guna2GradientCreer.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientCreer.TabIndex = 12;
+            this.guna2GradientCreer.Text = "Creer";
+            this.guna2GradientCreer.Click += new System.EventHandler(this.guna2GradientCreer_Click);
             // 
-            // panel7
+            // guna2DateTimePicker1
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel7.Location = new System.Drawing.Point(498, 427);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(358, 2);
-            this.panel7.TabIndex = 38;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderRadius = 20;
+            this.guna2DateTimePicker1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(34, 252);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(522, 36);
+            this.guna2DateTimePicker1.TabIndex = 4;
+            this.guna2DateTimePicker1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2DateTimePicker1.UseTransparentBackground = true;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 8, 17, 54, 26, 488);
             // 
-            // lblTypeTontine
+            // guna2HtmlLblDate
             // 
-            this.lblTypeTontine.AutoSize = true;
-            this.lblTypeTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTypeTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTypeTontine.Location = new System.Drawing.Point(493, 225);
-            this.lblTypeTontine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTypeTontine.Name = "lblTypeTontine";
-            this.lblTypeTontine.Size = new System.Drawing.Size(134, 25);
-            this.lblTypeTontine.TabIndex = 37;
-            this.lblTypeTontine.Text = "TypeTontine";
+            this.guna2HtmlLblDate.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLblDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLblDate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLblDate.Location = new System.Drawing.Point(43, 227);
+            this.guna2HtmlLblDate.Name = "guna2HtmlLblDate";
+            this.guna2HtmlLblDate.Size = new System.Drawing.Size(132, 19);
+            this.guna2HtmlLblDate.TabIndex = 11;
+            this.guna2HtmlLblDate.Text = "Date du premier tour";
             // 
-            // lblDate
+            // guna2HtmlLabel2
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDate.Location = new System.Drawing.Point(32, 487);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(57, 25);
-            this.lblDate.TabIndex = 36;
-            this.lblDate.Text = "Date";
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(374, 143);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(56, 19);
+            this.guna2HtmlLabel2.TabIndex = 9;
+            this.guna2HtmlLabel2.Text = "Penaliter";
             // 
-            // txtTypeTontine
+            // guna2TxtPenaliter
             // 
-            this.txtTypeTontine.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTypeTontine.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTypeTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTypeTontine.Location = new System.Drawing.Point(498, 259);
-            this.txtTypeTontine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTypeTontine.Name = "txtTypeTontine";
-            this.txtTypeTontine.Size = new System.Drawing.Size(353, 23);
-            this.txtTypeTontine.TabIndex = 35;
+            this.guna2TxtPenaliter.BorderRadius = 20;
+            this.guna2TxtPenaliter.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtPenaliter.DefaultText = "";
+            this.guna2TxtPenaliter.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtPenaliter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtPenaliter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtPenaliter.DisabledState.Parent = this.guna2TxtPenaliter;
+            this.guna2TxtPenaliter.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtPenaliter.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtPenaliter.FocusedState.Parent = this.guna2TxtPenaliter;
+            this.guna2TxtPenaliter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtPenaliter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtPenaliter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtPenaliter.HoverState.Parent = this.guna2TxtPenaliter;
+            this.guna2TxtPenaliter.Location = new System.Drawing.Point(365, 168);
+            this.guna2TxtPenaliter.Name = "guna2TxtPenaliter";
+            this.guna2TxtPenaliter.PasswordChar = '\0';
+            this.guna2TxtPenaliter.PlaceholderText = "";
+            this.guna2TxtPenaliter.SelectedText = "";
+            this.guna2TxtPenaliter.ShadowDecoration.Parent = this.guna2TxtPenaliter;
+            this.guna2TxtPenaliter.Size = new System.Drawing.Size(200, 36);
+            this.guna2TxtPenaliter.TabIndex = 3;
             // 
-            // panel4
+            // guna2HtmlLblMontant
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(497, 292);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(358, 2);
-            this.panel4.TabIndex = 34;
+            this.guna2HtmlLblMontant.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLblMontant.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLblMontant.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLblMontant.Location = new System.Drawing.Point(374, 48);
+            this.guna2HtmlLblMontant.Name = "guna2HtmlLblMontant";
+            this.guna2HtmlLblMontant.Size = new System.Drawing.Size(118, 19);
+            this.guna2HtmlLblMontant.TabIndex = 7;
+            this.guna2HtmlLblMontant.Text = "Montant minimum";
             // 
-            // panel5
+            // guna2TxtMontant
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(32, 557);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(358, 2);
-            this.panel5.TabIndex = 33;
+            this.guna2TxtMontant.BorderRadius = 20;
+            this.guna2TxtMontant.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtMontant.DefaultText = "";
+            this.guna2TxtMontant.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtMontant.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtMontant.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtMontant.DisabledState.Parent = this.guna2TxtMontant;
+            this.guna2TxtMontant.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtMontant.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtMontant.FocusedState.Parent = this.guna2TxtMontant;
+            this.guna2TxtMontant.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtMontant.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtMontant.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtMontant.HoverState.Parent = this.guna2TxtMontant;
+            this.guna2TxtMontant.Location = new System.Drawing.Point(365, 73);
+            this.guna2TxtMontant.Name = "guna2TxtMontant";
+            this.guna2TxtMontant.PasswordChar = '\0';
+            this.guna2TxtMontant.PlaceholderText = "";
+            this.guna2TxtMontant.SelectedText = "";
+            this.guna2TxtMontant.ShadowDecoration.Parent = this.guna2TxtMontant;
+            this.guna2TxtMontant.Size = new System.Drawing.Size(200, 36);
+            this.guna2TxtMontant.TabIndex = 1;
             // 
-            // lblDescriptionTontine
+            // guna2ComboBoxTypeReunion
             // 
-            this.lblDescriptionTontine.AutoSize = true;
-            this.lblDescriptionTontine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescriptionTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDescriptionTontine.Location = new System.Drawing.Point(32, 324);
-            this.lblDescriptionTontine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDescriptionTontine.Name = "lblDescriptionTontine";
-            this.lblDescriptionTontine.Size = new System.Drawing.Size(193, 25);
-            this.lblDescriptionTontine.TabIndex = 32;
-            this.lblDescriptionTontine.Text = "DescriptionTontine";
+            this.guna2ComboBoxTypeReunion.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxTypeReunion.BorderRadius = 20;
+            this.guna2ComboBoxTypeReunion.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2ComboBoxTypeReunion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxTypeReunion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxTypeReunion.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxTypeReunion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxTypeReunion.FocusedState.Parent = this.guna2ComboBoxTypeReunion;
+            this.guna2ComboBoxTypeReunion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBoxTypeReunion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2ComboBoxTypeReunion.HoverState.Parent = this.guna2ComboBoxTypeReunion;
+            this.guna2ComboBoxTypeReunion.ItemHeight = 30;
+            this.guna2ComboBoxTypeReunion.Items.AddRange(new object[] {
+            "Part fixe",
+            "Part variable"});
+            this.guna2ComboBoxTypeReunion.ItemsAppearance.Parent = this.guna2ComboBoxTypeReunion;
+            this.guna2ComboBoxTypeReunion.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.guna2ComboBoxTypeReunion.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
+            this.guna2ComboBoxTypeReunion.Location = new System.Drawing.Point(34, 168);
+            this.guna2ComboBoxTypeReunion.Name = "guna2ComboBoxTypeReunion";
+            this.guna2ComboBoxTypeReunion.ShadowDecoration.Parent = this.guna2ComboBoxTypeReunion;
+            this.guna2ComboBoxTypeReunion.Size = new System.Drawing.Size(191, 36);
+            this.guna2ComboBoxTypeReunion.StartIndex = 0;
+            this.guna2ComboBoxTypeReunion.TabIndex = 2;
             // 
-            // lblNomReunion
+            // guna2HtmlLblTypeTontine
             // 
-            this.lblNomReunion.AutoSize = true;
-            this.lblNomReunion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomReunion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblNomReunion.Location = new System.Drawing.Point(32, 225);
-            this.lblNomReunion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNomReunion.Name = "lblNomReunion";
-            this.lblNomReunion.Size = new System.Drawing.Size(135, 25);
-            this.lblNomReunion.TabIndex = 31;
-            this.lblNomReunion.Text = "NomReunion";
+            this.guna2HtmlLblTypeTontine.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLblTypeTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLblTypeTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLblTypeTontine.Location = new System.Drawing.Point(43, 143);
+            this.guna2HtmlLblTypeTontine.Name = "guna2HtmlLblTypeTontine";
+            this.guna2HtmlLblTypeTontine.Size = new System.Drawing.Size(113, 19);
+            this.guna2HtmlLblTypeTontine.TabIndex = 4;
+            this.guna2HtmlLblTypeTontine.Text = "Type de la tontine";
             // 
-            // txtNomReunion
+            // guna2HtmlLabelDescription
             // 
-            this.txtNomReunion.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNomReunion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomReunion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomReunion.Location = new System.Drawing.Point(32, 258);
-            this.txtNomReunion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNomReunion.Name = "txtNomReunion";
-            this.txtNomReunion.Size = new System.Drawing.Size(358, 23);
-            this.txtNomReunion.TabIndex = 30;
+            this.guna2HtmlLabelDescription.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabelDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabelDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabelDescription.Location = new System.Drawing.Point(43, 314);
+            this.guna2HtmlLabelDescription.Name = "guna2HtmlLabelDescription";
+            this.guna2HtmlLabelDescription.Size = new System.Drawing.Size(71, 19);
+            this.guna2HtmlLabelDescription.TabIndex = 2;
+            this.guna2HtmlLabelDescription.Text = "Description";
             // 
-            // panel3
+            // guna2TxtDescription
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(32, 465);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(358, 2);
-            this.panel3.TabIndex = 29;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(32, 293);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(358, 2);
-            this.panel2.TabIndex = 28;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Mutualite.WinForm.Properties.Resources.User;
-            this.panel1.Location = new System.Drawing.Point(1, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(902, 192);
-            this.panel1.TabIndex = 45;
-            // 
-            // txtPenalite
-            // 
-            this.txtPenalite.BackColor = System.Drawing.SystemColors.Control;
-            this.txtPenalite.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPenalite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPenalite.Location = new System.Drawing.Point(497, 521);
-            this.txtPenalite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPenalite.Multiline = true;
-            this.txtPenalite.Name = "txtPenalite";
-            this.txtPenalite.Size = new System.Drawing.Size(354, 26);
-            this.txtPenalite.TabIndex = 49;
-            // 
-            // lblPenalite
-            // 
-            this.lblPenalite.AutoSize = true;
-            this.lblPenalite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPenalite.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblPenalite.Location = new System.Drawing.Point(493, 487);
-            this.lblPenalite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPenalite.Name = "lblPenalite";
-            this.lblPenalite.Size = new System.Drawing.Size(90, 25);
-            this.lblPenalite.TabIndex = 48;
-            this.lblPenalite.Text = "Penalite";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(498, 557);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(358, 2);
-            this.panel6.TabIndex = 47;
-            // 
-            // dtpDate
-            // 
-            this.dtpDate.Location = new System.Drawing.Point(37, 520);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(353, 26);
-            this.dtpDate.TabIndex = 50;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(471, 604);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 52);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(169, 604);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 52);
-            this.button2.TabIndex = 51;
-            this.button2.Text = "Creer";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.guna2TxtDescription.BorderRadius = 20;
+            this.guna2TxtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtDescription.DefaultText = "";
+            this.guna2TxtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtDescription.DisabledState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtDescription.FocusedState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtDescription.HoverState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Location = new System.Drawing.Point(34, 339);
+            this.guna2TxtDescription.Name = "guna2TxtDescription";
+            this.guna2TxtDescription.PasswordChar = '\0';
+            this.guna2TxtDescription.PlaceholderText = "";
+            this.guna2TxtDescription.SelectedText = "";
+            this.guna2TxtDescription.ShadowDecoration.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Size = new System.Drawing.Size(531, 36);
+            this.guna2TxtDescription.TabIndex = 5;
             // 
             // FrmReunion
             // 
-            this.AcceptButton = this.btnCreer;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnAnnuler;
-            this.ClientSize = new System.Drawing.Size(903, 670);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dtpDate);
-            this.Controls.Add(this.txtPenalite);
-            this.Controls.Add(this.lblPenalite);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnAnnuler);
-            this.Controls.Add(this.btnCreer);
-            this.Controls.Add(this.rtbDescriptionTontine);
-            this.Controls.Add(this.lblMontantTontine);
-            this.Controls.Add(this.txtMontantTontine);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.lblTypeTontine);
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.txtTypeTontine);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.lblDescriptionTontine);
-            this.Controls.Add(this.lblNomReunion);
-            this.Controls.Add(this.txtNomReunion);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(681, 601);
+            this.Controls.Add(this.guna2ShadowPanel1);
+            this.Controls.Add(this.guna2HtmlLabelCreationTontine);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReunion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReunion";
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,28 +337,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAnnuler;
-        private System.Windows.Forms.Button btnCreer;
-        private System.Windows.Forms.RichTextBox rtbDescriptionTontine;
-        private System.Windows.Forms.Label lblMontantTontine;
-        private System.Windows.Forms.TextBox txtMontantTontine;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lblTypeTontine;
-        private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.TextBox txtTypeTontine;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblDescriptionTontine;
-        private System.Windows.Forms.Label lblNomReunion;
-        private System.Windows.Forms.TextBox txtNomReunion;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtPenalite;
-        private System.Windows.Forms.Label lblPenalite;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelNomReunion;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtNomReunion;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelCreationTontine;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelDescription;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtDescription;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblTypeTontine;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxTypeReunion;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtPenaliter;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblMontant;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtMontant;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientCreer;
     }
 }
