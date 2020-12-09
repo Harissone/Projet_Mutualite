@@ -11,6 +11,11 @@ namespace Mutualite.BLL
     public class ReunionBLO
     {
         ReunionDAO reunionRepo;
+
+        public ReunionBLO()
+        {
+
+        }
         public ReunionBLO(string dbFolder)
         {
             reunionRepo = new ReunionDAO(dbFolder);

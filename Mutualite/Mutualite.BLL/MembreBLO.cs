@@ -11,6 +11,12 @@ namespace Mutualite.BLL
     public class MembreBLO
     {
         MembreDAO membreRepo;
+
+        public MembreBLO()
+        {
+
+        }
+
         public MembreBLO(string dbFolder)
         {
             membreRepo = new MembreDAO(dbFolder);

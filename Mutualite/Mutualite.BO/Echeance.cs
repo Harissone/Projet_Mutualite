@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mutualite.BO
 {
+    [Serializable]
     public class Echeance
     {
         public int Montant { get; set; }
@@ -14,6 +15,11 @@ namespace Mutualite.BO
         public DateTime DateDebut { get; set; }
         public DateTime DateFin { get; set; }
         public DateTime DelaisPayement { get; set; }
+
+        public Echeance()
+        {
+
+        }
 
         public Echeance(int montant, string titre, string description, DateTime dateDebut, DateTime dateFin, DateTime delaisPayement)
         {
