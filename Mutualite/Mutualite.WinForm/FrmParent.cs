@@ -16,6 +16,7 @@ namespace Mutualite.WinForm
         public FrmParent()
         {
             InitializeComponent();
+            displayTime();
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)
@@ -109,10 +110,20 @@ namespace Mutualite.WinForm
            
         }
 
+        private void displayTime()
+        {
+            labelhour.Text = "Today is " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
             
             Console.WriteLine("Today is"+DateTime.Now);
+        }
+
+        private void guna2PanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

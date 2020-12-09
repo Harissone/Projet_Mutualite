@@ -44,12 +44,12 @@ namespace Mutualite.WinForm
             this.guna2CustomGradientPanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelhour = new System.Windows.Forms.Label();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblusers = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelProfil.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2CustomGradientPanelMenu.SuspendLayout();
@@ -385,23 +385,23 @@ namespace Mutualite.WinForm
             // guna2PanelContainer
             // 
             this.guna2PanelContainer.Controls.Add(this.guna2GradientButton2);
-            this.guna2PanelContainer.Controls.Add(this.label1);
             this.guna2PanelContainer.Location = new System.Drawing.Point(183, 50);
             this.guna2PanelContainer.Name = "guna2PanelContainer";
             this.guna2PanelContainer.ShadowDecoration.Parent = this.guna2PanelContainer;
             this.guna2PanelContainer.Size = new System.Drawing.Size(787, 607);
             this.guna2PanelContainer.TabIndex = 10;
+            this.guna2PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelContainer_Paint);
             // 
-            // label1
+            // labelhour
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(27, 532);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Date et Heure";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelhour.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelhour.ForeColor = System.Drawing.Color.Black;
+            this.labelhour.Location = new System.Drawing.Point(189, 611);
+            this.labelhour.Name = "labelhour";
+            this.labelhour.Size = new System.Drawing.Size(559, 38);
+            this.labelhour.TabIndex = 0;
+            this.labelhour.Text = "Date et Heure";
+            this.labelhour.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -443,29 +443,6 @@ namespace Mutualite.WinForm
             this.lblusers.Text = "Username Online";
             this.lblusers.Click += new System.EventHandler(this.label2_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::Mutualite.WinForm.Properties.Resources.User2;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(183, 100);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
@@ -499,6 +476,29 @@ namespace Mutualite.WinForm
             this.guna2Button1.TabIndex = 10;
             this.guna2Button1.Text = "Membres";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Mutualite.WinForm.Properties.Resources.User2;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(183, 100);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // FrmParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +506,7 @@ namespace Mutualite.WinForm
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(970, 687);
             this.Controls.Add(this.guna2PanelProfil);
+            this.Controls.Add(this.labelhour);
             this.Controls.Add(this.guna2CustomGradientPanelMenu);
             this.Controls.Add(this.guna2PanelContainer);
             this.ForeColor = System.Drawing.Color.White;
@@ -541,7 +542,7 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContainer;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelhour;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private System.Windows.Forms.Label lblusers;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
