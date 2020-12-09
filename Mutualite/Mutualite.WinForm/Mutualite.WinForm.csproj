@@ -201,6 +201,12 @@
     <Compile Include="FrmAccount.Designer.cs">
       <DependentUpon>FrmAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCaisseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaisseList.Designer.cs">
+      <DependentUpon>FrmCaisseList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCotisation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,12 @@
     </Compile>
     <Compile Include="FrmEcheanceList.Designer.cs">
       <DependentUpon>FrmEcheanceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnregistrerVersement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnregistrerVersement.Designer.cs">
+      <DependentUpon>FrmEnregistrerVersement.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEvenement.cs">
       <SubType>Form</SubType>
@@ -299,6 +311,12 @@
     <EmbeddedResource Include="FrmAccount.resx">
       <DependentUpon>FrmAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaisseList.resx">
+      <DependentUpon>FrmCaisseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCotisation.resx">
+      <DependentUpon>FrmCotisation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCycle.resx">
       <DependentUpon>FrmCycle.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEcheanceList.resx">
       <DependentUpon>FrmEcheanceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnregistrerVersement.resx">
+      <DependentUpon>FrmEnregistrerVersement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEvenement.resx">
       <DependentUpon>FrmEvenement.cs</DependentUpon>

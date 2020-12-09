@@ -1,4 +1,5 @@
-﻿using Mutualite.BO;
+﻿
+using Mutualite.BO;
 using Mutualite.DAL;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,10 @@ namespace Mutualite.BLL
         public IEnumerable<Cycle> GetByTypeRencontre(string dureeCycle)
         {
             return cycleRepo.Find(x => x.DureeCycle == dureeCycle);
+        }
+        public IEnumerable<Cycle> GetBy(Func<Cycle, bool> predicate)
+        {
+            return cycleRepo.Find(predicate);
         }
         public void EditCycle(Cycle oldCycle, Cycle newCycle)
         {

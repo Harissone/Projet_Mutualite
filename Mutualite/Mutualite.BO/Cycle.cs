@@ -27,7 +27,7 @@ namespace Mutualite.BO
             HeureAssemble = heureAssemble;
             SanctionRetard = sanctionRetard;
             SanctionAbsence = sanctionAbsence;
-            
+
         }
         public override bool Equals(object obj)
         {

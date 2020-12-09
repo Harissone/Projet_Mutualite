@@ -15,27 +15,27 @@ namespace Mutualite.DAL
         {
             caisseRepo = new CaisseDAO(dbFolder);
         }
-        public void AddPayment(Caisse caisse)
+        public void CreateCaisse(Caisse caisse)
         {
             caisseRepo.Add(caisse);
         }
-        public void DeletePayment(Caisse caisse)
+        public void DeleteCaisse(Caisse caisse)
         {
             caisseRepo.Remove(caisse);
         }
-        public IEnumerable<Caisse> GetAllPayment()
+        public IEnumerable<Caisse> GetAllCaisse()
         {
             return caisseRepo.Find();
         }
-        public IEnumerable<Caisse> GetByDateVersement(DateTime datevers)
+        public IEnumerable<Caisse> GetByDateVersement(string compte)
         {
-            return caisseRepo.Find(x => x.DateVersement == datevers);
+            return caisseRepo.Find(x => x.Compte == compte);
         }
         public IEnumerable<Caisse> GetBy(Func<Caisse, bool> predicate)
         {
             return caisseRepo.Find(predicate);
         }
-        public void EditPayment(Caisse oldCaisse, Caisse newCaisse)
+        public void EditCaisse(Caisse oldCaisse, Caisse newCaisse)
         {
             caisseRepo.Set(oldCaisse, newCaisse);
         }

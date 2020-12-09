@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caisse.cs" />
+    <Compile Include="Cycle.cs" />
     <Compile Include="Echeance.cs" />
     <Compile Include="Evenement.cs" />
     <Compile Include="Login.cs" />
