@@ -46,7 +46,6 @@ namespace Mutualite.WinForm
                 {
                     if (user.Username.Equals(txtUsername.Text, StringComparison.OrdinalIgnoreCase) && user.Password.Equals(txtPassword.Text))
                     {
-
                         Form f = new FrmParent();
                         f.Show();
                         txtUsername.Clear();

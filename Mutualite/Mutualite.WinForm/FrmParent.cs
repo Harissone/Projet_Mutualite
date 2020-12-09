@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mutualite.BO;
 
 namespace Mutualite.WinForm
 {
@@ -58,7 +59,9 @@ namespace Mutualite.WinForm
 
         private void guna2ButtonReunion_Click(object sender, EventArgs e)
         {
-
+            FrmReunionAccess fra = new FrmReunionAccess();
+            fra.Show();
+            this.Hide();
         }
 
         private void guna2ButtonExit_Click(object sender, EventArgs e)
@@ -79,7 +82,37 @@ namespace Mutualite.WinForm
 
         private void FrmParent_Load(object sender, EventArgs e)
         {
+         
+        }
 
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show
+                (
+                "You will return to the login page",
+                "Confirmation",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
+            FrmUser fu = new FrmUser();
+            fu.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+            Console.WriteLine("Today is"+DateTime.Now);
         }
     }
 }

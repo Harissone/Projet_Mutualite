@@ -16,7 +16,7 @@ namespace Mutualite.WinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmReunionList());
+            Application.Run(new FrmParent());
         }
     }
 }

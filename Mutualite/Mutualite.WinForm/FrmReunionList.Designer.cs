@@ -37,17 +37,17 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2DataGridViewReunion = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnModifierReunion = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnSupprimerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnCreerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Penaliter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblligne = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnModifierReunion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnSupprimerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnCreerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewReunion)).BeginInit();
@@ -205,16 +205,59 @@ namespace Mutualite.WinForm
             this.guna2DataGridViewReunion.ThemeStyle.RowsStyle.Height = 22;
             this.guna2DataGridViewReunion.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewReunion.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewReunion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewReunion_CellContentClick);
             this.guna2DataGridViewReunion.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewReunion_CellDoubleClick);
             // 
-            // guna2HtmlLblLigne
+            // Titre
             // 
-            this.guna2HtmlLblLigne.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLblLigne.Location = new System.Drawing.Point(812, 413);
-            this.guna2HtmlLblLigne.Name = "guna2HtmlLblLigne";
-            this.guna2HtmlLblLigne.Size = new System.Drawing.Size(34, 15);
-            this.guna2HtmlLblLigne.TabIndex = 17;
-            this.guna2HtmlLblLigne.Text = "Lignes";
+            this.Titre.DataPropertyName = "NomReunion";
+            this.Titre.HeaderText = "Titre";
+            this.Titre.Name = "Titre";
+            this.Titre.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TypeTontine";
+            this.Column1.HeaderText = "Type reunion";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "MontantMinimum";
+            this.Column2.HeaderText = "Montant minimum";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "DateTontine";
+            this.Column3.HeaderText = "date premier tour";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "DescriptionTontine";
+            this.Column4.HeaderText = "Description";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Penaliter
+            // 
+            this.Penaliter.DataPropertyName = "Penalite";
+            this.Penaliter.HeaderText = "Penaliter";
+            this.Penaliter.Name = "Penaliter";
+            this.Penaliter.ReadOnly = true;
+            // 
+            // lblligne
+            // 
+            this.lblligne.BackColor = System.Drawing.Color.Transparent;
+            this.lblligne.Location = new System.Drawing.Point(812, 413);
+            this.lblligne.Name = "lblligne";
+            this.lblligne.Size = new System.Drawing.Size(34, 15);
+            this.lblligne.TabIndex = 17;
+            this.lblligne.Text = "Lignes";
             // 
             // guna2GradientBtnRafraichir
             // 
@@ -296,48 +339,6 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnCreerReunion.Text = "Creer une reunion";
             this.guna2GradientBtnCreerReunion.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
             // 
-            // Titre
-            // 
-            this.Titre.DataPropertyName = "NomReunion";
-            this.Titre.HeaderText = "Titre";
-            this.Titre.Name = "Titre";
-            this.Titre.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "TypeTontine";
-            this.Column1.HeaderText = "Type reunion";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "MontantMinimum";
-            this.Column2.HeaderText = "Montant minimum";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "DateTontine";
-            this.Column3.HeaderText = "date premier tour";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "DescriptionTontine";
-            this.Column4.HeaderText = "Description";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Penaliter
-            // 
-            this.Penaliter.DataPropertyName = "Penalite";
-            this.Penaliter.HeaderText = "Penaliter";
-            this.Penaliter.Name = "Penaliter";
-            this.Penaliter.ReadOnly = true;
-            // 
             // FrmReunionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,7 +346,7 @@ namespace Mutualite.WinForm
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(874, 450);
             this.Controls.Add(this.guna2GradientBtnRafraichir);
-            this.Controls.Add(this.guna2HtmlLblLigne);
+            this.Controls.Add(this.lblligne);
             this.Controls.Add(this.guna2GradientBtnModifierReunion);
             this.Controls.Add(this.guna2GradientBtnSupprimerReunion);
             this.Controls.Add(this.guna2DataGridViewReunion);
@@ -374,7 +375,7 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewReunion;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerReunion;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierReunion;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblLigne;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblligne;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
