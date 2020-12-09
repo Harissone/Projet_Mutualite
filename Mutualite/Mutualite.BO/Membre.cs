@@ -9,14 +9,19 @@ namespace Mutualite.BO
     public class Membre
     {
         public string Nom { get; set; }
-        public int Telephone { get; set; }
+        public string Prenom { get; set; }
+        public string Adresse { get; set; }
         public string Email { get; set; }
+        public int Telephone { get; set; }
 
-        public Membre(string nom, int telephone, string email)
+        public Membre(string nom, string prenom, string adresse,string email, int telephone)
         {
             Nom = nom;
-            Telephone = telephone;
+            Prenom = prenom;
+            Adresse = adresse;
             Email = email;
+            Telephone = telephone;
+           
         }
         public override bool Equals(object obj)
         {

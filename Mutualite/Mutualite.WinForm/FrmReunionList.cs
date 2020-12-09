@@ -35,7 +35,7 @@ namespace Mutualite.WinForm
             ).OrderBy(x => x.NomReunion).ToArray();
             guna2DataGridViewReunion.DataSource = null;
             guna2DataGridViewReunion.DataSource = reunions;
-            guna2HtmlLblLigne.Text = $"{guna2DataGridViewReunion.RowCount} lignes";
+            lblligne.Text = $"{guna2DataGridViewReunion.RowCount} lignes";
             guna2DataGridViewReunion.ClearSelection();
         }
 
@@ -103,6 +103,11 @@ namespace Mutualite.WinForm
         private void guna2DataGridViewReunion_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             guna2GradientBtnModifierReunion_Click(sender, e);
+        }
+
+        private void guna2DataGridViewReunion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

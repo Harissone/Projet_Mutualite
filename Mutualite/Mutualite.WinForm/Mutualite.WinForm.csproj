@@ -243,6 +243,18 @@
     <Compile Include="FrmEvenementList.Designer.cs">
       <DependentUpon>FrmEvenementList.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembre.Designer.cs">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMembresListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembresListe.Designer.cs">
+      <DependentUpon>FrmMembresListe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmParent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +266,12 @@
     </Compile>
     <Compile Include="FrmReunion.Designer.cs">
       <DependentUpon>FrmReunion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReunionAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReunionAccess.Designer.cs">
+      <DependentUpon>FrmReunionAccess.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReunionList.cs">
       <SubType>Form</SubType>
@@ -299,11 +317,20 @@
     <EmbeddedResource Include="FrmEvenementList.resx">
       <DependentUpon>FrmEvenementList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembre.resx">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembresListe.resx">
+      <DependentUpon>FrmMembresListe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmParent.resx">
       <DependentUpon>FrmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReunion.resx">
       <DependentUpon>FrmReunion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReunionAccess.resx">
+      <DependentUpon>FrmReunionAccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReunionList.resx">
       <DependentUpon>FrmReunionList.cs</DependentUpon>

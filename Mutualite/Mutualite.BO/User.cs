@@ -8,6 +8,7 @@ namespace Mutualite.BO
 {
     public class User: Login
     {
+       
         public string ConfirmPassword { get; set; }
         public User(string username, string password, string confirmPassword)
             :base(username, password)
