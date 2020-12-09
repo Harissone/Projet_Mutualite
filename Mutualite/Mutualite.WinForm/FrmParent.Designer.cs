@@ -316,7 +316,6 @@ namespace Mutualite.WinForm
             this.labelhour.Size = new System.Drawing.Size(93, 22);
             this.labelhour.TabIndex = 0;
             this.labelhour.Text = "Date et Heure";
-            this.labelhour.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2GradientCreateAccount
             // 

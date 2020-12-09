@@ -28,7 +28,7 @@ namespace Mutualite.BLL
         {
             return cycleRepo.Find();
         }
-        public IEnumerable<Cycle> GetByTypeRencontre(string dureeCycle)
+        public IEnumerable<Cycle> GetByDureeCycle(string dureeCycle)
         {
             return cycleRepo.Find(x => x.DureeCycle == dureeCycle);
         }
@@ -40,7 +40,5 @@ namespace Mutualite.BLL
         {
             cycleRepo.Set(oldCycle, newCycle);
         }
-
-
     }
 }

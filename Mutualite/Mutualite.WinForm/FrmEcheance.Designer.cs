@@ -30,6 +30,10 @@ namespace Mutualite.WinForm
         private void InitializeComponent()
         {
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2DateTimePickerDelai = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePickerDateDebut = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientCreer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2DateTimePickerDateFin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLblDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,15 +44,12 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelTitre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TxtTitre = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelCreationTontine = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePickerDateDebut = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePickerDelai = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2DateTimePickerDelai);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel2);
@@ -69,6 +70,72 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 555);
             this.guna2ShadowPanel1.TabIndex = 5;
+            // 
+            // guna2DateTimePickerDelai
+            // 
+            this.guna2DateTimePickerDelai.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePickerDelai.BorderRadius = 20;
+            this.guna2DateTimePickerDelai.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2DateTimePickerDelai.CheckedState.Parent = this.guna2DateTimePickerDelai;
+            this.guna2DateTimePickerDelai.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2DateTimePickerDelai.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePickerDelai.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2DateTimePickerDelai.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePickerDelai.HoverState.Parent = this.guna2DateTimePickerDelai;
+            this.guna2DateTimePickerDelai.Location = new System.Drawing.Point(34, 339);
+            this.guna2DateTimePickerDelai.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePickerDelai.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePickerDelai.Name = "guna2DateTimePickerDelai";
+            this.guna2DateTimePickerDelai.ShadowDecoration.Parent = this.guna2DateTimePickerDelai;
+            this.guna2DateTimePickerDelai.Size = new System.Drawing.Size(531, 36);
+            this.guna2DateTimePickerDelai.TabIndex = 15;
+            this.guna2DateTimePickerDelai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2DateTimePickerDelai.UseTransparentBackground = true;
+            this.guna2DateTimePickerDelai.Value = new System.DateTime(2020, 12, 8, 17, 54, 26, 488);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(43, 314);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(128, 19);
+            this.guna2HtmlLabel2.TabIndex = 16;
+            this.guna2HtmlLabel2.Text = "Delai de la cotisation";
+            // 
+            // guna2DateTimePickerDateDebut
+            // 
+            this.guna2DateTimePickerDateDebut.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePickerDateDebut.BorderRadius = 20;
+            this.guna2DateTimePickerDateDebut.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2DateTimePickerDateDebut.CheckedState.Parent = this.guna2DateTimePickerDateDebut;
+            this.guna2DateTimePickerDateDebut.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2DateTimePickerDateDebut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePickerDateDebut.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2DateTimePickerDateDebut.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePickerDateDebut.HoverState.Parent = this.guna2DateTimePickerDateDebut;
+            this.guna2DateTimePickerDateDebut.Location = new System.Drawing.Point(34, 150);
+            this.guna2DateTimePickerDateDebut.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePickerDateDebut.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePickerDateDebut.Name = "guna2DateTimePickerDateDebut";
+            this.guna2DateTimePickerDateDebut.ShadowDecoration.Parent = this.guna2DateTimePickerDateDebut;
+            this.guna2DateTimePickerDateDebut.Size = new System.Drawing.Size(531, 36);
+            this.guna2DateTimePickerDateDebut.TabIndex = 13;
+            this.guna2DateTimePickerDateDebut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2DateTimePickerDateDebut.UseTransparentBackground = true;
+            this.guna2DateTimePickerDateDebut.Value = new System.DateTime(2020, 12, 8, 17, 54, 26, 488);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 125);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(91, 19);
+            this.guna2HtmlLabel1.TabIndex = 14;
+            this.guna2HtmlLabel1.Text = "Date du debut";
             // 
             // guna2GradientCreer
             // 
@@ -232,6 +299,7 @@ namespace Mutualite.WinForm
             // 
             // guna2HtmlLabelCreationTontine
             // 
+            this.guna2HtmlLabelCreationTontine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabelCreationTontine.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelCreationTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelCreationTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -240,72 +308,6 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelCreationTontine.Size = new System.Drawing.Size(259, 27);
             this.guna2HtmlLabelCreationTontine.TabIndex = 4;
             this.guna2HtmlLabelCreationTontine.Text = "CREATION D\'UNE ECHEANCE";
-            // 
-            // guna2DateTimePickerDateDebut
-            // 
-            this.guna2DateTimePickerDateDebut.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePickerDateDebut.BorderRadius = 20;
-            this.guna2DateTimePickerDateDebut.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2DateTimePickerDateDebut.CheckedState.Parent = this.guna2DateTimePickerDateDebut;
-            this.guna2DateTimePickerDateDebut.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePickerDateDebut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePickerDateDebut.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2DateTimePickerDateDebut.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePickerDateDebut.HoverState.Parent = this.guna2DateTimePickerDateDebut;
-            this.guna2DateTimePickerDateDebut.Location = new System.Drawing.Point(34, 150);
-            this.guna2DateTimePickerDateDebut.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePickerDateDebut.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePickerDateDebut.Name = "guna2DateTimePickerDateDebut";
-            this.guna2DateTimePickerDateDebut.ShadowDecoration.Parent = this.guna2DateTimePickerDateDebut;
-            this.guna2DateTimePickerDateDebut.Size = new System.Drawing.Size(531, 36);
-            this.guna2DateTimePickerDateDebut.TabIndex = 13;
-            this.guna2DateTimePickerDateDebut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2DateTimePickerDateDebut.UseTransparentBackground = true;
-            this.guna2DateTimePickerDateDebut.Value = new System.DateTime(2020, 12, 8, 17, 54, 26, 488);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 125);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(91, 19);
-            this.guna2HtmlLabel1.TabIndex = 14;
-            this.guna2HtmlLabel1.Text = "Date du debut";
-            // 
-            // guna2DateTimePickerDelai
-            // 
-            this.guna2DateTimePickerDelai.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePickerDelai.BorderRadius = 20;
-            this.guna2DateTimePickerDelai.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2DateTimePickerDelai.CheckedState.Parent = this.guna2DateTimePickerDelai;
-            this.guna2DateTimePickerDelai.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePickerDelai.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePickerDelai.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2DateTimePickerDelai.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePickerDelai.HoverState.Parent = this.guna2DateTimePickerDelai;
-            this.guna2DateTimePickerDelai.Location = new System.Drawing.Point(34, 339);
-            this.guna2DateTimePickerDelai.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePickerDelai.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePickerDelai.Name = "guna2DateTimePickerDelai";
-            this.guna2DateTimePickerDelai.ShadowDecoration.Parent = this.guna2DateTimePickerDelai;
-            this.guna2DateTimePickerDelai.Size = new System.Drawing.Size(531, 36);
-            this.guna2DateTimePickerDelai.TabIndex = 15;
-            this.guna2DateTimePickerDelai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2DateTimePickerDelai.UseTransparentBackground = true;
-            this.guna2DateTimePickerDelai.Value = new System.DateTime(2020, 12, 8, 17, 54, 26, 488);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(43, 314);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(128, 19);
-            this.guna2HtmlLabel2.TabIndex = 16;
-            this.guna2HtmlLabel2.Text = "Delai de la cotisation";
             // 
             // FrmEcheance
             // 

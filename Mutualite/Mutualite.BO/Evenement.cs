@@ -32,7 +32,7 @@ namespace Mutualite.BO
         public override bool Equals(object obj)
         {
             return obj is Evenement evenement &&
-                   Titre == evenement.Titre;
+                    Titre.Equals(evenement.Titre, StringComparison.OrdinalIgnoreCase);
         }
 
         public override int GetHashCode()

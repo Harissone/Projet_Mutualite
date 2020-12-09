@@ -34,20 +34,20 @@ namespace Mutualite.WinForm
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridViewEcheance = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Penaliter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnModifierEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnSupprimerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GradientBtnCreerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEcheance)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -71,9 +71,7 @@ namespace Mutualite.WinForm
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.guna2DataGridViewEcheance.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridViewEcheance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DataGridViewEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2DataGridViewEcheance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridViewEcheance.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridViewEcheance.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -135,11 +133,51 @@ namespace Mutualite.WinForm
             this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // Titre
+            // 
+            this.Titre.DataPropertyName = "Titre";
+            this.Titre.HeaderText = "Titre";
+            this.Titre.Name = "Titre";
+            this.Titre.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Montant";
+            this.Column2.HeaderText = "Montant a cotiser";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "DelaisPayement";
+            this.Column1.HeaderText = "Delai payement";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "DateDebut";
+            this.Column3.HeaderText = "Date debut";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "DateFin";
+            this.Column4.HeaderText = "Date fin";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Penaliter
+            // 
+            this.Penaliter.DataPropertyName = "Description";
+            this.Penaliter.HeaderText = "Description";
+            this.Penaliter.Name = "Penaliter";
+            this.Penaliter.ReadOnly = true;
+            // 
             // guna2ShadowPanel1
             // 
-            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
@@ -196,50 +234,9 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.TabIndex = 2;
             this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged);
             // 
-            // Titre
-            // 
-            this.Titre.DataPropertyName = "Titre";
-            this.Titre.HeaderText = "Titre";
-            this.Titre.Name = "Titre";
-            this.Titre.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Montant";
-            this.Column2.HeaderText = "Montant a cotiser";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "DelaisPayement";
-            this.Column1.HeaderText = "Delai payement";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "DateDebut";
-            this.Column3.HeaderText = "Date debut";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "DateFin";
-            this.Column4.HeaderText = "Date fin";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Penaliter
-            // 
-            this.Penaliter.DataPropertyName = "Description";
-            this.Penaliter.HeaderText = "Description";
-            this.Penaliter.Name = "Penaliter";
-            this.Penaliter.ReadOnly = true;
-            // 
             // guna2GradientBtnRafraichir
             // 
+            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnRafraichir.Animated = true;
             this.guna2GradientBtnRafraichir.BorderRadius = 20;
             this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
@@ -260,6 +257,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnModifierEcheance
             // 
+            this.guna2GradientBtnModifierEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnModifierEcheance.Animated = true;
             this.guna2GradientBtnModifierEcheance.BorderRadius = 20;
             this.guna2GradientBtnModifierEcheance.CheckedState.Parent = this.guna2GradientBtnModifierEcheance;
@@ -280,6 +278,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnSupprimerEcheance
             // 
+            this.guna2GradientBtnSupprimerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnSupprimerEcheance.Animated = true;
             this.guna2GradientBtnSupprimerEcheance.BorderRadius = 20;
             this.guna2GradientBtnSupprimerEcheance.CheckedState.Parent = this.guna2GradientBtnSupprimerEcheance;
@@ -297,6 +296,27 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnSupprimerEcheance.TabIndex = 22;
             this.guna2GradientBtnSupprimerEcheance.Text = "Supprimer une echeance";
             this.guna2GradientBtnSupprimerEcheance.Click += new System.EventHandler(this.guna2GradientBtnSupprimerEcheance_Click);
+            // 
+            // guna2GradientBtnCreerEcheance
+            // 
+            this.guna2GradientBtnCreerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnCreerEcheance.Animated = true;
+            this.guna2GradientBtnCreerEcheance.BorderRadius = 20;
+            this.guna2GradientBtnCreerEcheance.CheckedState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.CustomImages.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnCreerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnCreerEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnCreerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnCreerEcheance.HoverState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
+            this.guna2GradientBtnCreerEcheance.Location = new System.Drawing.Point(35, 23);
+            this.guna2GradientBtnCreerEcheance.Name = "guna2GradientBtnCreerEcheance";
+            this.guna2GradientBtnCreerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Size = new System.Drawing.Size(152, 37);
+            this.guna2GradientBtnCreerEcheance.TabIndex = 20;
+            this.guna2GradientBtnCreerEcheance.Text = "Creer une echeance";
+            this.guna2GradientBtnCreerEcheance.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
             // 
             // guna2CircleButton1
             // 
@@ -316,26 +336,6 @@ namespace Mutualite.WinForm
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Size = new System.Drawing.Size(30, 30);
             this.guna2CircleButton1.TabIndex = 1;
-            // 
-            // guna2GradientBtnCreerEcheance
-            // 
-            this.guna2GradientBtnCreerEcheance.Animated = true;
-            this.guna2GradientBtnCreerEcheance.BorderRadius = 20;
-            this.guna2GradientBtnCreerEcheance.CheckedState.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.CustomImages.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnCreerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnCreerEcheance.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnCreerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnCreerEcheance.HoverState.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
-            this.guna2GradientBtnCreerEcheance.Location = new System.Drawing.Point(35, 23);
-            this.guna2GradientBtnCreerEcheance.Name = "guna2GradientBtnCreerEcheance";
-            this.guna2GradientBtnCreerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.Size = new System.Drawing.Size(152, 37);
-            this.guna2GradientBtnCreerEcheance.TabIndex = 20;
-            this.guna2GradientBtnCreerEcheance.Text = "Creer une echeance";
-            this.guna2GradientBtnCreerEcheance.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
             // 
             // FrmEcheanceList
             // 

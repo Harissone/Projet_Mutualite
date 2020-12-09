@@ -47,6 +47,7 @@ namespace Mutualite.WinForm
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2ComboBoxModePayement);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel1);
@@ -264,6 +265,7 @@ namespace Mutualite.WinForm
             // 
             // guna2HtmlLabelEnregistreVersement
             // 
+            this.guna2HtmlLabelEnregistreVersement.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabelEnregistreVersement.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelEnregistreVersement.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelEnregistreVersement.ForeColor = System.Drawing.SystemColors.ControlDarkDark;

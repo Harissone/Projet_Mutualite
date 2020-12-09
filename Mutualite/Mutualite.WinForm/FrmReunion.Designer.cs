@@ -86,6 +86,7 @@ namespace Mutualite.WinForm
             // 
             // guna2HtmlLabelCreationTontine
             // 
+            this.guna2HtmlLabelCreationTontine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2HtmlLabelCreationTontine.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelCreationTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelCreationTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -97,6 +98,7 @@ namespace Mutualite.WinForm
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GradientCreer);
             this.guna2ShadowPanel1.Controls.Add(this.guna2DateTimePicker1);

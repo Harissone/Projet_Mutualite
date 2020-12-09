@@ -28,8 +28,9 @@ namespace Mutualite.WinForm
             var cycles = cycleBLO.GetBy
             (
                 x =>
-                x.TypeRencontre.ToLower().Contains(value)
-            ).OrderBy(x => x.TypeRencontre).ToArray();
+                (x.TypeRencontre != null && x.TypeRencontre.ToLower().Contains(value)) ||
+                (x.DureeCycle != null && x.DureeCycle.ToLower().Contains(value))
+            ).OrderBy(x => x.DureeCycle).ToArray();
             guna2DataGridViewCycle.DataSource = null;
             guna2DataGridViewCycle.DataSource = cycles;
             guna2HtmlLblLigne.Text = $"{guna2DataGridViewCycle.RowCount} lignes";

@@ -32,12 +32,19 @@ namespace Mutualite.BO
         public override bool Equals(object obj)
         {
             return obj is Cycle cycle &&
-                   TypeRencontre.Equals(cycle.TypeRencontre, StringComparison.OrdinalIgnoreCase);
+                   DureeCycle.Equals(cycle.DureeCycle, StringComparison.OrdinalIgnoreCase);
         }
 
         public override int GetHashCode()
         {
-            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(TypeRencontre);
+            return 317685184 + EqualityComparer<string>.Default.GetHashCode(DureeCycle);
         }
+
+
+        /* public override int GetHashCode()
+         {
+             return -1304721846 + EqualityComparer<string>.Default.GetHashCode(DureeCycle);
+         }*/
+
     }
 }
