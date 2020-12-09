@@ -163,5 +163,15 @@ namespace Mutualite.WinForm
             if (!string.IsNullOrEmpty(text))
                 throw new TypingException(text);
         }
+
+        private void guna2TxtNomReunion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmReunion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

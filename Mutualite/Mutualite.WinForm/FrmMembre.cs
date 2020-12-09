@@ -28,9 +28,8 @@ namespace Mutualite.WinForm
         public FrmMembre(Membre membre, Action callBack) : this(callBack)
         {
             this.oldMembre = membre;
-            txtbxnom.Text = membre.Nom;
-            txtbxprenom.Text = membre.Prenom;
-            txtbxadresse.Text = membre.Adresse.ToString();
+            txtbxnom.Text = membre.Username;
+            txtbxPassword.Text = membre.Password;
             txtbxemail.Text = membre.Email.ToString();
             txtbxtelephone.Text = membre.Telephone.ToString();
         }
@@ -38,8 +37,7 @@ namespace Mutualite.WinForm
         {
             string text = string.Empty;
             txtbxnom.BackColor = Color.White;
-            txtbxprenom.BackColor = Color.White;
-            txtbxadresse.BackColor = Color.White;
+            txtbxPassword.BackColor = Color.White;
             txtbxemail.BackColor = Color.White;
             txtbxtelephone.BackColor = Color.White;
 
@@ -48,15 +46,11 @@ namespace Mutualite.WinForm
                 text += "- Please enter your firstname ! \n";
                 txtbxnom.BackColor = Color.Pink;
             }
-            if (string.IsNullOrWhiteSpace(txtbxprenom.Text))
-            {
-                text += "- Please enter your lastname ! \n";
-                txtbxprenom.BackColor = Color.Pink;
-            }
-            if (string.IsNullOrWhiteSpace(txtbxadresse.Text))
+           
+            if (string.IsNullOrWhiteSpace(txtbxPassword.Text))
             {
                 text += "- Please enter your adress ! \n";
-                txtbxadresse.BackColor = Color.Pink;
+                txtbxPassword.BackColor = Color.Pink;
             }
             if (string.IsNullOrWhiteSpace(txtbxemail.Text))
             {
@@ -80,9 +74,9 @@ namespace Mutualite.WinForm
 
                 Membre newMembre = new Membre
                 (
-                    txtbxnom.Text.ToUpper(),
-                     txtbxprenom.Text,
-                    txtbxadresse.Text,
+                    txtbxnom.Text.ToUpper(),     
+                    txtbxPassword.Text,
+                    guna2TextBoxConfirmPassword.Text,
                     txtbxemail.Text,
                     int.Parse(txtbxtelephone.Text)
                 );
@@ -109,8 +103,8 @@ namespace Mutualite.WinForm
                     Close();
 
                 txtbxnom.Clear();
-                txtbxprenom.Clear();
-                txtbxadresse.Clear();
+              
+                txtbxPassword.Clear();
                 txtbxemail.Clear();
                 txtbxtelephone.Focus();
                 FrmMembresListe fml = new FrmMembresListe();

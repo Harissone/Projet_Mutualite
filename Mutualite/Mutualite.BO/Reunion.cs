@@ -12,7 +12,7 @@ namespace Mutualite.BO
         public string NomReunion { get; set; }
         public string DescriptionTontine { get; set; }
         public string TypeTontine { get; set; }
-        public int MontantTontine { get; set; }
+        public int MontantMinimum { get; set; }
         public DateTime DateTontine { get; set; }
         public int Penalite { get; set; }
 
@@ -21,12 +21,12 @@ namespace Mutualite.BO
 
         }
 
-        public Reunion(string nomReunion, string descriptionTontine, string typeTontine, int montantTontine, DateTime dateTontine, int penalite)
+        public Reunion(string nomReunion, string descriptionTontine, string typeTontine, int montantMinimum, DateTime dateTontine, int penalite)
         {
             NomReunion = nomReunion;
             DescriptionTontine = descriptionTontine;
             TypeTontine = typeTontine;
-            MontantTontine = montantTontine;
+            MontantMinimum = montantMinimum;
             DateTontine = dateTontine;
             Penalite = penalite;
         }

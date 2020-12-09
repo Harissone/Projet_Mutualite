@@ -87,13 +87,13 @@ namespace Mutualite.WinForm
                 checkForm();
 
                     Caisse newCaisse = new Caisse
-            (
-                guna2TxtCompte.Text,
-                int.Parse(guna2TxtMontant.Text),
-                DateTime.Parse(guna2DateTimePickerDateVersement.Text),
-                guna2ComboBoxModePayement.Text,
-                guna2TxtDescription.Text               
-            );
+                (
+                    guna2TxtCompte.Text,
+                    int.Parse(guna2TxtMontant.Text),
+                    DateTime.Parse(guna2DateTimePickerDateVersement.Text),
+                    guna2ComboBoxModePayement.Text,
+                    guna2TxtDescription.Text               
+                );
 
                 CaisseBLO caisseBLO = new CaisseBLO(ConfigurationManager.AppSettings["DbFolder"]);
 

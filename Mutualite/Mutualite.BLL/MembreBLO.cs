@@ -33,9 +33,9 @@ namespace Mutualite.BLL
         {
             return membreRepo.Find();
         }
-        public IEnumerable<Membre> GetByNom(string nom)
+        public IEnumerable<Membre> GetByNom(string username)
         {
-            return membreRepo.Find(x => x.Nom == nom);
+            return membreRepo.Find(x => x.Username == username);
         }
         public IEnumerable<Membre> GetBy(Func<Membre, bool> predicate)
         {

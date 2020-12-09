@@ -34,27 +34,27 @@ namespace Mutualite.WinForm
             this.txtbxtelephone = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAjouter = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLblLieu = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtbxadresse = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLblMontant = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtbxprenom = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtbxemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelNomReunion = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtbxnom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelCreationTontine = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBoxConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TextBoxConfirmPassword);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2ShadowPanel1.Controls.Add(this.txtbxtelephone);
             this.guna2ShadowPanel1.Controls.Add(this.btnAjouter);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblLieu);
-            this.guna2ShadowPanel1.Controls.Add(this.txtbxadresse);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblMontant);
-            this.guna2ShadowPanel1.Controls.Add(this.txtbxprenom);
+            this.guna2ShadowPanel1.Controls.Add(this.txtbxPassword);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelDescription);
             this.guna2ShadowPanel1.Controls.Add(this.txtbxemail);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelNomReunion);
@@ -63,7 +63,7 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(107, 75);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 487);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 570);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // guna2HtmlLabel1
@@ -71,7 +71,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 297);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 380);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(137, 19);
             this.guna2HtmlLabel1.TabIndex = 13;
@@ -93,13 +93,13 @@ namespace Mutualite.WinForm
             this.txtbxtelephone.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbxtelephone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxtelephone.HoverState.Parent = this.txtbxtelephone;
-            this.txtbxtelephone.Location = new System.Drawing.Point(25, 322);
+            this.txtbxtelephone.Location = new System.Drawing.Point(25, 405);
             this.txtbxtelephone.Name = "txtbxtelephone";
             this.txtbxtelephone.PasswordChar = '\0';
             this.txtbxtelephone.PlaceholderText = "";
             this.txtbxtelephone.SelectedText = "";
             this.txtbxtelephone.ShadowDecoration.Parent = this.txtbxtelephone;
-            this.txtbxtelephone.Size = new System.Drawing.Size(259, 36);
+            this.txtbxtelephone.Size = new System.Drawing.Size(540, 36);
             this.txtbxtelephone.TabIndex = 4;
             // 
             // btnAjouter
@@ -113,7 +113,7 @@ namespace Mutualite.WinForm
             this.btnAjouter.ForeColor = System.Drawing.Color.White;
             this.btnAjouter.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.btnAjouter.HoverState.Parent = this.btnAjouter;
-            this.btnAjouter.Location = new System.Drawing.Point(198, 394);
+            this.btnAjouter.Location = new System.Drawing.Point(202, 486);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.ShadowDecoration.Parent = this.btnAjouter;
             this.btnAjouter.Size = new System.Drawing.Size(180, 45);
@@ -126,79 +126,43 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblLieu.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblLieu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblLieu.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblLieu.Location = new System.Drawing.Point(43, 133);
+            this.guna2HtmlLblLieu.Location = new System.Drawing.Point(34, 133);
             this.guna2HtmlLblLieu.Name = "guna2HtmlLblLieu";
-            this.guna2HtmlLblLieu.Size = new System.Drawing.Size(51, 19);
+            this.guna2HtmlLblLieu.Size = new System.Drawing.Size(85, 19);
             this.guna2HtmlLblLieu.TabIndex = 9;
-            this.guna2HtmlLblLieu.Text = "Adresse";
+            this.guna2HtmlLblLieu.Text = "Mot de passe";
             // 
-            // txtbxadresse
+            // txtbxPassword
             // 
-            this.txtbxadresse.BorderRadius = 20;
-            this.txtbxadresse.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbxadresse.DefaultText = "";
-            this.txtbxadresse.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtbxadresse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtbxadresse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxadresse.DisabledState.Parent = this.txtbxadresse;
-            this.txtbxadresse.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxadresse.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbxadresse.FocusedState.Parent = this.txtbxadresse;
-            this.txtbxadresse.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbxadresse.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtbxadresse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbxadresse.HoverState.Parent = this.txtbxadresse;
-            this.txtbxadresse.Location = new System.Drawing.Point(34, 158);
-            this.txtbxadresse.Name = "txtbxadresse";
-            this.txtbxadresse.PasswordChar = '\0';
-            this.txtbxadresse.PlaceholderText = "";
-            this.txtbxadresse.SelectedText = "";
-            this.txtbxadresse.ShadowDecoration.Parent = this.txtbxadresse;
-            this.txtbxadresse.Size = new System.Drawing.Size(531, 36);
-            this.txtbxadresse.TabIndex = 2;
-            // 
-            // guna2HtmlLblMontant
-            // 
-            this.guna2HtmlLblMontant.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLblMontant.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLblMontant.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblMontant.Location = new System.Drawing.Point(374, 48);
-            this.guna2HtmlLblMontant.Name = "guna2HtmlLblMontant";
-            this.guna2HtmlLblMontant.Size = new System.Drawing.Size(51, 19);
-            this.guna2HtmlLblMontant.TabIndex = 7;
-            this.guna2HtmlLblMontant.Text = "Prenom";
-            // 
-            // txtbxprenom
-            // 
-            this.txtbxprenom.BorderRadius = 20;
-            this.txtbxprenom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtbxprenom.DefaultText = "";
-            this.txtbxprenom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtbxprenom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtbxprenom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxprenom.DisabledState.Parent = this.txtbxprenom;
-            this.txtbxprenom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxprenom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbxprenom.FocusedState.Parent = this.txtbxprenom;
-            this.txtbxprenom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtbxprenom.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtbxprenom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbxprenom.HoverState.Parent = this.txtbxprenom;
-            this.txtbxprenom.Location = new System.Drawing.Point(365, 73);
-            this.txtbxprenom.Name = "txtbxprenom";
-            this.txtbxprenom.PasswordChar = '\0';
-            this.txtbxprenom.PlaceholderText = "";
-            this.txtbxprenom.SelectedText = "";
-            this.txtbxprenom.ShadowDecoration.Parent = this.txtbxprenom;
-            this.txtbxprenom.Size = new System.Drawing.Size(200, 36);
-            this.txtbxprenom.TabIndex = 1;
+            this.txtbxPassword.BorderRadius = 20;
+            this.txtbxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxPassword.DefaultText = "";
+            this.txtbxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxPassword.DisabledState.Parent = this.txtbxPassword;
+            this.txtbxPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxPassword.FocusedState.Parent = this.txtbxPassword;
+            this.txtbxPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbxPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtbxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxPassword.HoverState.Parent = this.txtbxPassword;
+            this.txtbxPassword.Location = new System.Drawing.Point(25, 158);
+            this.txtbxPassword.Name = "txtbxPassword";
+            this.txtbxPassword.PasswordChar = '\0';
+            this.txtbxPassword.PlaceholderText = "";
+            this.txtbxPassword.SelectedText = "";
+            this.txtbxPassword.ShadowDecoration.Parent = this.txtbxPassword;
+            this.txtbxPassword.Size = new System.Drawing.Size(540, 36);
+            this.txtbxPassword.TabIndex = 2;
             // 
             // guna2HtmlLabelDescription
             // 
             this.guna2HtmlLabelDescription.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelDescription.Location = new System.Drawing.Point(34, 215);
+            this.guna2HtmlLabelDescription.Location = new System.Drawing.Point(34, 298);
             this.guna2HtmlLabelDescription.Name = "guna2HtmlLabelDescription";
             this.guna2HtmlLabelDescription.Size = new System.Drawing.Size(35, 19);
             this.guna2HtmlLabelDescription.TabIndex = 2;
@@ -220,13 +184,13 @@ namespace Mutualite.WinForm
             this.txtbxemail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbxemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxemail.HoverState.Parent = this.txtbxemail;
-            this.txtbxemail.Location = new System.Drawing.Point(25, 240);
+            this.txtbxemail.Location = new System.Drawing.Point(25, 323);
             this.txtbxemail.Name = "txtbxemail";
             this.txtbxemail.PasswordChar = '\0';
             this.txtbxemail.PlaceholderText = "";
             this.txtbxemail.SelectedText = "";
             this.txtbxemail.ShadowDecoration.Parent = this.txtbxemail;
-            this.txtbxemail.Size = new System.Drawing.Size(531, 36);
+            this.txtbxemail.Size = new System.Drawing.Size(540, 36);
             this.txtbxemail.TabIndex = 3;
             // 
             // guna2HtmlLabelNomReunion
@@ -256,13 +220,13 @@ namespace Mutualite.WinForm
             this.txtbxnom.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbxnom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxnom.HoverState.Parent = this.txtbxnom;
-            this.txtbxnom.Location = new System.Drawing.Point(34, 73);
+            this.txtbxnom.Location = new System.Drawing.Point(25, 73);
             this.txtbxnom.Name = "txtbxnom";
             this.txtbxnom.PasswordChar = '\0';
             this.txtbxnom.PlaceholderText = "";
             this.txtbxnom.SelectedText = "";
             this.txtbxnom.ShadowDecoration.Parent = this.txtbxnom;
-            this.txtbxnom.Size = new System.Drawing.Size(200, 36);
+            this.txtbxnom.Size = new System.Drawing.Size(540, 36);
             this.txtbxnom.TabIndex = 0;
             // 
             // guna2HtmlLabelCreationTontine
@@ -276,12 +240,48 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelCreationTontine.TabIndex = 6;
             this.guna2HtmlLabelCreationTontine.Text = "AJOUT D\'UN MEMBRE";
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(34, 216);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(142, 19);
+            this.guna2HtmlLabel2.TabIndex = 17;
+            this.guna2HtmlLabel2.Text = "mot de passe confirme";
+            // 
+            // guna2TextBoxConfirmPassword
+            // 
+            this.guna2TextBoxConfirmPassword.BorderRadius = 20;
+            this.guna2TextBoxConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxConfirmPassword.DefaultText = "";
+            this.guna2TextBoxConfirmPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxConfirmPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxConfirmPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxConfirmPassword.DisabledState.Parent = this.guna2TextBoxConfirmPassword;
+            this.guna2TextBoxConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxConfirmPassword.FocusedState.Parent = this.guna2TextBoxConfirmPassword;
+            this.guna2TextBoxConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBoxConfirmPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TextBoxConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxConfirmPassword.HoverState.Parent = this.guna2TextBoxConfirmPassword;
+            this.guna2TextBoxConfirmPassword.Location = new System.Drawing.Point(25, 241);
+            this.guna2TextBoxConfirmPassword.Name = "guna2TextBoxConfirmPassword";
+            this.guna2TextBoxConfirmPassword.PasswordChar = '\0';
+            this.guna2TextBoxConfirmPassword.PlaceholderText = "";
+            this.guna2TextBoxConfirmPassword.SelectedText = "";
+            this.guna2TextBoxConfirmPassword.ShadowDecoration.Parent = this.guna2TextBoxConfirmPassword;
+            this.guna2TextBoxConfirmPassword.Size = new System.Drawing.Size(540, 36);
+            this.guna2TextBoxConfirmPassword.TabIndex = 16;
+            // 
             // FrmMembre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 587);
+            this.ClientSize = new System.Drawing.Size(800, 682);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2HtmlLabelCreationTontine);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -302,13 +302,13 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2TextBox txtbxtelephone;
         private Guna.UI2.WinForms.Guna2GradientButton btnAjouter;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblLieu;
-        private Guna.UI2.WinForms.Guna2TextBox txtbxadresse;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblMontant;
-        private Guna.UI2.WinForms.Guna2TextBox txtbxprenom;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxPassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelDescription;
         private Guna.UI2.WinForms.Guna2TextBox txtbxemail;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelNomReunion;
         private Guna.UI2.WinForms.Guna2TextBox txtbxnom;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelCreationTontine;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxConfirmPassword;
     }
 }

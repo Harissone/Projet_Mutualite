@@ -23,11 +23,15 @@ namespace Mutualite.BO
             Commentaire = commentaire;
         }
 
-        public Caisse()
+        public override int GetHashCode()
         {
-
+            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Compte);
         }
 
-        
+        public override bool Equals(object obj)
+        {
+            return obj is Caisse caisse &&
+                  Compte.Equals(caisse.Compte, StringComparison.OrdinalIgnoreCase);
+        }
     }
 }

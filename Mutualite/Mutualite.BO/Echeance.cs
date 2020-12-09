@@ -32,8 +32,8 @@ namespace Mutualite.BO
         }
         public override bool Equals(object obj)
         {
-            return obj is Echeance product &&
-                   Titre.Equals(product.Titre, StringComparison.OrdinalIgnoreCase);
+            return obj is Echeance echeance &&
+                   Titre.Equals(echeance.Titre, StringComparison.OrdinalIgnoreCase);
         }
 
         public override int GetHashCode()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mutualite.BLL;
+using Mutualite.BO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -14,6 +16,7 @@ namespace Mutualite.WinForm
 {
     public partial class FrmMembresListe : Form
     {
+       
         private MembreBLO membreBLO;
         public FrmMembresListe()
         {
@@ -27,11 +30,8 @@ namespace Mutualite.WinForm
             var membres = membreBLO.GetBy
             (
                 x =>
-                x.Nom.ToLower().Contains(value) ||
-                x.Prenom.ToLower().Contains(value) ||
-                x.Adresse.ToLower().Contains(value) ||
-                x.Email.ToLower().Contains(value)
-            ).OrderBy(x => x.Nom).ToArray();
+                x.Username.ToLower().Contains(value)    
+            ).OrderBy(x => x.Username).ToArray();
             guna2DataGridViewEvenement.DataSource = null;
             guna2DataGridViewEvenement.DataSource = membres;
             guna2HtmlLblLigne.Text = $"{guna2DataGridViewEvenement.RowCount} lignes";

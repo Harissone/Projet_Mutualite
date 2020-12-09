@@ -35,7 +35,6 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2DataGridViewReunion = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnModifierReunion = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnSupprimerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnCreerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewReunion)).BeginInit();
@@ -55,13 +55,11 @@ namespace Mutualite.WinForm
             // 
             // guna2ShadowPanel1
             // 
-            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(48, 85);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(99, 82);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Padding = new System.Windows.Forms.Padding(3, 1, 3, 2);
             this.guna2ShadowPanel1.Radius = 16;
@@ -114,25 +112,6 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.TabIndex = 2;
             this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged);
             // 
-            // guna2CircleButton1
-            // 
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2CircleButton1.HoverState.Image = global::Mutualite.WinForm.Properties.Resources.search_26px1;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Image = global::Mutualite.WinForm.Properties.Resources.search_26px;
-            this.guna2CircleButton1.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(30, 11);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(30, 30);
-            this.guna2CircleButton1.TabIndex = 1;
-            // 
             // guna2DataGridViewReunion
             // 
             this.guna2DataGridViewReunion.AllowUserToAddRows = false;
@@ -142,9 +121,7 @@ namespace Mutualite.WinForm
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.guna2DataGridViewReunion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridViewReunion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DataGridViewReunion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2DataGridViewReunion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridViewReunion.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridViewReunion.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -176,7 +153,7 @@ namespace Mutualite.WinForm
             this.guna2DataGridViewReunion.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridViewReunion.EnableHeadersVisualStyles = false;
             this.guna2DataGridViewReunion.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewReunion.Location = new System.Drawing.Point(48, 159);
+            this.guna2DataGridViewReunion.Location = new System.Drawing.Point(99, 156);
             this.guna2DataGridViewReunion.Name = "guna2DataGridViewReunion";
             this.guna2DataGridViewReunion.ReadOnly = true;
             this.guna2DataGridViewReunion.RowHeadersVisible = false;
@@ -252,8 +229,9 @@ namespace Mutualite.WinForm
             // 
             // lblligne
             // 
+            this.lblligne.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblligne.BackColor = System.Drawing.Color.Transparent;
-            this.lblligne.Location = new System.Drawing.Point(812, 413);
+            this.lblligne.Location = new System.Drawing.Point(863, 410);
             this.lblligne.Name = "lblligne";
             this.lblligne.Size = new System.Drawing.Size(34, 15);
             this.lblligne.TabIndex = 17;
@@ -261,6 +239,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnRafraichir
             // 
+            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnRafraichir.Animated = true;
             this.guna2GradientBtnRafraichir.BorderRadius = 20;
             this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
@@ -271,7 +250,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
-            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(627, 25);
+            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(678, 22);
             this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
             this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
@@ -281,6 +260,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnModifierReunion
             // 
+            this.guna2GradientBtnModifierReunion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnModifierReunion.Animated = true;
             this.guna2GradientBtnModifierReunion.BorderRadius = 20;
             this.guna2GradientBtnModifierReunion.CheckedState.Parent = this.guna2GradientBtnModifierReunion;
@@ -291,7 +271,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnModifierReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnModifierReunion.HoverState.Parent = this.guna2GradientBtnModifierReunion;
             this.guna2GradientBtnModifierReunion.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
-            this.guna2GradientBtnModifierReunion.Location = new System.Drawing.Point(424, 25);
+            this.guna2GradientBtnModifierReunion.Location = new System.Drawing.Point(475, 22);
             this.guna2GradientBtnModifierReunion.Name = "guna2GradientBtnModifierReunion";
             this.guna2GradientBtnModifierReunion.ShadowDecoration.Parent = this.guna2GradientBtnModifierReunion;
             this.guna2GradientBtnModifierReunion.Size = new System.Drawing.Size(183, 37);
@@ -301,6 +281,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnSupprimerReunion
             // 
+            this.guna2GradientBtnSupprimerReunion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnSupprimerReunion.Animated = true;
             this.guna2GradientBtnSupprimerReunion.BorderRadius = 20;
             this.guna2GradientBtnSupprimerReunion.CheckedState.Parent = this.guna2GradientBtnSupprimerReunion;
@@ -311,7 +292,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnSupprimerReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnSupprimerReunion.HoverState.Parent = this.guna2GradientBtnSupprimerReunion;
             this.guna2GradientBtnSupprimerReunion.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
-            this.guna2GradientBtnSupprimerReunion.Location = new System.Drawing.Point(221, 25);
+            this.guna2GradientBtnSupprimerReunion.Location = new System.Drawing.Point(272, 22);
             this.guna2GradientBtnSupprimerReunion.Name = "guna2GradientBtnSupprimerReunion";
             this.guna2GradientBtnSupprimerReunion.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerReunion;
             this.guna2GradientBtnSupprimerReunion.Size = new System.Drawing.Size(188, 37);
@@ -321,6 +302,7 @@ namespace Mutualite.WinForm
             // 
             // guna2GradientBtnCreerReunion
             // 
+            this.guna2GradientBtnCreerReunion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2GradientBtnCreerReunion.Animated = true;
             this.guna2GradientBtnCreerReunion.BorderRadius = 20;
             this.guna2GradientBtnCreerReunion.CheckedState.Parent = this.guna2GradientBtnCreerReunion;
@@ -331,7 +313,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnCreerReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnCreerReunion.HoverState.Parent = this.guna2GradientBtnCreerReunion;
             this.guna2GradientBtnCreerReunion.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
-            this.guna2GradientBtnCreerReunion.Location = new System.Drawing.Point(51, 25);
+            this.guna2GradientBtnCreerReunion.Location = new System.Drawing.Point(102, 22);
             this.guna2GradientBtnCreerReunion.Name = "guna2GradientBtnCreerReunion";
             this.guna2GradientBtnCreerReunion.ShadowDecoration.Parent = this.guna2GradientBtnCreerReunion;
             this.guna2GradientBtnCreerReunion.Size = new System.Drawing.Size(152, 37);
@@ -339,12 +321,31 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnCreerReunion.Text = "Creer une reunion";
             this.guna2GradientBtnCreerReunion.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
             // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.guna2CircleButton1.HoverState.Image = global::Mutualite.WinForm.Properties.Resources.search_26px1;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Image = global::Mutualite.WinForm.Properties.Resources.search_26px;
+            this.guna2CircleButton1.ImageSize = new System.Drawing.Size(16, 16);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(30, 11);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(30, 30);
+            this.guna2CircleButton1.TabIndex = 1;
+            // 
             // FrmReunionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(874, 450);
+            this.ClientSize = new System.Drawing.Size(921, 450);
             this.Controls.Add(this.guna2GradientBtnRafraichir);
             this.Controls.Add(this.lblligne);
             this.Controls.Add(this.guna2GradientBtnModifierReunion);

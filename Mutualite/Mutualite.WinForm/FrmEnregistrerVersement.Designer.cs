@@ -30,6 +30,8 @@ namespace Mutualite.WinForm
         private void InitializeComponent()
         {
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ComboBoxModePayement = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientCreer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2DateTimePickerDateVersement = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLblDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,8 +42,6 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelCompte = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TxtCompte = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelEnregistreVersement = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBoxModePayement = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,41 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 483);
             this.guna2ShadowPanel1.TabIndex = 7;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
+            // 
+            // guna2ComboBoxModePayement
+            // 
+            this.guna2ComboBoxModePayement.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxModePayement.BorderRadius = 20;
+            this.guna2ComboBoxModePayement.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxModePayement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxModePayement.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxModePayement.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxModePayement.FocusedState.Parent = this.guna2ComboBoxModePayement;
+            this.guna2ComboBoxModePayement.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBoxModePayement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBoxModePayement.HoverState.Parent = this.guna2ComboBoxModePayement;
+            this.guna2ComboBoxModePayement.ItemHeight = 30;
+            this.guna2ComboBoxModePayement.Items.AddRange(new object[] {
+            "Especes",
+            "Virement bancaire",
+            "Payement mobile"});
+            this.guna2ComboBoxModePayement.ItemsAppearance.Parent = this.guna2ComboBoxModePayement;
+            this.guna2ComboBoxModePayement.Location = new System.Drawing.Point(34, 255);
+            this.guna2ComboBoxModePayement.Name = "guna2ComboBoxModePayement";
+            this.guna2ComboBoxModePayement.ShadowDecoration.Parent = this.guna2ComboBoxModePayement;
+            this.guna2ComboBoxModePayement.Size = new System.Drawing.Size(531, 36);
+            this.guna2ComboBoxModePayement.TabIndex = 18;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 230);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(123, 19);
+            this.guna2HtmlLabel1.TabIndex = 17;
+            this.guna2HtmlLabel1.Text = "Mode du payement";
             // 
             // guna2GradientCreer
             // 
@@ -237,37 +272,6 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelEnregistreVersement.Size = new System.Drawing.Size(268, 27);
             this.guna2HtmlLabelEnregistreVersement.TabIndex = 6;
             this.guna2HtmlLabelEnregistreVersement.Text = "ENREGISTRER UN VERSEMENT";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 230);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(123, 19);
-            this.guna2HtmlLabel1.TabIndex = 17;
-            this.guna2HtmlLabel1.Text = "Mode du payement";
-            // 
-            // guna2ComboBoxModePayement
-            // 
-            this.guna2ComboBoxModePayement.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBoxModePayement.BorderRadius = 20;
-            this.guna2ComboBoxModePayement.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBoxModePayement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBoxModePayement.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxModePayement.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxModePayement.FocusedState.Parent = this.guna2ComboBoxModePayement;
-            this.guna2ComboBoxModePayement.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBoxModePayement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBoxModePayement.HoverState.Parent = this.guna2ComboBoxModePayement;
-            this.guna2ComboBoxModePayement.ItemHeight = 30;
-            this.guna2ComboBoxModePayement.ItemsAppearance.Parent = this.guna2ComboBoxModePayement;
-            this.guna2ComboBoxModePayement.Location = new System.Drawing.Point(34, 255);
-            this.guna2ComboBoxModePayement.Name = "guna2ComboBoxModePayement";
-            this.guna2ComboBoxModePayement.ShadowDecoration.Parent = this.guna2ComboBoxModePayement;
-            this.guna2ComboBoxModePayement.Size = new System.Drawing.Size(531, 36);
-            this.guna2ComboBoxModePayement.TabIndex = 18;
             // 
             // FrmEnregistrerVersement
             // 

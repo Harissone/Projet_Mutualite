@@ -13,13 +13,13 @@ using System.Windows.Forms;
 
 namespace Mutualite.WinForm
 {
-    public partial class FrmCaisseList : Form
+    public partial class FrmEnregistrerVersementList : Form
     {
         private CaisseBLO caisseBLO;
-        public FrmCaisseList()
+        public FrmEnregistrerVersementList()
         {
             InitializeComponent();
-            guna2DataGridViewCaisse.AutoGenerateColumns = false;
+            guna2DataGridViewVersement.AutoGenerateColumns = false;
             caisseBLO = new CaisseBLO(ConfigurationManager.AppSettings["DbFolder"]);
         }
         private void loadData()
@@ -31,10 +31,10 @@ namespace Mutualite.WinForm
                 x.Compte.ToLower().Contains(value) ||
                 x.ModePayement.ToLower().Contains(value)
             ).OrderBy(x => x.Compte).ToArray();
-            guna2DataGridViewCaisse.DataSource = null;
-            guna2DataGridViewCaisse.DataSource = caisses;
-            guna2HtmlLblLigne.Text = $"{guna2DataGridViewCaisse.RowCount} lignes";
-            guna2DataGridViewCaisse.ClearSelection();
+            guna2DataGridViewVersement.DataSource = null;
+            guna2DataGridViewVersement.DataSource = caisses;
+            guna2HtmlLblLigne.Text = $"{guna2DataGridViewVersement.RowCount} lignes";
+            guna2DataGridViewVersement.ClearSelection();
         }
 
         private void guna2GradientBtnNouveau_Click(object sender, EventArgs e)
@@ -45,19 +45,19 @@ namespace Mutualite.WinForm
 
         private void guna2GradientBtnSupprimerVersement_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridViewCaisse.SelectedRows.Count > 0)
+            if (guna2DataGridViewVersement.SelectedRows.Count > 0)
             {
                 if (
                     MessageBox.Show
                     (
-                        "Do you really want to delete this ?",
+                        "Do you really want to delete this cash register ?",
                         "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
                     ) == DialogResult.Yes
                 )
                 {
-                    for (int i = 0; i < guna2DataGridViewCaisse.SelectedRows.Count; i++)
+                    for (int i = 0; i < guna2DataGridViewVersement.SelectedRows.Count; i++)
                     {
-                        caisseBLO.DeleteCaisse(guna2DataGridViewCaisse.SelectedRows[i].DataBoundItem as Caisse);
+                        caisseBLO.DeleteCaisse(guna2DataGridViewVersement.SelectedRows[i].DataBoundItem as Caisse);
                     }
                     loadData();
                 }
@@ -66,13 +66,13 @@ namespace Mutualite.WinForm
 
         private void guna2GradientBtnModifierVersement_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridViewCaisse.SelectedRows.Count > 0)
+            if (guna2DataGridViewVersement.SelectedRows.Count > 0)
             {
-                for (int i = 0; i < guna2DataGridViewCaisse.SelectedRows.Count; i++)
+                for (int i = 0; i < guna2DataGridViewVersement.SelectedRows.Count; i++)
                 {
                     Form f = new FrmEnregistrerVersement
                     (
-                        guna2DataGridViewCaisse.SelectedRows[i].DataBoundItem as Caisse,
+                        guna2DataGridViewVersement.SelectedRows[i].DataBoundItem as Caisse,
                         loadData
                     );
                     f.ShowDialog();
@@ -88,12 +88,12 @@ namespace Mutualite.WinForm
                 guna2TxtSearch.Clear();
         }
 
-        private void FrmCaisseList_Load(object sender, EventArgs e)
+        private void guna2TxtSearch_TextChanged(object sender, EventArgs e)
         {
             loadData();
         }
 
-        private void guna2TxtSearch_TextChanged(object sender, EventArgs e)
+        private void FrmEnregistrerVersementList_Load(object sender, EventArgs e)
         {
             loadData();
         }

@@ -82,6 +82,7 @@ namespace Mutualite.WinForm
             this.guna2TxtNomReunion.ShadowDecoration.Parent = this.guna2TxtNomReunion;
             this.guna2TxtNomReunion.Size = new System.Drawing.Size(200, 36);
             this.guna2TxtNomReunion.TabIndex = 0;
+            this.guna2TxtNomReunion.TextChanged += new System.EventHandler(this.guna2TxtNomReunion_TextChanged);
             // 
             // guna2HtmlLabelCreationTontine
             // 
@@ -328,6 +329,7 @@ namespace Mutualite.WinForm
             this.Name = "FrmReunion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReunion";
+            this.Load += new System.EventHandler(this.FrmReunion_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             this.ResumeLayout(false);

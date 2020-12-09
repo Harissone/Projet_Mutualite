@@ -35,7 +35,7 @@ namespace Mutualite.WinForm
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.txtLogin = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -111,22 +111,22 @@ namespace Mutualite.WinForm
             this.lblPassword.TabIndex = 6;
             this.lblPassword.Text = "Password";
             // 
-            // txtLogin
+            // BtnLogin
             // 
-            this.txtLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BtnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtLogin.BackColor = System.Drawing.Color.Magenta;
-            this.txtLogin.FlatAppearance.BorderSize = 0;
-            this.txtLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtLogin.Location = new System.Drawing.Point(36, 388);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(75, 30);
-            this.txtLogin.TabIndex = 7;
-            this.txtLogin.Text = "Login";
-            this.txtLogin.UseVisualStyleBackColor = false;
-            this.txtLogin.Click += new System.EventHandler(this.txtLogin_Click);
+            this.BtnLogin.BackColor = System.Drawing.Color.Magenta;
+            this.BtnLogin.FlatAppearance.BorderSize = 0;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnLogin.Location = new System.Drawing.Point(36, 388);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(75, 30);
+            this.BtnLogin.TabIndex = 7;
+            this.BtnLogin.Text = "Login";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // btnSignUp
             // 
@@ -161,7 +161,7 @@ namespace Mutualite.WinForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 450);
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtUsername);
@@ -188,7 +188,7 @@ namespace Mutualite.WinForm
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Button txtLogin;
+        private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.Button btnSignUp;
     }
 }

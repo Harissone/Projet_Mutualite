@@ -45,29 +45,31 @@ namespace Mutualite.WinForm
 
         private void guna2ButtonSeance_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FrmCycleList());
         }
 
         private void guna2ButtonEcheance_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FrmEcheanceList());
         }
 
         private void guna2ButtonEvenement_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FrmEvenementList());
         }
 
         private void guna2ButtonReunion_Click(object sender, EventArgs e)
         {
-            FrmReunionAccess fra = new FrmReunionAccess();
-            fra.Show();
-            this.Hide();
+            openChildForm(new FrmReunionList());
+            
         }
 
         private void guna2ButtonExit_Click(object sender, EventArgs e)
         {
             Close();
+            Form f = new FrmUser();
+            f.Show();
+            
         }
 
         private void guna2ButtonAcceuil_Click(object sender, EventArgs e)
@@ -77,8 +79,7 @@ namespace Mutualite.WinForm
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            Form f = new FrmAccount();
-            f.Show();
+           
         }
 
         private void FrmParent_Load(object sender, EventArgs e)

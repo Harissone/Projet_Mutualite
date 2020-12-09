@@ -39,20 +39,20 @@ namespace Mutualite.WinForm
             this.guna2ButtonParametre = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonExit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelProfil = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.labelhour = new System.Windows.Forms.Label();
+            this.guna2GradientCreateAccount = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblusers = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelhour = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelProfil.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanelMenu.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -298,7 +298,7 @@ namespace Mutualite.WinForm
             // 
             this.guna2PanelProfil.BackColor = System.Drawing.Color.GhostWhite;
             this.guna2PanelProfil.Controls.Add(this.labelhour);
-            this.guna2PanelProfil.Controls.Add(this.guna2GradientButton1);
+            this.guna2PanelProfil.Controls.Add(this.guna2GradientCreateAccount);
             this.guna2PanelProfil.Controls.Add(this.guna2Panel4);
             this.guna2PanelProfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelProfil.Location = new System.Drawing.Point(183, 0);
@@ -307,34 +307,45 @@ namespace Mutualite.WinForm
             this.guna2PanelProfil.Size = new System.Drawing.Size(787, 50);
             this.guna2PanelProfil.TabIndex = 1;
             // 
-            // guna2GradientButton1
+            // labelhour
             // 
-            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2GradientButton1.Checked = true;
-            this.guna2GradientButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientButton1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientButton1.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2GradientButton1.CheckedState.Image = global::Mutualite.WinForm.Properties.Resources.add2_16px;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(452, 3);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(167, 42);
-            this.guna2GradientButton1.TabIndex = 3;
-            this.guna2GradientButton1.Text = "Create account";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.labelhour.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelhour.ForeColor = System.Drawing.Color.Black;
+            this.labelhour.Location = new System.Drawing.Point(6, 15);
+            this.labelhour.Name = "labelhour";
+            this.labelhour.Size = new System.Drawing.Size(93, 22);
+            this.labelhour.TabIndex = 0;
+            this.labelhour.Text = "Date et Heure";
+            this.labelhour.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2GradientCreateAccount
+            // 
+            this.guna2GradientCreateAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GradientCreateAccount.Animated = true;
+            this.guna2GradientCreateAccount.BorderRadius = 15;
+            this.guna2GradientCreateAccount.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2GradientCreateAccount.Checked = true;
+            this.guna2GradientCreateAccount.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientCreateAccount.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientCreateAccount.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientCreateAccount.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.guna2GradientCreateAccount.CheckedState.Image = global::Mutualite.WinForm.Properties.Resources.add2_16px;
+            this.guna2GradientCreateAccount.CheckedState.Parent = this.guna2GradientCreateAccount;
+            this.guna2GradientCreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientCreateAccount.CustomImages.Parent = this.guna2GradientCreateAccount;
+            this.guna2GradientCreateAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientCreateAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientCreateAccount.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCreateAccount.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientCreateAccount.HoverState.Parent = this.guna2GradientCreateAccount;
+            this.guna2GradientCreateAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientCreateAccount.Location = new System.Drawing.Point(452, 3);
+            this.guna2GradientCreateAccount.Name = "guna2GradientCreateAccount";
+            this.guna2GradientCreateAccount.ShadowDecoration.Parent = this.guna2GradientCreateAccount;
+            this.guna2GradientCreateAccount.Size = new System.Drawing.Size(167, 42);
+            this.guna2GradientCreateAccount.TabIndex = 3;
+            this.guna2GradientCreateAccount.Text = "Create account";
+            this.guna2GradientCreateAccount.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2Panel4
             // 
@@ -357,6 +368,18 @@ namespace Mutualite.WinForm
             this.lblusers.TabIndex = 3;
             this.lblusers.Text = "Username Online";
             this.lblusers.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2CustomGradientPanelMenu
             // 
@@ -390,38 +413,6 @@ namespace Mutualite.WinForm
             this.guna2Panel1.Size = new System.Drawing.Size(183, 100);
             this.guna2Panel1.TabIndex = 9;
             // 
-            // guna2PanelContainer
-            // 
-            this.guna2PanelContainer.Location = new System.Drawing.Point(183, 50);
-            this.guna2PanelContainer.Name = "guna2PanelContainer";
-            this.guna2PanelContainer.ShadowDecoration.Parent = this.guna2PanelContainer;
-            this.guna2PanelContainer.Size = new System.Drawing.Size(787, 607);
-            this.guna2PanelContainer.TabIndex = 10;
-            this.guna2PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelContainer_Paint);
-            // 
-            // labelhour
-            // 
-            this.labelhour.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelhour.ForeColor = System.Drawing.Color.Black;
-            this.labelhour.Location = new System.Drawing.Point(6, 15);
-            this.labelhour.Name = "labelhour";
-            this.labelhour.Size = new System.Drawing.Size(93, 22);
-            this.labelhour.TabIndex = 0;
-            this.labelhour.Text = "Date et Heure";
-            this.labelhour.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = global::Mutualite.WinForm.Properties.Resources.User2;
@@ -432,6 +423,15 @@ namespace Mutualite.WinForm
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PanelContainer
+            // 
+            this.guna2PanelContainer.Location = new System.Drawing.Point(183, 50);
+            this.guna2PanelContainer.Name = "guna2PanelContainer";
+            this.guna2PanelContainer.ShadowDecoration.Parent = this.guna2PanelContainer;
+            this.guna2PanelContainer.Size = new System.Drawing.Size(787, 625);
+            this.guna2PanelContainer.TabIndex = 10;
+            this.guna2PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelContainer_Paint);
             // 
             // FrmParent
             // 
@@ -450,9 +450,9 @@ namespace Mutualite.WinForm
             this.Load += new System.EventHandler(this.FrmParent_Load);
             this.guna2PanelProfil.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2CustomGradientPanelMenu.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -469,7 +469,7 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2Panel guna2PanelProfil;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientCreateAccount;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanelMenu;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContainer;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

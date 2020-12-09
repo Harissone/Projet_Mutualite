@@ -8,7 +8,6 @@ namespace Mutualite.BO
 {
     public class User: Login
     {
-       
         public string ConfirmPassword { get; set; }
         public User(string username, string password, string confirmPassword)
             :base(username, password)
@@ -17,8 +16,8 @@ namespace Mutualite.BO
         }
         public override bool Equals(object obj)
         {
-            return obj is User product &&
-                   Username.Equals(product.Username, StringComparison.OrdinalIgnoreCase);
+            return obj is User user &&
+                   Username.Equals(user.Username, StringComparison.OrdinalIgnoreCase);
         }
 
         public override int GetHashCode()

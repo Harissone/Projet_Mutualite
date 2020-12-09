@@ -13,7 +13,7 @@ namespace Mutualite.DAL
     public class CaisseDAO
     {
         private static List<Caisse> caisses;
-        private const string FILE_NAME = @"cycles.json";
+        private const string FILE_NAME = @"caisse.json";
         private readonly string dbFolder;
         private FileInfo file;
         public CaisseDAO(string dbFolder)

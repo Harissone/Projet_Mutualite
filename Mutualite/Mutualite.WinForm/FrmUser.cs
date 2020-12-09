@@ -15,11 +15,13 @@ namespace Mutualite.WinForm
 {
     public partial class FrmUser : Form
     {
+        
         private Action callBack;
         private User oldUser;
         public FrmUser()
         {
             InitializeComponent();
+
         }
         public FrmUser(Action callBack) : this()
         {
@@ -39,11 +41,11 @@ namespace Mutualite.WinForm
             f.Show();
         }
 
-        private void txtLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
             try
             {
-                UserBLO userBLO;
+             
                 foreach (var user in UserDAO.users)
                 {
                     if (user.Username.Equals(txtUsername.Text, StringComparison.OrdinalIgnoreCase) && user.Password.Equals(txtPassword.Text))
