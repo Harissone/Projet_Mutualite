@@ -11,6 +11,12 @@ namespace Mutualite.BLL
     public class EvenementBLO
     {
         EvenementDAO evenementRepo;
+
+        public EvenementBLO()
+        {
+
+        }
+
         public EvenementBLO(string dbFolder)
         {
             evenementRepo = new EvenementDAO(dbFolder);

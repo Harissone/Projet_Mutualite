@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Mutualite.BO
 {
+    [Serializable]
     public class Membre
     {
         public string Nom { get; set; }
         public int Telephone { get; set; }
         public string Email { get; set; }
+
+        public Membre()
+        {
+
+        }
 
         public Membre(string nom, int telephone, string email)
         {

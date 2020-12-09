@@ -55,6 +55,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEvenement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvenement.Designer.cs">
+      <DependentUpon>FrmEvenement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembre.Designer.cs">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReunion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReunion.Designer.cs">
+      <DependentUpon>FrmReunion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +89,15 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvenement.resx">
+      <DependentUpon>FrmEvenement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembre.resx">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReunion.resx">
+      <DependentUpon>FrmReunion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
@@ -104,6 +131,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mutualite.BLL\Mutualite.BLL.csproj">
+      <Project>{5f7c00c1-b730-4abc-bbb0-cdc424cbf6f3}</Project>
+      <Name>Mutualite.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mutualite.BO\Mutualite.BO.csproj">
+      <Project>{ea1dc139-a0b8-44fb-902f-2b2a3cc3a3fd}</Project>
+      <Name>Mutualite.BO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
