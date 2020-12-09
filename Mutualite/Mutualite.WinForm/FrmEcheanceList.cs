@@ -13,66 +13,66 @@ using System.Windows.Forms;
 
 namespace Mutualite.WinForm
 {
-    public partial class FrmEvenementList : Form
+    public partial class FrmEcheanceList : Form
     {
-        private EvenementBLO evenementBLO;
-        public FrmEvenementList()
+        private EcheanceBLO echeanceBLO;
+        public FrmEcheanceList()
         {
             InitializeComponent();
-            guna2DataGridViewEvenement.AutoGenerateColumns = false;
-            evenementBLO = new EvenementBLO(ConfigurationManager.AppSettings["DbFolder"]);
+            guna2DataGridViewEcheance.AutoGenerateColumns = false;
+            echeanceBLO = new EcheanceBLO(ConfigurationManager.AppSettings["DbFolder"]);
         }
         private void loadData()
         {
             string value = guna2TxtSearch.Text.ToLower();
-            var evenements = evenementBLO.GetBy
+            var echeances = echeanceBLO.GetBy
             (
                 x =>
                 x.Titre.ToLower().Contains(value) ||
                 x.Description.ToLower().Contains(value)
             ).OrderBy(x => x.Titre).ToArray();
-            guna2DataGridViewEvenement.DataSource = null;
-            guna2DataGridViewEvenement.DataSource = evenements;
-            guna2HtmlLblLigne.Text = $"{guna2DataGridViewEvenement.RowCount} lignes";
-            guna2DataGridViewEvenement.ClearSelection();
+            guna2DataGridViewEcheance.DataSource = null;
+            guna2DataGridViewEcheance.DataSource = echeances;
+            guna2HtmlLblLigne.Text = $"{guna2DataGridViewEcheance.RowCount} lignes";
+            guna2DataGridViewEcheance.ClearSelection();
         }
 
         private void guna2GradientBtnCreerReunion_Click(object sender, EventArgs e)
         {
-            Form f = new FrmEvenement(loadData);
+            Form f = new FrmEcheance(loadData);
             f.Show();
         }
 
-        private void guna2GradientBtnSupprimerReunion_Click(object sender, EventArgs e)
+        private void guna2GradientBtnSupprimerEcheance_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridViewEvenement.SelectedRows.Count > 0)
+            if (guna2DataGridViewEcheance.SelectedRows.Count > 0)
             {
                 if (
                     MessageBox.Show
                     (
-                        "Do you really want to delete this event ?",
+                        "Do you really want to delete this echeance ?",
                         "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
                     ) == DialogResult.Yes
                 )
                 {
-                    for (int i = 0; i < guna2DataGridViewEvenement.SelectedRows.Count; i++)
+                    for (int i = 0; i < guna2DataGridViewEcheance.SelectedRows.Count; i++)
                     {
-                        evenementBLO.DeleteEvenement(guna2DataGridViewEvenement.SelectedRows[i].DataBoundItem as Evenement);
+                        echeanceBLO.DeleteEcheance(guna2DataGridViewEcheance.SelectedRows[i].DataBoundItem as Echeance);
                     }
                     loadData();
                 }
             }
         }
 
-        private void guna2GradientBtnModifierReunion_Click(object sender, EventArgs e)
+        private void guna2GradientBtnModifierEcheance_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridViewEvenement.SelectedRows.Count > 0)
+            if (guna2DataGridViewEcheance.SelectedRows.Count > 0)
             {
-                for (int i = 0; i < guna2DataGridViewEvenement.SelectedRows.Count; i++)
+                for (int i = 0; i < guna2DataGridViewEcheance.SelectedRows.Count; i++)
                 {
-                    Form f = new FrmEvenement
+                    Form f = new FrmEcheance
                     (
-                        guna2DataGridViewEvenement.SelectedRows[i].DataBoundItem as Evenement,
+                        guna2DataGridViewEcheance.SelectedRows[i].DataBoundItem as Echeance,
                         loadData
                     );
                     f.ShowDialog();
@@ -88,12 +88,12 @@ namespace Mutualite.WinForm
                 guna2TxtSearch.Clear();
         }
 
-        private void FrmEvenementList_Load(object sender, EventArgs e)
+        private void guna2TxtSearch_TextChanged(object sender, EventArgs e)
         {
             loadData();
         }
 
-        private void guna2TxtSearch_TextChanged(object sender, EventArgs e)
+        private void FrmEcheanceList_Load(object sender, EventArgs e)
         {
             loadData();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Mutualite.WinForm
 {
-    partial class FrmEvenementList
+    partial class FrmEcheanceList
     {
         /// <summary>
         /// Required designer variable.
@@ -33,22 +33,22 @@ namespace Mutualite.WinForm
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DataGridViewEvenement = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2DataGridViewEcheance = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Penaliter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnModifierReunion = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnSupprimerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnCreerReunion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnModifierEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnSupprimerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEvenement)).BeginInit();
+            this.guna2GradientBtnCreerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEcheance)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,29 +56,29 @@ namespace Mutualite.WinForm
             // guna2HtmlLblLigne
             // 
             this.guna2HtmlLblLigne.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLblLigne.Location = new System.Drawing.Point(771, 432);
+            this.guna2HtmlLblLigne.Location = new System.Drawing.Point(742, 430);
             this.guna2HtmlLblLigne.Name = "guna2HtmlLblLigne";
             this.guna2HtmlLblLigne.Size = new System.Drawing.Size(34, 15);
             this.guna2HtmlLblLigne.TabIndex = 24;
             this.guna2HtmlLblLigne.Text = "Lignes";
             // 
-            // guna2DataGridViewEvenement
+            // guna2DataGridViewEcheance
             // 
-            this.guna2DataGridViewEvenement.AllowUserToAddRows = false;
-            this.guna2DataGridViewEvenement.AllowUserToDeleteRows = false;
+            this.guna2DataGridViewEcheance.AllowUserToAddRows = false;
+            this.guna2DataGridViewEcheance.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridViewEvenement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.guna2DataGridViewEcheance.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridViewEcheance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2DataGridViewEvenement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridViewEvenement.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridViewEvenement.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridViewEvenement.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewEcheance.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guna2DataGridViewEcheance.BackgroundColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guna2DataGridViewEcheance.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridViewEcheance.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -86,10 +86,11 @@ namespace Mutualite.WinForm
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewEvenement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridViewEvenement.ColumnHeadersHeight = 21;
-            this.guna2DataGridViewEvenement.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.guna2DataGridViewEcheance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridViewEcheance.ColumnHeadersHeight = 21;
+            this.guna2DataGridViewEcheance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Titre,
+            this.Column2,
             this.Column1,
             this.Column3,
             this.Column4,
@@ -101,38 +102,38 @@ namespace Mutualite.WinForm
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewEvenement.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridViewEvenement.EnableHeadersVisualStyles = false;
-            this.guna2DataGridViewEvenement.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.Location = new System.Drawing.Point(32, 157);
-            this.guna2DataGridViewEvenement.Name = "guna2DataGridViewEvenement";
-            this.guna2DataGridViewEvenement.ReadOnly = true;
-            this.guna2DataGridViewEvenement.RowHeadersVisible = false;
-            this.guna2DataGridViewEvenement.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridViewEvenement.Size = new System.Drawing.Size(773, 269);
-            this.guna2DataGridViewEvenement.TabIndex = 21;
-            this.guna2DataGridViewEvenement.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridViewEvenement.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DataGridViewEvenement.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridViewEvenement.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2DataGridViewEvenement.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2DataGridViewEvenement.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.ThemeStyle.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridViewEvenement.ThemeStyle.HeaderStyle.Height = 21;
-            this.guna2DataGridViewEvenement.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridViewEvenement.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewEcheance.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridViewEcheance.EnableHeadersVisualStyles = false;
+            this.guna2DataGridViewEcheance.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.Location = new System.Drawing.Point(32, 157);
+            this.guna2DataGridViewEcheance.Name = "guna2DataGridViewEcheance";
+            this.guna2DataGridViewEcheance.ReadOnly = true;
+            this.guna2DataGridViewEcheance.RowHeadersVisible = false;
+            this.guna2DataGridViewEcheance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridViewEcheance.Size = new System.Drawing.Size(745, 269);
+            this.guna2DataGridViewEcheance.TabIndex = 21;
+            this.guna2DataGridViewEcheance.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewEcheance.ThemeStyle.HeaderStyle.Height = 21;
+            this.guna2DataGridViewEcheance.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewEcheance.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2ShadowPanel1
             // 
@@ -148,7 +149,7 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.Radius = 16;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowShift = 3;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(773, 55);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(745, 55);
             this.guna2ShadowPanel1.TabIndex = 19;
             // 
             // guna2GroupBox1
@@ -164,7 +165,7 @@ namespace Mutualite.WinForm
             this.guna2GroupBox1.Location = new System.Drawing.Point(3, 1);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(767, 52);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(739, 52);
             this.guna2GroupBox1.TabIndex = 0;
             // 
             // guna2TxtSearch
@@ -191,7 +192,7 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.SelectedText = "";
             this.guna2TxtSearch.SelectionStart = 9;
             this.guna2TxtSearch.ShadowDecoration.Parent = this.guna2TxtSearch;
-            this.guna2TxtSearch.Size = new System.Drawing.Size(679, 36);
+            this.guna2TxtSearch.Size = new System.Drawing.Size(644, 36);
             this.guna2TxtSearch.TabIndex = 2;
             this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged);
             // 
@@ -202,31 +203,38 @@ namespace Mutualite.WinForm
             this.Titre.Name = "Titre";
             this.Titre.ReadOnly = true;
             // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Montant";
+            this.Column2.HeaderText = "Montant a cotiser";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
             // Column1
             // 
-            this.Column1.DataPropertyName = "Montant";
-            this.Column1.HeaderText = "Montant";
+            this.Column1.DataPropertyName = "DelaisPayement";
+            this.Column1.HeaderText = "Delai payement";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "Date";
-            this.Column3.HeaderText = "date evenement";
+            this.Column3.DataPropertyName = "DateDebut";
+            this.Column3.HeaderText = "Date debut";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.DataPropertyName = "Description";
-            this.Column4.HeaderText = "Description";
+            this.Column4.DataPropertyName = "DateFin";
+            this.Column4.HeaderText = "Date fin";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
             // Penaliter
             // 
-            this.Penaliter.DataPropertyName = "Lieu";
-            this.Penaliter.HeaderText = "Lieux evenement";
+            this.Penaliter.DataPropertyName = "Description";
+            this.Penaliter.HeaderText = "Description";
             this.Penaliter.Name = "Penaliter";
             this.Penaliter.ReadOnly = true;
             // 
@@ -242,7 +250,7 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
-            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(668, 23);
+            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(611, 23);
             this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
             this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
@@ -250,65 +258,45 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnRafraichir.Text = "Rafraichir";
             this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click);
             // 
-            // guna2GradientBtnModifierReunion
+            // guna2GradientBtnModifierEcheance
             // 
-            this.guna2GradientBtnModifierReunion.Animated = true;
-            this.guna2GradientBtnModifierReunion.BorderRadius = 20;
-            this.guna2GradientBtnModifierReunion.CheckedState.Parent = this.guna2GradientBtnModifierReunion;
-            this.guna2GradientBtnModifierReunion.CustomImages.Parent = this.guna2GradientBtnModifierReunion;
-            this.guna2GradientBtnModifierReunion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnModifierReunion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientBtnModifierReunion.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnModifierReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnModifierReunion.HoverState.Parent = this.guna2GradientBtnModifierReunion;
-            this.guna2GradientBtnModifierReunion.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
-            this.guna2GradientBtnModifierReunion.Location = new System.Drawing.Point(448, 23);
-            this.guna2GradientBtnModifierReunion.Name = "guna2GradientBtnModifierReunion";
-            this.guna2GradientBtnModifierReunion.ShadowDecoration.Parent = this.guna2GradientBtnModifierReunion;
-            this.guna2GradientBtnModifierReunion.Size = new System.Drawing.Size(189, 37);
-            this.guna2GradientBtnModifierReunion.TabIndex = 23;
-            this.guna2GradientBtnModifierReunion.Text = "Modifier un evenement";
-            this.guna2GradientBtnModifierReunion.Click += new System.EventHandler(this.guna2GradientBtnModifierReunion_Click);
+            this.guna2GradientBtnModifierEcheance.Animated = true;
+            this.guna2GradientBtnModifierEcheance.BorderRadius = 20;
+            this.guna2GradientBtnModifierEcheance.CheckedState.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.CustomImages.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnModifierEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientBtnModifierEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnModifierEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnModifierEcheance.HoverState.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
+            this.guna2GradientBtnModifierEcheance.Location = new System.Drawing.Point(408, 23);
+            this.guna2GradientBtnModifierEcheance.Name = "guna2GradientBtnModifierEcheance";
+            this.guna2GradientBtnModifierEcheance.ShadowDecoration.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.Size = new System.Drawing.Size(183, 37);
+            this.guna2GradientBtnModifierEcheance.TabIndex = 23;
+            this.guna2GradientBtnModifierEcheance.Text = "Modifier une echeance";
+            this.guna2GradientBtnModifierEcheance.Click += new System.EventHandler(this.guna2GradientBtnModifierEcheance_Click);
             // 
-            // guna2GradientBtnSupprimerReunion
+            // guna2GradientBtnSupprimerEcheance
             // 
-            this.guna2GradientBtnSupprimerReunion.Animated = true;
-            this.guna2GradientBtnSupprimerReunion.BorderRadius = 20;
-            this.guna2GradientBtnSupprimerReunion.CheckedState.Parent = this.guna2GradientBtnSupprimerReunion;
-            this.guna2GradientBtnSupprimerReunion.CustomImages.Parent = this.guna2GradientBtnSupprimerReunion;
-            this.guna2GradientBtnSupprimerReunion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnSupprimerReunion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnSupprimerReunion.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnSupprimerReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnSupprimerReunion.HoverState.Parent = this.guna2GradientBtnSupprimerReunion;
-            this.guna2GradientBtnSupprimerReunion.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
-            this.guna2GradientBtnSupprimerReunion.Location = new System.Drawing.Point(228, 23);
-            this.guna2GradientBtnSupprimerReunion.Name = "guna2GradientBtnSupprimerReunion";
-            this.guna2GradientBtnSupprimerReunion.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerReunion;
-            this.guna2GradientBtnSupprimerReunion.Size = new System.Drawing.Size(195, 37);
-            this.guna2GradientBtnSupprimerReunion.TabIndex = 22;
-            this.guna2GradientBtnSupprimerReunion.Text = "Supprimer un evenement";
-            this.guna2GradientBtnSupprimerReunion.Click += new System.EventHandler(this.guna2GradientBtnSupprimerReunion_Click);
-            // 
-            // guna2GradientBtnCreerReunion
-            // 
-            this.guna2GradientBtnCreerReunion.Animated = true;
-            this.guna2GradientBtnCreerReunion.BorderRadius = 20;
-            this.guna2GradientBtnCreerReunion.CheckedState.Parent = this.guna2GradientBtnCreerReunion;
-            this.guna2GradientBtnCreerReunion.CustomImages.Parent = this.guna2GradientBtnCreerReunion;
-            this.guna2GradientBtnCreerReunion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnCreerReunion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnCreerReunion.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnCreerReunion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnCreerReunion.HoverState.Parent = this.guna2GradientBtnCreerReunion;
-            this.guna2GradientBtnCreerReunion.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
-            this.guna2GradientBtnCreerReunion.Location = new System.Drawing.Point(35, 23);
-            this.guna2GradientBtnCreerReunion.Name = "guna2GradientBtnCreerReunion";
-            this.guna2GradientBtnCreerReunion.ShadowDecoration.Parent = this.guna2GradientBtnCreerReunion;
-            this.guna2GradientBtnCreerReunion.Size = new System.Drawing.Size(164, 37);
-            this.guna2GradientBtnCreerReunion.TabIndex = 20;
-            this.guna2GradientBtnCreerReunion.Text = "Creer un evenement";
-            this.guna2GradientBtnCreerReunion.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
+            this.guna2GradientBtnSupprimerEcheance.Animated = true;
+            this.guna2GradientBtnSupprimerEcheance.BorderRadius = 20;
+            this.guna2GradientBtnSupprimerEcheance.CheckedState.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.CustomImages.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnSupprimerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnSupprimerEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnSupprimerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnSupprimerEcheance.HoverState.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
+            this.guna2GradientBtnSupprimerEcheance.Location = new System.Drawing.Point(205, 23);
+            this.guna2GradientBtnSupprimerEcheance.Name = "guna2GradientBtnSupprimerEcheance";
+            this.guna2GradientBtnSupprimerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.Size = new System.Drawing.Size(188, 37);
+            this.guna2GradientBtnSupprimerEcheance.TabIndex = 22;
+            this.guna2GradientBtnSupprimerEcheance.Text = "Supprimer une echeance";
+            this.guna2GradientBtnSupprimerEcheance.Click += new System.EventHandler(this.guna2GradientBtnSupprimerEcheance_Click);
             // 
             // guna2CircleButton1
             // 
@@ -329,35 +317,45 @@ namespace Mutualite.WinForm
             this.guna2CircleButton1.Size = new System.Drawing.Size(30, 30);
             this.guna2CircleButton1.TabIndex = 1;
             // 
-            // guna2HtmlLabel1
+            // guna2GradientBtnCreerEcheance
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 62);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 15);
-            this.guna2HtmlLabel1.TabIndex = 26;
-            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
+            this.guna2GradientBtnCreerEcheance.Animated = true;
+            this.guna2GradientBtnCreerEcheance.BorderRadius = 20;
+            this.guna2GradientBtnCreerEcheance.CheckedState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.CustomImages.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnCreerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnCreerEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnCreerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnCreerEcheance.HoverState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
+            this.guna2GradientBtnCreerEcheance.Location = new System.Drawing.Point(35, 23);
+            this.guna2GradientBtnCreerEcheance.Name = "guna2GradientBtnCreerEcheance";
+            this.guna2GradientBtnCreerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Size = new System.Drawing.Size(152, 37);
+            this.guna2GradientBtnCreerEcheance.TabIndex = 20;
+            this.guna2GradientBtnCreerEcheance.Text = "Creer une echeance";
+            this.guna2GradientBtnCreerEcheance.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
             // 
-            // FrmEvenementList
+            // FrmEcheanceList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(833, 450);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.ClientSize = new System.Drawing.Size(805, 450);
             this.Controls.Add(this.guna2GradientBtnRafraichir);
             this.Controls.Add(this.guna2HtmlLblLigne);
-            this.Controls.Add(this.guna2GradientBtnModifierReunion);
-            this.Controls.Add(this.guna2GradientBtnSupprimerReunion);
-            this.Controls.Add(this.guna2DataGridViewEvenement);
-            this.Controls.Add(this.guna2GradientBtnCreerReunion);
+            this.Controls.Add(this.guna2GradientBtnModifierEcheance);
+            this.Controls.Add(this.guna2GradientBtnSupprimerEcheance);
+            this.Controls.Add(this.guna2DataGridViewEcheance);
+            this.Controls.Add(this.guna2GradientBtnCreerEcheance);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmEvenementList";
+            this.Name = "FrmEcheanceList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEvenementList";
-            this.Load += new System.EventHandler(this.FrmEvenementList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEvenement)).EndInit();
+            this.Text = "FrmEcheanceList";
+            this.Load += new System.EventHandler(this.FrmEcheanceList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEcheance)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -369,19 +367,19 @@ namespace Mutualite.WinForm
 
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblLigne;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierReunion;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerReunion;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewEvenement;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnCreerReunion;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierEcheance;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerEcheance;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewEcheance;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TxtSearch;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penaliter;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnCreerEcheance;
     }
 }

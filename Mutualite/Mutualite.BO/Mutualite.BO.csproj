@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cotisation.cs" />
+    <Compile Include="Cycle.cs" />
     <Compile Include="Echeance.cs" />
     <Compile Include="Evenement.cs" />
     <Compile Include="Login.cs" />

@@ -13,35 +13,34 @@ using System.Windows.Forms;
 
 namespace Mutualite.WinForm
 {
-   
-    public partial class FrmEvenement : Form
+    public partial class FrmEcheance : Form
     {
         private Action callBack;
-        private Evenement oldEvenement;
-        public FrmEvenement()
+        private Echeance oldEcheance;
+        public FrmEcheance()
         {
             InitializeComponent();
         }
-        public FrmEvenement(Action callBack) : this()
+        public FrmEcheance(Action callBack) : this()
         {
             this.callBack = callBack;
         }
-        public FrmEvenement(Evenement evenement, Action callBack) : this(callBack)
+        public FrmEcheance(Echeance echeance, Action callBack) : this(callBack)
         {
-            this.oldEvenement = evenement;
-            guna2TxtTitre.Text = evenement.Titre;
-            guna2TxtDescription.Text = evenement.Description.ToString();
-            guna2TxtMontant.Text = evenement.Montant.ToString();
-            guna2DateTimePicker1.Text = evenement.Date.ToString();
-            guna2TxtLieu.Text = evenement.Lieu.ToString();
+            this.oldEcheance = echeance;
+            guna2TxtTitre.Text = echeance.Titre;
+            guna2TxtDescription.Text = echeance.Description.ToString();
+            guna2TxtMontant.Text = echeance.Montant.ToString();
+            guna2DateTimePickerDateDebut.Text = echeance.DateDebut.ToString();
+            guna2DateTimePickerDateFin.Text = echeance.DateFin.ToString();
+            guna2DateTimePickerDelai.Text = echeance.DelaisPayement.ToString();           
         }
         private void checkForm()
         {
             string text = string.Empty;
             guna2TxtTitre.BackColor = Color.White;
             guna2TxtDescription.BackColor = Color.White;
-            guna2TxtMontant.BackColor = Color.White;
-            guna2TxtLieu.BackColor = Color.White;
+            guna2TxtMontant.BackColor = Color.White;           
 
             if (string.IsNullOrWhiteSpace(guna2TxtTitre.Text))
             {
@@ -58,12 +57,6 @@ namespace Mutualite.WinForm
                 text += "- Please enter the mount ! \n";
                 guna2TxtMontant.BackColor = Color.Pink;
             }
-            if (string.IsNullOrWhiteSpace(guna2TxtLieu.Text))
-            {
-                text += "- Please enter the location ! \n";
-                guna2TxtLieu.BackColor = Color.Pink;
-            }
-
             if (!string.IsNullOrEmpty(text))
                 throw new TypingException(text);
         }
@@ -74,25 +67,26 @@ namespace Mutualite.WinForm
             {
                 checkForm();
 
-                Evenement newEvenement = new Evenement
+                Echeance newEcheance = new Echeance
                 (
+                    int.Parse(guna2TxtMontant.Text),
                     guna2TxtTitre.Text.ToUpper(),
                     guna2TxtDescription.Text,
-                    DateTime.Parse(guna2DateTimePicker1.Text),
-                    guna2TxtLieu.Text,
-                    int.Parse(guna2TxtMontant.Text)                
+                    DateTime.Parse(guna2DateTimePickerDateDebut.Text),
+                    DateTime.Parse(guna2DateTimePickerDateFin.Text),
+                    DateTime.Parse(guna2DateTimePickerDelai.Text)
                 );
 
-                EvenementBLO evenementBLO = new EvenementBLO(ConfigurationManager.AppSettings["DbFolder"]);
+                EcheanceBLO echeanceBLO = new EcheanceBLO(ConfigurationManager.AppSettings["DbFolder"]);
 
-                if (this.oldEvenement == null)
-                    evenementBLO.CreateEvenement(newEvenement);
+                if (this.oldEcheance == null)
+                    echeanceBLO.CreateEcheance(newEcheance);
                 else
-                    evenementBLO.EditEvenement(oldEvenement, newEvenement);
+                    echeanceBLO.EditEcheance(oldEcheance, newEcheance);
 
                 MessageBox.Show
                 (
-                    "Evenement creer !",
+                    "Echeance creer !",
                     "Confirmation",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
@@ -101,15 +95,15 @@ namespace Mutualite.WinForm
                 if (callBack != null)
                     callBack();
 
-                if (oldEvenement != null)
+                if (oldEcheance != null)
                     Close();
 
                 guna2TxtTitre.Clear();
                 guna2TxtDescription.Clear();
                 guna2TxtMontant.Clear();
-                guna2TxtLieu.Clear();
+                
                 guna2TxtTitre.Focus();
-                Form f = new FrmEvenementList();
+                Form f = new FrmEcheanceList();
                 f.Show();
             }
             catch (TypingException ex)
@@ -153,11 +147,6 @@ namespace Mutualite.WinForm
                    MessageBoxIcon.Error
                );
             }
-        }
-
-        private void FrmEvenement_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

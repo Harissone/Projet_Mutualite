@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="CotisationBLO.cs" />
+    <Compile Include="CycleBLO.cs" />
     <Compile Include="EcheanceBLO.cs" />
     <Compile Include="EvenementBLO.cs" />
     <Compile Include="LoginBLO.cs" />

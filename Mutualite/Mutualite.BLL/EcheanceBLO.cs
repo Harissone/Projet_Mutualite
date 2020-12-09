@@ -23,7 +23,7 @@ namespace Mutualite.BLL
         {
             echeanceRepo.Remove(echeance);
         }
-        public IEnumerable<Echeance> GetAllProducts()
+        public IEnumerable<Echeance> GetAllEcheance()
         {
             return echeanceRepo.Find();
         }
@@ -35,7 +35,7 @@ namespace Mutualite.BLL
         {
             return echeanceRepo.Find(predicate);
         }
-        public void EditProduct(Echeance oldEcheance, Echeance newEcheance)
+        public void EditEcheance(Echeance oldEcheance, Echeance newEcheance)
         {
             echeanceRepo.Set(oldEcheance, newEcheance);
         }

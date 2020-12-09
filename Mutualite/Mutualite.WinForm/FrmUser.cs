@@ -1,4 +1,5 @@
-﻿using Mutualite.BO;
+﻿using Mutualite.BLL;
+using Mutualite.BO;
 using Mutualite.DAL;
 using System;
 using System.Collections.Generic;
@@ -42,18 +43,20 @@ namespace Mutualite.WinForm
         {
             try
             {
+                UserBLO userBLO;
                 foreach (var user in UserDAO.users)
                 {
                     if (user.Username.Equals(txtUsername.Text, StringComparison.OrdinalIgnoreCase) && user.Password.Equals(txtPassword.Text))
                     {
-
-                        Form f = new FrmParent();
-                        f.Show();
                         txtUsername.Clear();
                         txtPassword.Clear();
                         txtUsername.Focus();
+
+                        Form f = new FrmParent();
+                        f.Show();
+                       
                         this.Hide();
-                        return;
+                        
                     }
                     else
                     {
