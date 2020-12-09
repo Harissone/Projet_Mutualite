@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Mutualite.BO
 {
+    [Serializable]
     public class User: Login
     {
         public string ConfirmPassword { get; set; }
+
+        public User()
+        {
+
+        }
+
         public User(string username, string password, string confirmPassword)
             :base(username, password)
         {
@@ -25,8 +32,8 @@ namespace Mutualite.BO
             return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Username);
         }
 
+       
 
-
-
+       
     }
 }
