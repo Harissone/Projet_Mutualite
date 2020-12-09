@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mutualite.BO
 {
+    [Serializable]
     public class Membre
     {
         public string Nom { get; set; }
@@ -14,7 +15,7 @@ namespace Mutualite.BO
         public string Email { get; set; }
         public int Telephone { get; set; }
 
-        public Membre(string nom, string prenom, string adresse,string email, int telephone)
+        public Membre(string nom, int telephone, string email)
         {
             Nom = nom;
             Prenom = prenom;
