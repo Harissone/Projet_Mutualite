@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaisseDAO.cs" />
     <Compile Include="EcheanceDAO.cs" />
     <Compile Include="EvenementDAO.cs" />
     <Compile Include="LoginDAO.cs" />
