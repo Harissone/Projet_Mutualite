@@ -29,9 +29,9 @@ namespace Mutualite.WinForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridViewCycle = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,12 +46,14 @@ namespace Mutualite.WinForm
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnModifierCycle = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientBtnSupprimerCycle = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCycle)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2HtmlLblLigne
@@ -67,25 +69,25 @@ namespace Mutualite.WinForm
             // 
             this.guna2DataGridViewCycle.AllowUserToAddRows = false;
             this.guna2DataGridViewCycle.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewCycle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCycle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridViewCycle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2DataGridViewCycle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridViewCycle.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridViewCycle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridViewCycle.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridViewCycle.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewCycle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewCycle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridViewCycle.ColumnHeadersHeight = 21;
             this.guna2DataGridViewCycle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Titre,
@@ -96,14 +98,14 @@ namespace Mutualite.WinForm
             this.Penaliter,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewCycle.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewCycle.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridViewCycle.EnableHeadersVisualStyles = false;
             this.guna2DataGridViewCycle.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewCycle.Location = new System.Drawing.Point(45, 209);
@@ -247,7 +249,7 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.SelectedText = "";
             this.guna2TxtSearch.SelectionStart = 9;
             this.guna2TxtSearch.ShadowDecoration.Parent = this.guna2TxtSearch;
-            this.guna2TxtSearch.Size = new System.Drawing.Size(848, 36);
+            this.guna2TxtSearch.Size = new System.Drawing.Size(558, 36);
             this.guna2TxtSearch.TabIndex = 2;
             // 
             // guna2CircleButton1
@@ -269,6 +271,18 @@ namespace Mutualite.WinForm
             this.guna2CircleButton1.Size = new System.Drawing.Size(30, 30);
             this.guna2CircleButton1.TabIndex = 1;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnRafraichir);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnSupprimerCycle);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnModifierCycle);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(753, 81);
+            this.guna2Panel1.TabIndex = 44;
+            // 
             // guna2GradientBtnRafraichir
             // 
             this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -282,12 +296,13 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
-            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(556, 45);
+            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(572, 24);
             this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
             this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
             this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientBtnRafraichir.TabIndex = 40;
+            this.guna2GradientBtnRafraichir.TabIndex = 47;
             this.guna2GradientBtnRafraichir.Text = "Rafraichir";
+            this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click_1);
             // 
             // guna2GradientBtnModifierCycle
             // 
@@ -302,12 +317,13 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnModifierCycle.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnModifierCycle.HoverState.Parent = this.guna2GradientBtnModifierCycle;
             this.guna2GradientBtnModifierCycle.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
-            this.guna2GradientBtnModifierCycle.Location = new System.Drawing.Point(289, 45);
+            this.guna2GradientBtnModifierCycle.Location = new System.Drawing.Point(305, 24);
             this.guna2GradientBtnModifierCycle.Name = "guna2GradientBtnModifierCycle";
             this.guna2GradientBtnModifierCycle.ShadowDecoration.Parent = this.guna2GradientBtnModifierCycle;
             this.guna2GradientBtnModifierCycle.Size = new System.Drawing.Size(183, 37);
-            this.guna2GradientBtnModifierCycle.TabIndex = 39;
+            this.guna2GradientBtnModifierCycle.TabIndex = 46;
             this.guna2GradientBtnModifierCycle.Text = "Modifier le cycle";
+            this.guna2GradientBtnModifierCycle.Click += new System.EventHandler(this.guna2GradientBtnModifierCycle_Click_1);
             // 
             // guna2GradientBtnSupprimerCycle
             // 
@@ -322,12 +338,13 @@ namespace Mutualite.WinForm
             this.guna2GradientBtnSupprimerCycle.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientBtnSupprimerCycle.HoverState.Parent = this.guna2GradientBtnSupprimerCycle;
             this.guna2GradientBtnSupprimerCycle.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
-            this.guna2GradientBtnSupprimerCycle.Location = new System.Drawing.Point(39, 45);
+            this.guna2GradientBtnSupprimerCycle.Location = new System.Drawing.Point(55, 24);
             this.guna2GradientBtnSupprimerCycle.Name = "guna2GradientBtnSupprimerCycle";
             this.guna2GradientBtnSupprimerCycle.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerCycle;
             this.guna2GradientBtnSupprimerCycle.Size = new System.Drawing.Size(182, 37);
-            this.guna2GradientBtnSupprimerCycle.TabIndex = 38;
+            this.guna2GradientBtnSupprimerCycle.TabIndex = 45;
             this.guna2GradientBtnSupprimerCycle.Text = "Supprimer le cycle";
+            this.guna2GradientBtnSupprimerCycle.Click += new System.EventHandler(this.guna2GradientBtnSupprimerCycle_Click_1);
             // 
             // FrmCycleList
             // 
@@ -335,12 +352,10 @@ namespace Mutualite.WinForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(753, 534);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLblLigne);
             this.Controls.Add(this.guna2DataGridViewCycle);
             this.Controls.Add(this.guna2ShadowPanel1);
-            this.Controls.Add(this.guna2GradientBtnRafraichir);
-            this.Controls.Add(this.guna2GradientBtnModifierCycle);
-            this.Controls.Add(this.guna2GradientBtnSupprimerCycle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCycleList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -349,6 +364,7 @@ namespace Mutualite.WinForm
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCycle)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,8 +386,9 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TxtSearch;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierCycle;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerCycle;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierCycle;
     }
 }

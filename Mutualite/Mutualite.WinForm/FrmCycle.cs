@@ -138,8 +138,7 @@ namespace Mutualite.WinForm
                 guna2TxtSanctionRetard.Clear();
 
                 guna2TxtSanctionAbsence.Focus();
-                Form f = new FrmCycleList();
-                f.Show();
+               
             }
             catch (TypingException ex)
             {

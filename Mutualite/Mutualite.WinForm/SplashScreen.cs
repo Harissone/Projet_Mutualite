@@ -23,7 +23,7 @@ namespace Mutualite.WinForm
             if(panel2.Width >= 1000)
             {
                 timer1.Stop();
-                Form f = new FrmUser();
+                Form f = new FrmAccount();
                 f.Show();
                 this.Hide();
             }

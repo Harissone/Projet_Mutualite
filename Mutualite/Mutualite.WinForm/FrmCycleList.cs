@@ -91,5 +91,50 @@ namespace Mutualite.WinForm
             else
                 guna2TxtSearch.Clear();
         }
+
+        private void guna2GradientBtnSupprimerCycle_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewCycle.SelectedRows.Count > 0)
+            {
+                if (
+                    MessageBox.Show
+                    (
+                        "Do you really want to delete this cycle ?",
+                        "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                    ) == DialogResult.Yes
+                )
+                {
+                    for (int i = 0; i < guna2DataGridViewCycle.SelectedRows.Count; i++)
+                    {
+                        cycleBLO.DeleteCycle(guna2DataGridViewCycle.SelectedRows[i].DataBoundItem as Cycle);
+                    }
+                    loadData();
+                }
+            }
+        }
+
+        private void guna2GradientBtnModifierCycle_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewCycle.SelectedRows.Count > 0)
+            {
+                for (int i = 0; i < guna2DataGridViewCycle.SelectedRows.Count; i++)
+                {
+                    Form f = new FrmCycle
+                    (
+                        guna2DataGridViewCycle.SelectedRows[i].DataBoundItem as Cycle,
+                        loadData
+                    );
+                    f.ShowDialog();
+                }
+            }
+        }
+
+        private void guna2GradientBtnRafraichir_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(guna2TxtSearch.Text))
+                loadData();
+            else
+                guna2TxtSearch.Clear();
+        }
     }
 }

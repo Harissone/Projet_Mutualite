@@ -33,6 +33,12 @@ namespace Mutualite.WinForm
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnModifierVersement = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnSupprimerVersement = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnNouveau = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2PanelContainerCaisse = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridViewCaisse = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,11 +48,9 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnModifierVersement = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnSupprimerVersement = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnNouveau = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2PanelContainerCaisse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCaisse)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -61,6 +65,114 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblLigne.Size = new System.Drawing.Size(34, 15);
             this.guna2HtmlLblLigne.TabIndex = 31;
             this.guna2HtmlLblLigne.Text = "Lignes";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnRafraichir);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnNouveau);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnModifierVersement);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnSupprimerVersement);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(800, 81);
+            this.guna2Panel1.TabIndex = 32;
+            // 
+            // guna2GradientBtnRafraichir
+            // 
+            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnRafraichir.Animated = true;
+            this.guna2GradientBtnRafraichir.BorderRadius = 20;
+            this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.CustomImages.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnRafraichir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientBtnRafraichir.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
+            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(650, 28);
+            this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
+            this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
+            this.guna2GradientBtnRafraichir.TabIndex = 36;
+            this.guna2GradientBtnRafraichir.Text = "Rafraichir";
+            this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click_1);
+            // 
+            // guna2GradientBtnModifierVersement
+            // 
+            this.guna2GradientBtnModifierVersement.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnModifierVersement.Animated = true;
+            this.guna2GradientBtnModifierVersement.BorderRadius = 20;
+            this.guna2GradientBtnModifierVersement.CheckedState.Parent = this.guna2GradientBtnModifierVersement;
+            this.guna2GradientBtnModifierVersement.CustomImages.Parent = this.guna2GradientBtnModifierVersement;
+            this.guna2GradientBtnModifierVersement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnModifierVersement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientBtnModifierVersement.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnModifierVersement.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnModifierVersement.HoverState.Parent = this.guna2GradientBtnModifierVersement;
+            this.guna2GradientBtnModifierVersement.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
+            this.guna2GradientBtnModifierVersement.Location = new System.Drawing.Point(430, 28);
+            this.guna2GradientBtnModifierVersement.Name = "guna2GradientBtnModifierVersement";
+            this.guna2GradientBtnModifierVersement.ShadowDecoration.Parent = this.guna2GradientBtnModifierVersement;
+            this.guna2GradientBtnModifierVersement.Size = new System.Drawing.Size(189, 37);
+            this.guna2GradientBtnModifierVersement.TabIndex = 35;
+            this.guna2GradientBtnModifierVersement.Text = "Modifier un versement";
+            this.guna2GradientBtnModifierVersement.Click += new System.EventHandler(this.guna2GradientBtnModifierVersement_Click_1);
+            // 
+            // guna2GradientBtnSupprimerVersement
+            // 
+            this.guna2GradientBtnSupprimerVersement.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnSupprimerVersement.Animated = true;
+            this.guna2GradientBtnSupprimerVersement.BorderRadius = 20;
+            this.guna2GradientBtnSupprimerVersement.CheckedState.Parent = this.guna2GradientBtnSupprimerVersement;
+            this.guna2GradientBtnSupprimerVersement.CustomImages.Parent = this.guna2GradientBtnSupprimerVersement;
+            this.guna2GradientBtnSupprimerVersement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnSupprimerVersement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnSupprimerVersement.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnSupprimerVersement.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnSupprimerVersement.HoverState.Parent = this.guna2GradientBtnSupprimerVersement;
+            this.guna2GradientBtnSupprimerVersement.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
+            this.guna2GradientBtnSupprimerVersement.Location = new System.Drawing.Point(183, 28);
+            this.guna2GradientBtnSupprimerVersement.Name = "guna2GradientBtnSupprimerVersement";
+            this.guna2GradientBtnSupprimerVersement.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerVersement;
+            this.guna2GradientBtnSupprimerVersement.Size = new System.Drawing.Size(195, 37);
+            this.guna2GradientBtnSupprimerVersement.TabIndex = 34;
+            this.guna2GradientBtnSupprimerVersement.Text = "Supprimer un versement";
+            this.guna2GradientBtnSupprimerVersement.Click += new System.EventHandler(this.guna2GradientBtnSupprimerVersement_Click_1);
+            // 
+            // guna2GradientBtnNouveau
+            // 
+            this.guna2GradientBtnNouveau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnNouveau.Animated = true;
+            this.guna2GradientBtnNouveau.BorderRadius = 20;
+            this.guna2GradientBtnNouveau.CheckedState.Parent = this.guna2GradientBtnNouveau;
+            this.guna2GradientBtnNouveau.CustomImages.Parent = this.guna2GradientBtnNouveau;
+            this.guna2GradientBtnNouveau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnNouveau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnNouveau.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnNouveau.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnNouveau.HoverState.Parent = this.guna2GradientBtnNouveau;
+            this.guna2GradientBtnNouveau.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
+            this.guna2GradientBtnNouveau.Location = new System.Drawing.Point(17, 28);
+            this.guna2GradientBtnNouveau.Name = "guna2GradientBtnNouveau";
+            this.guna2GradientBtnNouveau.ShadowDecoration.Parent = this.guna2GradientBtnNouveau;
+            this.guna2GradientBtnNouveau.Size = new System.Drawing.Size(104, 37);
+            this.guna2GradientBtnNouveau.TabIndex = 33;
+            this.guna2GradientBtnNouveau.Text = "Nouveau";
+            this.guna2GradientBtnNouveau.Click += new System.EventHandler(this.guna2GradientBtnNouveau_Click_1);
+            // 
+            // guna2PanelContainerCaisse
+            // 
+            this.guna2PanelContainerCaisse.Controls.Add(this.guna2DataGridViewCaisse);
+            this.guna2PanelContainerCaisse.Controls.Add(this.guna2ShadowPanel1);
+            this.guna2PanelContainerCaisse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PanelContainerCaisse.Location = new System.Drawing.Point(0, 81);
+            this.guna2PanelContainerCaisse.Name = "guna2PanelContainerCaisse";
+            this.guna2PanelContainerCaisse.ShadowDecoration.Parent = this.guna2PanelContainerCaisse;
+            this.guna2PanelContainerCaisse.Size = new System.Drawing.Size(800, 442);
+            this.guna2PanelContainerCaisse.TabIndex = 33;
             // 
             // guna2DataGridViewCaisse
             // 
@@ -102,13 +214,13 @@ namespace Mutualite.WinForm
             this.guna2DataGridViewCaisse.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridViewCaisse.EnableHeadersVisualStyles = false;
             this.guna2DataGridViewCaisse.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewCaisse.Location = new System.Drawing.Point(14, 191);
+            this.guna2DataGridViewCaisse.Location = new System.Drawing.Point(14, 110);
             this.guna2DataGridViewCaisse.Name = "guna2DataGridViewCaisse";
             this.guna2DataGridViewCaisse.ReadOnly = true;
             this.guna2DataGridViewCaisse.RowHeadersVisible = false;
             this.guna2DataGridViewCaisse.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridViewCaisse.Size = new System.Drawing.Size(773, 269);
-            this.guna2DataGridViewCaisse.TabIndex = 28;
+            this.guna2DataGridViewCaisse.TabIndex = 32;
             this.guna2DataGridViewCaisse.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridViewCaisse.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2DataGridViewCaisse.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -173,14 +285,14 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(14, 117);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(14, 36);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Padding = new System.Windows.Forms.Padding(3, 1, 3, 2);
             this.guna2ShadowPanel1.Radius = 16;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowShift = 3;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(773, 55);
-            this.guna2ShadowPanel1.TabIndex = 26;
+            this.guna2ShadowPanel1.TabIndex = 31;
             // 
             // guna2GroupBox1
             // 
@@ -224,91 +336,7 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.ShadowDecoration.Parent = this.guna2TxtSearch;
             this.guna2TxtSearch.Size = new System.Drawing.Size(679, 36);
             this.guna2TxtSearch.TabIndex = 2;
-            this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged);
-            // 
-            // guna2GradientBtnRafraichir
-            // 
-            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnRafraichir.Animated = true;
-            this.guna2GradientBtnRafraichir.BorderRadius = 20;
-            this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.CustomImages.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnRafraichir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientBtnRafraichir.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
-            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(650, 57);
-            this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
-            this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientBtnRafraichir.TabIndex = 32;
-            this.guna2GradientBtnRafraichir.Text = "Rafraichir";
-            this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click);
-            // 
-            // guna2GradientBtnModifierVersement
-            // 
-            this.guna2GradientBtnModifierVersement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnModifierVersement.Animated = true;
-            this.guna2GradientBtnModifierVersement.BorderRadius = 20;
-            this.guna2GradientBtnModifierVersement.CheckedState.Parent = this.guna2GradientBtnModifierVersement;
-            this.guna2GradientBtnModifierVersement.CustomImages.Parent = this.guna2GradientBtnModifierVersement;
-            this.guna2GradientBtnModifierVersement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnModifierVersement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientBtnModifierVersement.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnModifierVersement.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnModifierVersement.HoverState.Parent = this.guna2GradientBtnModifierVersement;
-            this.guna2GradientBtnModifierVersement.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
-            this.guna2GradientBtnModifierVersement.Location = new System.Drawing.Point(430, 57);
-            this.guna2GradientBtnModifierVersement.Name = "guna2GradientBtnModifierVersement";
-            this.guna2GradientBtnModifierVersement.ShadowDecoration.Parent = this.guna2GradientBtnModifierVersement;
-            this.guna2GradientBtnModifierVersement.Size = new System.Drawing.Size(189, 37);
-            this.guna2GradientBtnModifierVersement.TabIndex = 30;
-            this.guna2GradientBtnModifierVersement.Text = "Modifier un versement";
-            this.guna2GradientBtnModifierVersement.Click += new System.EventHandler(this.guna2GradientBtnModifierVersement_Click);
-            // 
-            // guna2GradientBtnSupprimerVersement
-            // 
-            this.guna2GradientBtnSupprimerVersement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnSupprimerVersement.Animated = true;
-            this.guna2GradientBtnSupprimerVersement.BorderRadius = 20;
-            this.guna2GradientBtnSupprimerVersement.CheckedState.Parent = this.guna2GradientBtnSupprimerVersement;
-            this.guna2GradientBtnSupprimerVersement.CustomImages.Parent = this.guna2GradientBtnSupprimerVersement;
-            this.guna2GradientBtnSupprimerVersement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnSupprimerVersement.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnSupprimerVersement.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnSupprimerVersement.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnSupprimerVersement.HoverState.Parent = this.guna2GradientBtnSupprimerVersement;
-            this.guna2GradientBtnSupprimerVersement.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
-            this.guna2GradientBtnSupprimerVersement.Location = new System.Drawing.Point(183, 57);
-            this.guna2GradientBtnSupprimerVersement.Name = "guna2GradientBtnSupprimerVersement";
-            this.guna2GradientBtnSupprimerVersement.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerVersement;
-            this.guna2GradientBtnSupprimerVersement.Size = new System.Drawing.Size(195, 37);
-            this.guna2GradientBtnSupprimerVersement.TabIndex = 29;
-            this.guna2GradientBtnSupprimerVersement.Text = "Supprimer un versement";
-            this.guna2GradientBtnSupprimerVersement.Click += new System.EventHandler(this.guna2GradientBtnSupprimerVersement_Click);
-            // 
-            // guna2GradientBtnNouveau
-            // 
-            this.guna2GradientBtnNouveau.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnNouveau.Animated = true;
-            this.guna2GradientBtnNouveau.BorderRadius = 20;
-            this.guna2GradientBtnNouveau.CheckedState.Parent = this.guna2GradientBtnNouveau;
-            this.guna2GradientBtnNouveau.CustomImages.Parent = this.guna2GradientBtnNouveau;
-            this.guna2GradientBtnNouveau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnNouveau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnNouveau.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnNouveau.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnNouveau.HoverState.Parent = this.guna2GradientBtnNouveau;
-            this.guna2GradientBtnNouveau.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
-            this.guna2GradientBtnNouveau.Location = new System.Drawing.Point(17, 57);
-            this.guna2GradientBtnNouveau.Name = "guna2GradientBtnNouveau";
-            this.guna2GradientBtnNouveau.ShadowDecoration.Parent = this.guna2GradientBtnNouveau;
-            this.guna2GradientBtnNouveau.Size = new System.Drawing.Size(104, 37);
-            this.guna2GradientBtnNouveau.TabIndex = 27;
-            this.guna2GradientBtnNouveau.Text = "Nouveau";
-            this.guna2GradientBtnNouveau.Click += new System.EventHandler(this.guna2GradientBtnNouveau_Click);
+            this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged_1);
             // 
             // guna2CircleButton1
             // 
@@ -335,18 +363,16 @@ namespace Mutualite.WinForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 523);
-            this.Controls.Add(this.guna2GradientBtnRafraichir);
+            this.Controls.Add(this.guna2PanelContainerCaisse);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLblLigne);
-            this.Controls.Add(this.guna2GradientBtnModifierVersement);
-            this.Controls.Add(this.guna2GradientBtnSupprimerVersement);
-            this.Controls.Add(this.guna2DataGridViewCaisse);
-            this.Controls.Add(this.guna2GradientBtnNouveau);
-            this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCaisseList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCaisseList";
             this.Load += new System.EventHandler(this.FrmCaisseList_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2PanelContainerCaisse.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCaisse)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
@@ -356,18 +382,19 @@ namespace Mutualite.WinForm
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblLigne;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnNouveau;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierVersement;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerVersement;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelContainerCaisse;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewCaisse;
         private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penaliter;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnNouveau;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TxtSearch;

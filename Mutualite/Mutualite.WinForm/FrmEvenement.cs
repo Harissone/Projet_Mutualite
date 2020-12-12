@@ -113,8 +113,7 @@ namespace Mutualite.WinForm
                 guna2TxtLieux.Clear();
 
                 guna2TxtTitre.Focus();
-                Form f = new FrmEvenementList();
-                f.Show();
+               
             }
             catch (TypingException ex)
             {

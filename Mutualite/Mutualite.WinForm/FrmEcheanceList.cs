@@ -22,6 +22,20 @@ namespace Mutualite.WinForm
             guna2DataGridViewEcheance.AutoGenerateColumns = false;
             echeanceBLO = new EcheanceBLO(ConfigurationManager.AppSettings["DbFolder"]);
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            guna2PanelContainerEcheance.Controls.Add(childForm);
+            guna2PanelContainerEcheance.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void loadData()
         {
             string value = guna2TxtSearch.Text.ToLower();
@@ -94,6 +108,61 @@ namespace Mutualite.WinForm
         }
 
         private void FrmEcheanceList_Load(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        private void guna2GradientBtnCreerEcheance_Click(object sender, EventArgs e)
+        {
+            openChildForm( new FrmEcheance(loadData));    
+        }
+
+        private void guna2GradientBtnSupprimerEcheance_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewEcheance.SelectedRows.Count > 0)
+            {
+                if (
+                    MessageBox.Show
+                    (
+                        "Do you really want to delete this echeance ?",
+                        "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                    ) == DialogResult.Yes
+                )
+                {
+                    for (int i = 0; i < guna2DataGridViewEcheance.SelectedRows.Count; i++)
+                    {
+                        echeanceBLO.DeleteEcheance(guna2DataGridViewEcheance.SelectedRows[i].DataBoundItem as Echeance);
+                    }
+                    loadData();
+                }
+            }
+        }
+
+        private void guna2GradientBtnModifierEcheance_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewEcheance.SelectedRows.Count > 0)
+            {
+                for (int i = 0; i < guna2DataGridViewEcheance.SelectedRows.Count; i++)
+                {
+                    Form f = new FrmEcheance
+                    (
+                        guna2DataGridViewEcheance.SelectedRows[i].DataBoundItem as Echeance,
+                        loadData
+                    );
+                    f.ShowDialog();
+                }
+            }
+        }
+
+        private void guna2GradientBtnRafraichir_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(guna2TxtSearch.Text))
+                loadData();
+            else
+                guna2TxtSearch.Clear();
+        }
+
+        private void guna2TxtSearch_TextChanged_1(object sender, EventArgs e)
         {
             loadData();
         }

@@ -52,7 +52,7 @@ namespace Mutualite.WinForm
             this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Location = new System.Drawing.Point(0, 388);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(35, 12);
+            this.panel2.Size = new System.Drawing.Size(22, 12);
             this.panel2.TabIndex = 2;
             // 
             // timer1

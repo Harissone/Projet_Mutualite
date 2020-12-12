@@ -13,7 +13,7 @@ namespace Mutualite.DAL
     public class MembreDAO
     {
         private static List<Membre> membres;
-        private const string FILE_NAME = @"user.json";
+        private const string FILE_NAME = @"membre.json";
         private readonly string dbFolder;
         private FileInfo file;
         public MembreDAO(string dbFolder)

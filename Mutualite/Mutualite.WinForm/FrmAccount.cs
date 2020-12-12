@@ -81,7 +81,7 @@ namespace Mutualite.WinForm
 
                             MessageBox.Show
                          (
-                             "Save done",
+                             "Compte creer",
                              "Confirmation",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Information
@@ -95,6 +95,8 @@ namespace Mutualite.WinForm
                             txtUsername.Clear();
                             txtPassword.Clear();
                             txtConfirmPassword.Clear();
+                    Form f = new FrmParent();
+                    f.Show();
                     this.Hide();
                            
                     }         

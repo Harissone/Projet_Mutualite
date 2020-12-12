@@ -30,8 +30,8 @@ namespace Mutualite.WinForm
             var membres = membreBLO.GetBy
             (
                 x =>
-                x.Username.ToLower().Contains(value)    
-            ).OrderBy(x => x.Username).ToArray();
+                x.Nom.ToLower().Contains(value)    
+            ).OrderBy(x => x.Nom).ToArray();
             guna2DataGridViewEvenement.DataSource = null;
             guna2DataGridViewEvenement.DataSource = membres;
             guna2HtmlLblLigne.Text = $"{guna2DataGridViewEvenement.RowCount} lignes";

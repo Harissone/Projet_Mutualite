@@ -53,6 +53,7 @@ namespace Mutualite.WinForm
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.AutoScroll = true;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2ComboBoxJourSemaine);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelJourSemaine);
@@ -72,10 +73,10 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelDureeCycle);
             this.guna2ShadowPanel1.Controls.Add(this.guna2TxtDureeCycle);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(40, 87);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(40, 45);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 802);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 564);
             this.guna2ShadowPanel1.TabIndex = 5;
             // 
             // guna2ComboBoxJourSemaine
@@ -103,10 +104,10 @@ namespace Mutualite.WinForm
             this.guna2ComboBoxJourSemaine.ItemsAppearance.Parent = this.guna2ComboBoxJourSemaine;
             this.guna2ComboBoxJourSemaine.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2ComboBoxJourSemaine.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.guna2ComboBoxJourSemaine.Location = new System.Drawing.Point(34, 326);
+            this.guna2ComboBoxJourSemaine.Location = new System.Drawing.Point(354, 167);
             this.guna2ComboBoxJourSemaine.Name = "guna2ComboBoxJourSemaine";
             this.guna2ComboBoxJourSemaine.ShadowDecoration.Parent = this.guna2ComboBoxJourSemaine;
-            this.guna2ComboBoxJourSemaine.Size = new System.Drawing.Size(531, 36);
+            this.guna2ComboBoxJourSemaine.Size = new System.Drawing.Size(199, 36);
             this.guna2ComboBoxJourSemaine.StartIndex = 0;
             this.guna2ComboBoxJourSemaine.TabIndex = 21;
             // 
@@ -115,7 +116,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelJourSemaine.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelJourSemaine.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelJourSemaine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelJourSemaine.Location = new System.Drawing.Point(43, 301);
+            this.guna2HtmlLabelJourSemaine.Location = new System.Drawing.Point(363, 142);
             this.guna2HtmlLabelJourSemaine.Name = "guna2HtmlLabelJourSemaine";
             this.guna2HtmlLabelJourSemaine.Size = new System.Drawing.Size(116, 19);
             this.guna2HtmlLabelJourSemaine.TabIndex = 22;
@@ -126,7 +127,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblSanctionAbsence.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblSanctionAbsence.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblSanctionAbsence.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblSanctionAbsence.Location = new System.Drawing.Point(39, 654);
+            this.guna2HtmlLblSanctionAbsence.Location = new System.Drawing.Point(35, 400);
             this.guna2HtmlLblSanctionAbsence.Name = "guna2HtmlLblSanctionAbsence";
             this.guna2HtmlLblSanctionAbsence.Size = new System.Drawing.Size(108, 19);
             this.guna2HtmlLblSanctionAbsence.TabIndex = 19;
@@ -148,13 +149,13 @@ namespace Mutualite.WinForm
             this.guna2TxtSanctionAbsence.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2TxtSanctionAbsence.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TxtSanctionAbsence.HoverState.Parent = this.guna2TxtSanctionAbsence;
-            this.guna2TxtSanctionAbsence.Location = new System.Drawing.Point(30, 679);
+            this.guna2TxtSanctionAbsence.Location = new System.Drawing.Point(26, 425);
             this.guna2TxtSanctionAbsence.Name = "guna2TxtSanctionAbsence";
             this.guna2TxtSanctionAbsence.PasswordChar = '\0';
             this.guna2TxtSanctionAbsence.PlaceholderText = "";
             this.guna2TxtSanctionAbsence.SelectedText = "";
             this.guna2TxtSanctionAbsence.ShadowDecoration.Parent = this.guna2TxtSanctionAbsence;
-            this.guna2TxtSanctionAbsence.Size = new System.Drawing.Size(531, 36);
+            this.guna2TxtSanctionAbsence.Size = new System.Drawing.Size(535, 36);
             this.guna2TxtSanctionAbsence.TabIndex = 20;
             // 
             // guna2HtmlLabelSanctionRetard
@@ -162,7 +163,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelSanctionRetard.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelSanctionRetard.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelSanctionRetard.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelSanctionRetard.Location = new System.Drawing.Point(43, 566);
+            this.guna2HtmlLabelSanctionRetard.Location = new System.Drawing.Point(39, 312);
             this.guna2HtmlLabelSanctionRetard.Name = "guna2HtmlLabelSanctionRetard";
             this.guna2HtmlLabelSanctionRetard.Size = new System.Drawing.Size(96, 19);
             this.guna2HtmlLabelSanctionRetard.TabIndex = 17;
@@ -184,7 +185,7 @@ namespace Mutualite.WinForm
             this.guna2TxtSanctionRetard.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2TxtSanctionRetard.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TxtSanctionRetard.HoverState.Parent = this.guna2TxtSanctionRetard;
-            this.guna2TxtSanctionRetard.Location = new System.Drawing.Point(34, 591);
+            this.guna2TxtSanctionRetard.Location = new System.Drawing.Point(30, 337);
             this.guna2TxtSanctionRetard.Name = "guna2TxtSanctionRetard";
             this.guna2TxtSanctionRetard.PasswordChar = '\0';
             this.guna2TxtSanctionRetard.PlaceholderText = "";
@@ -204,12 +205,12 @@ namespace Mutualite.WinForm
             this.guna2DateTimePickerDatePremiereRencontre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2DateTimePickerDatePremiereRencontre.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePickerDatePremiereRencontre.HoverState.Parent = this.guna2DateTimePickerDatePremiereRencontre;
-            this.guna2DateTimePickerDatePremiereRencontre.Location = new System.Drawing.Point(34, 416);
+            this.guna2DateTimePickerDatePremiereRencontre.Location = new System.Drawing.Point(26, 254);
             this.guna2DateTimePickerDatePremiereRencontre.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePickerDatePremiereRencontre.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePickerDatePremiereRencontre.Name = "guna2DateTimePickerDatePremiereRencontre";
             this.guna2DateTimePickerDatePremiereRencontre.ShadowDecoration.Parent = this.guna2DateTimePickerDatePremiereRencontre;
-            this.guna2DateTimePickerDatePremiereRencontre.Size = new System.Drawing.Size(531, 36);
+            this.guna2DateTimePickerDatePremiereRencontre.Size = new System.Drawing.Size(207, 36);
             this.guna2DateTimePickerDatePremiereRencontre.TabIndex = 15;
             this.guna2DateTimePickerDatePremiereRencontre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2DateTimePickerDatePremiereRencontre.UseTransparentBackground = true;
@@ -220,7 +221,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblPremiereRencontre.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblPremiereRencontre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblPremiereRencontre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblPremiereRencontre.Location = new System.Drawing.Point(43, 391);
+            this.guna2HtmlLblPremiereRencontre.Location = new System.Drawing.Point(43, 229);
             this.guna2HtmlLblPremiereRencontre.Name = "guna2HtmlLblPremiereRencontre";
             this.guna2HtmlLblPremiereRencontre.Size = new System.Drawing.Size(185, 19);
             this.guna2HtmlLblPremiereRencontre.TabIndex = 16;
@@ -247,10 +248,10 @@ namespace Mutualite.WinForm
             this.guna2ComboBoxTypeRencontre.ItemsAppearance.Parent = this.guna2ComboBoxTypeRencontre;
             this.guna2ComboBoxTypeRencontre.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2ComboBoxTypeRencontre.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.guna2ComboBoxTypeRencontre.Location = new System.Drawing.Point(30, 240);
+            this.guna2ComboBoxTypeRencontre.Location = new System.Drawing.Point(30, 167);
             this.guna2ComboBoxTypeRencontre.Name = "guna2ComboBoxTypeRencontre";
             this.guna2ComboBoxTypeRencontre.ShadowDecoration.Parent = this.guna2ComboBoxTypeRencontre;
-            this.guna2ComboBoxTypeRencontre.Size = new System.Drawing.Size(535, 36);
+            this.guna2ComboBoxTypeRencontre.Size = new System.Drawing.Size(203, 36);
             this.guna2ComboBoxTypeRencontre.StartIndex = 0;
             this.guna2ComboBoxTypeRencontre.TabIndex = 13;
             // 
@@ -259,7 +260,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblTypeRencontre.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblTypeRencontre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblTypeRencontre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblTypeRencontre.Location = new System.Drawing.Point(43, 215);
+            this.guna2HtmlLblTypeRencontre.Location = new System.Drawing.Point(43, 142);
             this.guna2HtmlLblTypeRencontre.Name = "guna2HtmlLblTypeRencontre";
             this.guna2HtmlLblTypeRencontre.Size = new System.Drawing.Size(114, 19);
             this.guna2HtmlLblTypeRencontre.TabIndex = 14;
@@ -276,7 +277,7 @@ namespace Mutualite.WinForm
             this.guna2GradientCreer.ForeColor = System.Drawing.Color.White;
             this.guna2GradientCreer.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientCreer.HoverState.Parent = this.guna2GradientCreer;
-            this.guna2GradientCreer.Location = new System.Drawing.Point(197, 734);
+            this.guna2GradientCreer.Location = new System.Drawing.Point(188, 483);
             this.guna2GradientCreer.Name = "guna2GradientCreer";
             this.guna2GradientCreer.ShadowDecoration.Parent = this.guna2GradientCreer;
             this.guna2GradientCreer.Size = new System.Drawing.Size(180, 45);
@@ -295,12 +296,12 @@ namespace Mutualite.WinForm
             this.guna2DateTimePickerHeureRencontre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2DateTimePickerHeureRencontre.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.guna2DateTimePickerHeureRencontre.HoverState.Parent = this.guna2DateTimePickerHeureRencontre;
-            this.guna2DateTimePickerHeureRencontre.Location = new System.Drawing.Point(34, 502);
+            this.guna2DateTimePickerHeureRencontre.Location = new System.Drawing.Point(354, 254);
             this.guna2DateTimePickerHeureRencontre.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePickerHeureRencontre.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePickerHeureRencontre.Name = "guna2DateTimePickerHeureRencontre";
             this.guna2DateTimePickerHeureRencontre.ShadowDecoration.Parent = this.guna2DateTimePickerHeureRencontre;
-            this.guna2DateTimePickerHeureRencontre.Size = new System.Drawing.Size(531, 36);
+            this.guna2DateTimePickerHeureRencontre.Size = new System.Drawing.Size(199, 36);
             this.guna2DateTimePickerHeureRencontre.TabIndex = 4;
             this.guna2DateTimePickerHeureRencontre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2DateTimePickerHeureRencontre.UseTransparentBackground = true;
@@ -311,7 +312,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblHeureRencontre.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblHeureRencontre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblHeureRencontre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblHeureRencontre.Location = new System.Drawing.Point(43, 477);
+            this.guna2HtmlLblHeureRencontre.Location = new System.Drawing.Point(363, 229);
             this.guna2HtmlLblHeureRencontre.Name = "guna2HtmlLblHeureRencontre";
             this.guna2HtmlLblHeureRencontre.Size = new System.Drawing.Size(136, 19);
             this.guna2HtmlLblHeureRencontre.TabIndex = 11;
@@ -341,10 +342,10 @@ namespace Mutualite.WinForm
             this.guna2ComboBoxFrequenceAssemble.ItemsAppearance.Parent = this.guna2ComboBoxFrequenceAssemble;
             this.guna2ComboBoxFrequenceAssemble.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.guna2ComboBoxFrequenceAssemble.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.guna2ComboBoxFrequenceAssemble.Location = new System.Drawing.Point(34, 154);
+            this.guna2ComboBoxFrequenceAssemble.Location = new System.Drawing.Point(354, 73);
             this.guna2ComboBoxFrequenceAssemble.Name = "guna2ComboBoxFrequenceAssemble";
             this.guna2ComboBoxFrequenceAssemble.ShadowDecoration.Parent = this.guna2ComboBoxFrequenceAssemble;
-            this.guna2ComboBoxFrequenceAssemble.Size = new System.Drawing.Size(531, 36);
+            this.guna2ComboBoxFrequenceAssemble.Size = new System.Drawing.Size(199, 36);
             this.guna2ComboBoxFrequenceAssemble.StartIndex = 0;
             this.guna2ComboBoxFrequenceAssemble.TabIndex = 2;
             // 
@@ -353,7 +354,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblFrequenceAssemble.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLblFrequenceAssemble.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLblFrequenceAssemble.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblFrequenceAssemble.Location = new System.Drawing.Point(43, 129);
+            this.guna2HtmlLblFrequenceAssemble.Location = new System.Drawing.Point(363, 48);
             this.guna2HtmlLblFrequenceAssemble.Name = "guna2HtmlLblFrequenceAssemble";
             this.guna2HtmlLblFrequenceAssemble.Size = new System.Drawing.Size(164, 19);
             this.guna2HtmlLblFrequenceAssemble.TabIndex = 4;
@@ -393,7 +394,7 @@ namespace Mutualite.WinForm
             this.guna2TxtDureeCycle.SelectedText = "";
             this.guna2TxtDureeCycle.SelectionStart = 31;
             this.guna2TxtDureeCycle.ShadowDecoration.Parent = this.guna2TxtDureeCycle;
-            this.guna2TxtDureeCycle.Size = new System.Drawing.Size(527, 36);
+            this.guna2TxtDureeCycle.Size = new System.Drawing.Size(199, 36);
             this.guna2TxtDureeCycle.TabIndex = 0;
             // 
             // guna2HtmlLabelCreationTontine
@@ -401,7 +402,7 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelCreationTontine.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelCreationTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelCreationTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelCreationTontine.Location = new System.Drawing.Point(50, 37);
+            this.guna2HtmlLabelCreationTontine.Location = new System.Drawing.Point(51, 12);
             this.guna2HtmlLabelCreationTontine.Name = "guna2HtmlLabelCreationTontine";
             this.guna2HtmlLabelCreationTontine.Size = new System.Drawing.Size(207, 27);
             this.guna2HtmlLabelCreationTontine.TabIndex = 4;
@@ -412,7 +413,7 @@ namespace Mutualite.WinForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(689, 920);
+            this.ClientSize = new System.Drawing.Size(689, 626);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2HtmlLabelCreationTontine);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

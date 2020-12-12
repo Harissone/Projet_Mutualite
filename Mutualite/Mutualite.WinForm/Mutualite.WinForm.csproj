@@ -195,11 +195,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAcceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcceuil.Designer.cs">
+      <DependentUpon>FrmAcceuil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAccount.Designer.cs">
       <DependentUpon>FrmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssemble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssemble.Designer.cs">
+      <DependentUpon>FrmAssemble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssembleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssembleList.Designer.cs">
+      <DependentUpon>FrmAssembleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCaisse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaisse.Designer.cs">
+      <DependentUpon>FrmCaisse.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCaisseList.cs">
       <SubType>Form</SubType>
@@ -314,8 +338,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAcceuil.resx">
+      <DependentUpon>FrmAcceuil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAccount.resx">
       <DependentUpon>FrmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssemble.resx">
+      <DependentUpon>FrmAssemble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssembleList.resx">
+      <DependentUpon>FrmAssembleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaisse.resx">
+      <DependentUpon>FrmCaisse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCaisseList.resx">
       <DependentUpon>FrmCaisseList.cs</DependentUpon>

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assemble.cs" />
     <Compile Include="Caisse.cs" />
     <Compile Include="Cycle.cs" />
     <Compile Include="Echeance.cs" />

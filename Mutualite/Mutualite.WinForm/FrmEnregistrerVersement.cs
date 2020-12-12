@@ -104,7 +104,7 @@ namespace Mutualite.WinForm
 
                 MessageBox.Show
                 (
-                    "Cycle creer !",
+                    "Cotisation effectuer !",
                     "Confirmation",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
@@ -121,8 +121,7 @@ namespace Mutualite.WinForm
                 guna2TxtDescription.Clear();
 
                 guna2TxtCompte.Focus();
-                Form f = new FrmCaisseList();
-                f.Show();
+               
             }
             catch (TypingException ex)
             {

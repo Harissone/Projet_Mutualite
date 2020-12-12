@@ -22,6 +22,20 @@ namespace Mutualite.WinForm
             guna2DataGridViewEvenement.AutoGenerateColumns = false;
             evenementBLO = new EvenementBLO(ConfigurationManager.AppSettings["DbFolder"]);
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            guna2PanelContainerEvenement.Controls.Add(childForm);
+            guna2PanelContainerEvenement.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void loadData()
         {
             string value = guna2TxtSearch.Text.ToLower();
@@ -94,6 +108,62 @@ namespace Mutualite.WinForm
         }
 
         private void guna2TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        private void guna2GradientBtnCreerReunion_Click_1(object sender, EventArgs e)
+        {
+            openChildForm( new FrmEvenement(loadData));
+            
+        }
+
+        private void guna2GradientBtnSupprimerReunion_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewEvenement.SelectedRows.Count > 0)
+            {
+                if (
+                    MessageBox.Show
+                    (
+                        "Do you really want to delete this event ?",
+                        "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                    ) == DialogResult.Yes
+                )
+                {
+                    for (int i = 0; i < guna2DataGridViewEvenement.SelectedRows.Count; i++)
+                    {
+                        evenementBLO.DeleteEvenement(guna2DataGridViewEvenement.SelectedRows[i].DataBoundItem as Evenement);
+                    }
+                    loadData();
+                }
+            }
+        }
+
+        private void guna2GradientBtnModifierReunion_Click_1(object sender, EventArgs e)
+        {
+            if (guna2DataGridViewEvenement.SelectedRows.Count > 0)
+            {
+                for (int i = 0; i < guna2DataGridViewEvenement.SelectedRows.Count; i++)
+                {
+                    Form f = new FrmEvenement
+                    (
+                        guna2DataGridViewEvenement.SelectedRows[i].DataBoundItem as Evenement,
+                        loadData
+                    );
+                    f.ShowDialog();
+                }
+            }
+        }
+
+        private void guna2GradientBtnRafraichir_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(guna2TxtSearch.Text))
+                loadData();
+            else
+                guna2TxtSearch.Clear();
+        }
+
+        private void guna2TxtSearch_TextChanged_1(object sender, EventArgs e)
         {
             loadData();
         }

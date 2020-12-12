@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssembleBLO.cs" />
     <Compile Include="CaisseBLO.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="CycleBLO.cs" />

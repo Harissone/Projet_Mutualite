@@ -33,6 +33,12 @@ namespace Mutualite.WinForm
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLblLigne = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnModifierEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnSupprimerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientBtnCreerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2PanelContainerEcheance = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridViewEcheance = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,11 +49,9 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2TxtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GradientBtnRafraichir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnModifierEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnSupprimerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientBtnCreerEcheance = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2PanelContainerEcheance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEcheance)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -56,11 +60,119 @@ namespace Mutualite.WinForm
             // guna2HtmlLblLigne
             // 
             this.guna2HtmlLblLigne.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLblLigne.Location = new System.Drawing.Point(742, 430);
+            this.guna2HtmlLblLigne.Location = new System.Drawing.Point(739, 481);
             this.guna2HtmlLblLigne.Name = "guna2HtmlLblLigne";
             this.guna2HtmlLblLigne.Size = new System.Drawing.Size(34, 15);
             this.guna2HtmlLblLigne.TabIndex = 24;
             this.guna2HtmlLblLigne.Text = "Lignes";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnRafraichir);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnCreerEcheance);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnModifierEcheance);
+            this.guna2Panel1.Controls.Add(this.guna2GradientBtnSupprimerEcheance);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(805, 78);
+            this.guna2Panel1.TabIndex = 25;
+            // 
+            // guna2GradientBtnRafraichir
+            // 
+            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnRafraichir.Animated = true;
+            this.guna2GradientBtnRafraichir.BorderRadius = 20;
+            this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.CustomImages.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnRafraichir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientBtnRafraichir.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
+            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(624, 23);
+            this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
+            this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
+            this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
+            this.guna2GradientBtnRafraichir.TabIndex = 29;
+            this.guna2GradientBtnRafraichir.Text = "Rafraichir";
+            this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click_1);
+            // 
+            // guna2GradientBtnModifierEcheance
+            // 
+            this.guna2GradientBtnModifierEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnModifierEcheance.Animated = true;
+            this.guna2GradientBtnModifierEcheance.BorderRadius = 20;
+            this.guna2GradientBtnModifierEcheance.CheckedState.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.CustomImages.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnModifierEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientBtnModifierEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnModifierEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnModifierEcheance.HoverState.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
+            this.guna2GradientBtnModifierEcheance.Location = new System.Drawing.Point(421, 23);
+            this.guna2GradientBtnModifierEcheance.Name = "guna2GradientBtnModifierEcheance";
+            this.guna2GradientBtnModifierEcheance.ShadowDecoration.Parent = this.guna2GradientBtnModifierEcheance;
+            this.guna2GradientBtnModifierEcheance.Size = new System.Drawing.Size(183, 37);
+            this.guna2GradientBtnModifierEcheance.TabIndex = 28;
+            this.guna2GradientBtnModifierEcheance.Text = "Modifier une echeance";
+            this.guna2GradientBtnModifierEcheance.Click += new System.EventHandler(this.guna2GradientBtnModifierEcheance_Click_1);
+            // 
+            // guna2GradientBtnSupprimerEcheance
+            // 
+            this.guna2GradientBtnSupprimerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnSupprimerEcheance.Animated = true;
+            this.guna2GradientBtnSupprimerEcheance.BorderRadius = 20;
+            this.guna2GradientBtnSupprimerEcheance.CheckedState.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.CustomImages.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnSupprimerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnSupprimerEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnSupprimerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnSupprimerEcheance.HoverState.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
+            this.guna2GradientBtnSupprimerEcheance.Location = new System.Drawing.Point(218, 23);
+            this.guna2GradientBtnSupprimerEcheance.Name = "guna2GradientBtnSupprimerEcheance";
+            this.guna2GradientBtnSupprimerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerEcheance;
+            this.guna2GradientBtnSupprimerEcheance.Size = new System.Drawing.Size(188, 37);
+            this.guna2GradientBtnSupprimerEcheance.TabIndex = 27;
+            this.guna2GradientBtnSupprimerEcheance.Text = "Supprimer une echeance";
+            this.guna2GradientBtnSupprimerEcheance.Click += new System.EventHandler(this.guna2GradientBtnSupprimerEcheance_Click_1);
+            // 
+            // guna2GradientBtnCreerEcheance
+            // 
+            this.guna2GradientBtnCreerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientBtnCreerEcheance.Animated = true;
+            this.guna2GradientBtnCreerEcheance.BorderRadius = 20;
+            this.guna2GradientBtnCreerEcheance.CheckedState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.CustomImages.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2GradientBtnCreerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientBtnCreerEcheance.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientBtnCreerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientBtnCreerEcheance.HoverState.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
+            this.guna2GradientBtnCreerEcheance.Location = new System.Drawing.Point(48, 23);
+            this.guna2GradientBtnCreerEcheance.Name = "guna2GradientBtnCreerEcheance";
+            this.guna2GradientBtnCreerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnCreerEcheance;
+            this.guna2GradientBtnCreerEcheance.Size = new System.Drawing.Size(152, 37);
+            this.guna2GradientBtnCreerEcheance.TabIndex = 26;
+            this.guna2GradientBtnCreerEcheance.Text = "Creer une echeance";
+            this.guna2GradientBtnCreerEcheance.Click += new System.EventHandler(this.guna2GradientBtnCreerEcheance_Click);
+            // 
+            // guna2PanelContainerEcheance
+            // 
+            this.guna2PanelContainerEcheance.Controls.Add(this.guna2DataGridViewEcheance);
+            this.guna2PanelContainerEcheance.Controls.Add(this.guna2ShadowPanel1);
+            this.guna2PanelContainerEcheance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PanelContainerEcheance.Location = new System.Drawing.Point(0, 78);
+            this.guna2PanelContainerEcheance.Name = "guna2PanelContainerEcheance";
+            this.guna2PanelContainerEcheance.ShadowDecoration.Parent = this.guna2PanelContainerEcheance;
+            this.guna2PanelContainerEcheance.Size = new System.Drawing.Size(805, 421);
+            this.guna2PanelContainerEcheance.TabIndex = 26;
             // 
             // guna2DataGridViewEcheance
             // 
@@ -103,13 +215,13 @@ namespace Mutualite.WinForm
             this.guna2DataGridViewEcheance.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridViewEcheance.EnableHeadersVisualStyles = false;
             this.guna2DataGridViewEcheance.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewEcheance.Location = new System.Drawing.Point(32, 157);
+            this.guna2DataGridViewEcheance.Location = new System.Drawing.Point(28, 104);
             this.guna2DataGridViewEcheance.Name = "guna2DataGridViewEcheance";
             this.guna2DataGridViewEcheance.ReadOnly = true;
             this.guna2DataGridViewEcheance.RowHeadersVisible = false;
             this.guna2DataGridViewEcheance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridViewEcheance.Size = new System.Drawing.Size(745, 269);
-            this.guna2DataGridViewEcheance.TabIndex = 21;
+            this.guna2DataGridViewEcheance.TabIndex = 25;
             this.guna2DataGridViewEcheance.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2DataGridViewEcheance.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -181,14 +293,14 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(32, 83);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(28, 30);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Padding = new System.Windows.Forms.Padding(3, 1, 3, 2);
             this.guna2ShadowPanel1.Radius = 16;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowShift = 3;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(745, 55);
-            this.guna2ShadowPanel1.TabIndex = 19;
+            this.guna2ShadowPanel1.TabIndex = 24;
             // 
             // guna2GroupBox1
             // 
@@ -232,91 +344,7 @@ namespace Mutualite.WinForm
             this.guna2TxtSearch.ShadowDecoration.Parent = this.guna2TxtSearch;
             this.guna2TxtSearch.Size = new System.Drawing.Size(644, 36);
             this.guna2TxtSearch.TabIndex = 2;
-            this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged);
-            // 
-            // guna2GradientBtnRafraichir
-            // 
-            this.guna2GradientBtnRafraichir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnRafraichir.Animated = true;
-            this.guna2GradientBtnRafraichir.BorderRadius = 20;
-            this.guna2GradientBtnRafraichir.CheckedState.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.CustomImages.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnRafraichir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientBtnRafraichir.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnRafraichir.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnRafraichir.HoverState.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.Image = global::Mutualite.WinForm.Properties.Resources.refresh_32px;
-            this.guna2GradientBtnRafraichir.Location = new System.Drawing.Point(611, 23);
-            this.guna2GradientBtnRafraichir.Name = "guna2GradientBtnRafraichir";
-            this.guna2GradientBtnRafraichir.ShadowDecoration.Parent = this.guna2GradientBtnRafraichir;
-            this.guna2GradientBtnRafraichir.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientBtnRafraichir.TabIndex = 25;
-            this.guna2GradientBtnRafraichir.Text = "Rafraichir";
-            this.guna2GradientBtnRafraichir.Click += new System.EventHandler(this.guna2GradientBtnRafraichir_Click);
-            // 
-            // guna2GradientBtnModifierEcheance
-            // 
-            this.guna2GradientBtnModifierEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnModifierEcheance.Animated = true;
-            this.guna2GradientBtnModifierEcheance.BorderRadius = 20;
-            this.guna2GradientBtnModifierEcheance.CheckedState.Parent = this.guna2GradientBtnModifierEcheance;
-            this.guna2GradientBtnModifierEcheance.CustomImages.Parent = this.guna2GradientBtnModifierEcheance;
-            this.guna2GradientBtnModifierEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnModifierEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientBtnModifierEcheance.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnModifierEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnModifierEcheance.HoverState.Parent = this.guna2GradientBtnModifierEcheance;
-            this.guna2GradientBtnModifierEcheance.Image = global::Mutualite.WinForm.Properties.Resources.shift_50px;
-            this.guna2GradientBtnModifierEcheance.Location = new System.Drawing.Point(408, 23);
-            this.guna2GradientBtnModifierEcheance.Name = "guna2GradientBtnModifierEcheance";
-            this.guna2GradientBtnModifierEcheance.ShadowDecoration.Parent = this.guna2GradientBtnModifierEcheance;
-            this.guna2GradientBtnModifierEcheance.Size = new System.Drawing.Size(183, 37);
-            this.guna2GradientBtnModifierEcheance.TabIndex = 23;
-            this.guna2GradientBtnModifierEcheance.Text = "Modifier une echeance";
-            this.guna2GradientBtnModifierEcheance.Click += new System.EventHandler(this.guna2GradientBtnModifierEcheance_Click);
-            // 
-            // guna2GradientBtnSupprimerEcheance
-            // 
-            this.guna2GradientBtnSupprimerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnSupprimerEcheance.Animated = true;
-            this.guna2GradientBtnSupprimerEcheance.BorderRadius = 20;
-            this.guna2GradientBtnSupprimerEcheance.CheckedState.Parent = this.guna2GradientBtnSupprimerEcheance;
-            this.guna2GradientBtnSupprimerEcheance.CustomImages.Parent = this.guna2GradientBtnSupprimerEcheance;
-            this.guna2GradientBtnSupprimerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnSupprimerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnSupprimerEcheance.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnSupprimerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnSupprimerEcheance.HoverState.Parent = this.guna2GradientBtnSupprimerEcheance;
-            this.guna2GradientBtnSupprimerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.drop_down_50px;
-            this.guna2GradientBtnSupprimerEcheance.Location = new System.Drawing.Point(205, 23);
-            this.guna2GradientBtnSupprimerEcheance.Name = "guna2GradientBtnSupprimerEcheance";
-            this.guna2GradientBtnSupprimerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnSupprimerEcheance;
-            this.guna2GradientBtnSupprimerEcheance.Size = new System.Drawing.Size(188, 37);
-            this.guna2GradientBtnSupprimerEcheance.TabIndex = 22;
-            this.guna2GradientBtnSupprimerEcheance.Text = "Supprimer une echeance";
-            this.guna2GradientBtnSupprimerEcheance.Click += new System.EventHandler(this.guna2GradientBtnSupprimerEcheance_Click);
-            // 
-            // guna2GradientBtnCreerEcheance
-            // 
-            this.guna2GradientBtnCreerEcheance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2GradientBtnCreerEcheance.Animated = true;
-            this.guna2GradientBtnCreerEcheance.BorderRadius = 20;
-            this.guna2GradientBtnCreerEcheance.CheckedState.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.CustomImages.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
-            this.guna2GradientBtnCreerEcheance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientBtnCreerEcheance.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientBtnCreerEcheance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientBtnCreerEcheance.HoverState.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.Image = global::Mutualite.WinForm.Properties.Resources.add_50px;
-            this.guna2GradientBtnCreerEcheance.Location = new System.Drawing.Point(35, 23);
-            this.guna2GradientBtnCreerEcheance.Name = "guna2GradientBtnCreerEcheance";
-            this.guna2GradientBtnCreerEcheance.ShadowDecoration.Parent = this.guna2GradientBtnCreerEcheance;
-            this.guna2GradientBtnCreerEcheance.Size = new System.Drawing.Size(152, 37);
-            this.guna2GradientBtnCreerEcheance.TabIndex = 20;
-            this.guna2GradientBtnCreerEcheance.Text = "Creer une echeance";
-            this.guna2GradientBtnCreerEcheance.Click += new System.EventHandler(this.guna2GradientBtnCreerReunion_Click);
+            this.guna2TxtSearch.TextChanged += new System.EventHandler(this.guna2TxtSearch_TextChanged_1);
             // 
             // guna2CircleButton1
             // 
@@ -342,19 +370,17 @@ namespace Mutualite.WinForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(805, 450);
-            this.Controls.Add(this.guna2GradientBtnRafraichir);
+            this.ClientSize = new System.Drawing.Size(805, 499);
+            this.Controls.Add(this.guna2PanelContainerEcheance);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLblLigne);
-            this.Controls.Add(this.guna2GradientBtnModifierEcheance);
-            this.Controls.Add(this.guna2GradientBtnSupprimerEcheance);
-            this.Controls.Add(this.guna2DataGridViewEcheance);
-            this.Controls.Add(this.guna2GradientBtnCreerEcheance);
-            this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEcheanceList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEcheanceList";
             this.Load += new System.EventHandler(this.FrmEcheanceList_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2PanelContainerEcheance.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEcheance)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
@@ -364,22 +390,23 @@ namespace Mutualite.WinForm
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblLigne;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnRafraichir;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnCreerEcheance;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnModifierEcheance;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnSupprimerEcheance;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelContainerEcheance;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewEcheance;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TxtSearch;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Penaliter;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientBtnCreerEcheance;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtSearch;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

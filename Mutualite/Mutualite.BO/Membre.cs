@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Mutualite.BO
 {
-    public class Membre : User
-    {   
+    public class Membre //: //User
+    { 
+        public string Nom { get; set; }
         public string Email { get; set; }
         public int Telephone { get; set; }
-        public Membre(string username, string password, string confirmPassword,  string email, int telephone)
-           : base(username, password, confirmPassword)
+        public Membre(string nom, string email, int telephone)
+           //: base(username, password, confirmPassword)
         {
-            Username = username;
-            Password = password;
+            Nom = nom;          
             Email = email;
             Telephone = telephone;
         }
@@ -22,11 +22,11 @@ namespace Mutualite.BO
         public override bool Equals(object obj)
         {
             return obj is Membre membre &&
-                   Username.Equals(membre.Username, StringComparison.OrdinalIgnoreCase);
+                   Nom.Equals(membre.Nom, StringComparison.OrdinalIgnoreCase);
         }
         public override int GetHashCode()
         {
-            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Username);
+            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Nom);
         }
     }
 }

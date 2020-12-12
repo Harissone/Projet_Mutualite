@@ -1,7 +1,7 @@
 ﻿
 namespace Mutualite.WinForm
 {
-    partial class FrmEvenement
+    partial class FrmCaisse
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@ namespace Mutualite.WinForm
         private void InitializeComponent()
         {
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2HtmlLblDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientCreer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2DateTimePickerDateEvenement = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLblDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -37,11 +39,9 @@ namespace Mutualite.WinForm
             this.guna2TxtMontant = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TxtLieux = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabelTitre = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TxtTitre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLblCompte = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TxtCompte = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabelCreationTontine = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLblDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TxtDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,14 +58,50 @@ namespace Mutualite.WinForm
             this.guna2ShadowPanel1.Controls.Add(this.guna2TxtMontant);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelDescription);
             this.guna2ShadowPanel1.Controls.Add(this.guna2TxtLieux);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabelTitre);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtTitre);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLblCompte);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TxtCompte);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(49, 67);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(76, 86);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(587, 476);
-            this.guna2ShadowPanel1.TabIndex = 7;
+            this.guna2ShadowPanel1.TabIndex = 9;
+            // 
+            // guna2HtmlLblDescription
+            // 
+            this.guna2HtmlLblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLblDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLblDescription.Location = new System.Drawing.Point(43, 321);
+            this.guna2HtmlLblDescription.Name = "guna2HtmlLblDescription";
+            this.guna2HtmlLblDescription.Size = new System.Drawing.Size(71, 19);
+            this.guna2HtmlLblDescription.TabIndex = 13;
+            this.guna2HtmlLblDescription.Text = "Description";
+            // 
+            // guna2TxtDescription
+            // 
+            this.guna2TxtDescription.BorderRadius = 20;
+            this.guna2TxtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtDescription.DefaultText = "";
+            this.guna2TxtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtDescription.DisabledState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtDescription.FocusedState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtDescription.HoverState.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Location = new System.Drawing.Point(34, 346);
+            this.guna2TxtDescription.Name = "guna2TxtDescription";
+            this.guna2TxtDescription.PasswordChar = '\0';
+            this.guna2TxtDescription.PlaceholderText = "";
+            this.guna2TxtDescription.SelectedText = "";
+            this.guna2TxtDescription.ShadowDecoration.Parent = this.guna2TxtDescription;
+            this.guna2TxtDescription.Size = new System.Drawing.Size(531, 36);
+            this.guna2TxtDescription.TabIndex = 14;
             // 
             // guna2GradientCreer
             // 
@@ -115,9 +151,9 @@ namespace Mutualite.WinForm
             this.guna2HtmlLblDate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLblDate.Location = new System.Drawing.Point(43, 136);
             this.guna2HtmlLblDate.Name = "guna2HtmlLblDate";
-            this.guna2HtmlLblDate.Size = new System.Drawing.Size(128, 19);
+            this.guna2HtmlLblDate.Size = new System.Drawing.Size(119, 19);
             this.guna2HtmlLblDate.TabIndex = 11;
-            this.guna2HtmlLblDate.Text = "Date de l\'evenement";
+            this.guna2HtmlLblDate.Text = "Date du versement";
             // 
             // guna2HtmlLblMontant
             // 
@@ -191,41 +227,41 @@ namespace Mutualite.WinForm
             this.guna2TxtLieux.Size = new System.Drawing.Size(531, 36);
             this.guna2TxtLieux.TabIndex = 5;
             // 
-            // guna2HtmlLabelTitre
+            // guna2HtmlLblCompte
             // 
-            this.guna2HtmlLabelTitre.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabelTitre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabelTitre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelTitre.Location = new System.Drawing.Point(43, 48);
-            this.guna2HtmlLabelTitre.Name = "guna2HtmlLabelTitre";
-            this.guna2HtmlLabelTitre.Size = new System.Drawing.Size(30, 19);
-            this.guna2HtmlLabelTitre.TabIndex = 0;
-            this.guna2HtmlLabelTitre.Text = "Titre";
+            this.guna2HtmlLblCompte.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLblCompte.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLblCompte.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2HtmlLblCompte.Location = new System.Drawing.Point(43, 48);
+            this.guna2HtmlLblCompte.Name = "guna2HtmlLblCompte";
+            this.guna2HtmlLblCompte.Size = new System.Drawing.Size(51, 19);
+            this.guna2HtmlLblCompte.TabIndex = 0;
+            this.guna2HtmlLblCompte.Text = "Compte";
             // 
-            // guna2TxtTitre
+            // guna2TxtCompte
             // 
-            this.guna2TxtTitre.BorderRadius = 20;
-            this.guna2TxtTitre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TxtTitre.DefaultText = "";
-            this.guna2TxtTitre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TxtTitre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TxtTitre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TxtTitre.DisabledState.Parent = this.guna2TxtTitre;
-            this.guna2TxtTitre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TxtTitre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtTitre.FocusedState.Parent = this.guna2TxtTitre;
-            this.guna2TxtTitre.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TxtTitre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2TxtTitre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtTitre.HoverState.Parent = this.guna2TxtTitre;
-            this.guna2TxtTitre.Location = new System.Drawing.Point(34, 73);
-            this.guna2TxtTitre.Name = "guna2TxtTitre";
-            this.guna2TxtTitre.PasswordChar = '\0';
-            this.guna2TxtTitre.PlaceholderText = "";
-            this.guna2TxtTitre.SelectedText = "";
-            this.guna2TxtTitre.ShadowDecoration.Parent = this.guna2TxtTitre;
-            this.guna2TxtTitre.Size = new System.Drawing.Size(200, 36);
-            this.guna2TxtTitre.TabIndex = 0;
+            this.guna2TxtCompte.BorderRadius = 20;
+            this.guna2TxtCompte.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TxtCompte.DefaultText = "";
+            this.guna2TxtCompte.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TxtCompte.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TxtCompte.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtCompte.DisabledState.Parent = this.guna2TxtCompte;
+            this.guna2TxtCompte.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TxtCompte.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtCompte.FocusedState.Parent = this.guna2TxtCompte;
+            this.guna2TxtCompte.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TxtCompte.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2TxtCompte.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TxtCompte.HoverState.Parent = this.guna2TxtCompte;
+            this.guna2TxtCompte.Location = new System.Drawing.Point(34, 73);
+            this.guna2TxtCompte.Name = "guna2TxtCompte";
+            this.guna2TxtCompte.PasswordChar = '\0';
+            this.guna2TxtCompte.PlaceholderText = "";
+            this.guna2TxtCompte.SelectedText = "";
+            this.guna2TxtCompte.ShadowDecoration.Parent = this.guna2TxtCompte;
+            this.guna2TxtCompte.Size = new System.Drawing.Size(200, 36);
+            this.guna2TxtCompte.TabIndex = 0;
             // 
             // guna2HtmlLabelCreationTontine
             // 
@@ -233,62 +269,24 @@ namespace Mutualite.WinForm
             this.guna2HtmlLabelCreationTontine.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabelCreationTontine.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabelCreationTontine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabelCreationTontine.Location = new System.Drawing.Point(49, 23);
+            this.guna2HtmlLabelCreationTontine.Location = new System.Drawing.Point(76, 42);
             this.guna2HtmlLabelCreationTontine.Name = "guna2HtmlLabelCreationTontine";
-            this.guna2HtmlLabelCreationTontine.Size = new System.Drawing.Size(262, 27);
-            this.guna2HtmlLabelCreationTontine.TabIndex = 6;
-            this.guna2HtmlLabelCreationTontine.Text = "CREATION D\'UN EVENEMENT";
+            this.guna2HtmlLabelCreationTontine.Size = new System.Drawing.Size(259, 27);
+            this.guna2HtmlLabelCreationTontine.TabIndex = 8;
+            this.guna2HtmlLabelCreationTontine.Text = "CREATION D\'UNE ECHEANCE";
             // 
-            // guna2HtmlLblDescription
-            // 
-            this.guna2HtmlLblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLblDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLblDescription.Location = new System.Drawing.Point(43, 321);
-            this.guna2HtmlLblDescription.Name = "guna2HtmlLblDescription";
-            this.guna2HtmlLblDescription.Size = new System.Drawing.Size(71, 19);
-            this.guna2HtmlLblDescription.TabIndex = 13;
-            this.guna2HtmlLblDescription.Text = "Description";
-            // 
-            // guna2TxtDescription
-            // 
-            this.guna2TxtDescription.BorderRadius = 20;
-            this.guna2TxtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TxtDescription.DefaultText = "";
-            this.guna2TxtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TxtDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TxtDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TxtDescription.DisabledState.Parent = this.guna2TxtDescription;
-            this.guna2TxtDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TxtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtDescription.FocusedState.Parent = this.guna2TxtDescription;
-            this.guna2TxtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TxtDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2TxtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtDescription.HoverState.Parent = this.guna2TxtDescription;
-            this.guna2TxtDescription.Location = new System.Drawing.Point(34, 346);
-            this.guna2TxtDescription.Name = "guna2TxtDescription";
-            this.guna2TxtDescription.PasswordChar = '\0';
-            this.guna2TxtDescription.PlaceholderText = "";
-            this.guna2TxtDescription.SelectedText = "";
-            this.guna2TxtDescription.ShadowDecoration.Parent = this.guna2TxtDescription;
-            this.guna2TxtDescription.Size = new System.Drawing.Size(531, 36);
-            this.guna2TxtDescription.TabIndex = 14;
-            // 
-            // FrmEvenement
+            // FrmCaisse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(680, 575);
+            this.ClientSize = new System.Drawing.Size(754, 617);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2HtmlLabelCreationTontine);
-            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmEvenement";
+            this.Name = "FrmCaisse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEvenement";
-            this.Load += new System.EventHandler(this.FrmEvenement_Load);
+            this.Text = "FrmCaisse";
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -299,6 +297,8 @@ namespace Mutualite.WinForm
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblDescription;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtDescription;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientCreer;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePickerDateEvenement;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblDate;
@@ -306,10 +306,8 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2TextBox guna2TxtMontant;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelDescription;
         private Guna.UI2.WinForms.Guna2TextBox guna2TxtLieux;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelTitre;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TxtTitre;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblCompte;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TxtCompte;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabelCreationTontine;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLblDescription;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TxtDescription;
     }
 }

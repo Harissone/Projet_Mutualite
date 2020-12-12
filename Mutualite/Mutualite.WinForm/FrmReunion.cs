@@ -85,8 +85,7 @@ namespace Mutualite.WinForm
                     guna2TxtMontant.Clear();
                     guna2TxtPenaliter.Clear();
                     guna2TxtNomReunion.Focus();
-                Form f = new FrmReunionList();
-                f.Show();
+               
             }
             catch (TypingException ex)
             {

@@ -43,16 +43,17 @@ namespace Mutualite.WinForm
             this.guna2GradientCreateAccount = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblusers = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2BtnAssembleGenerale = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelProfil.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanelMenu.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -250,7 +251,7 @@ namespace Mutualite.WinForm
             this.guna2ButtonParametre.HoverState.Parent = this.guna2ButtonParametre;
             this.guna2ButtonParametre.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2ButtonParametre.IndicateFocus = true;
-            this.guna2ButtonParametre.Location = new System.Drawing.Point(0, 452);
+            this.guna2ButtonParametre.Location = new System.Drawing.Point(2, 513);
             this.guna2ButtonParametre.Name = "guna2ButtonParametre";
             this.guna2ButtonParametre.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
             this.guna2ButtonParametre.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
@@ -284,14 +285,14 @@ namespace Mutualite.WinForm
             this.guna2ButtonExit.HoverState.Parent = this.guna2ButtonExit;
             this.guna2ButtonExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2ButtonExit.IndicateFocus = true;
-            this.guna2ButtonExit.Location = new System.Drawing.Point(0, 607);
+            this.guna2ButtonExit.Location = new System.Drawing.Point(1, 672);
             this.guna2ButtonExit.Name = "guna2ButtonExit";
             this.guna2ButtonExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
             this.guna2ButtonExit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
             this.guna2ButtonExit.ShadowDecoration.Parent = this.guna2ButtonExit;
             this.guna2ButtonExit.Size = new System.Drawing.Size(180, 50);
             this.guna2ButtonExit.TabIndex = 8;
-            this.guna2ButtonExit.Text = "Exit";
+            this.guna2ButtonExit.Text = "Deconnecter";
             this.guna2ButtonExit.Click += new System.EventHandler(this.guna2ButtonExit_Click);
             // 
             // guna2PanelProfil
@@ -304,7 +305,7 @@ namespace Mutualite.WinForm
             this.guna2PanelProfil.Location = new System.Drawing.Point(183, 0);
             this.guna2PanelProfil.Name = "guna2PanelProfil";
             this.guna2PanelProfil.ShadowDecoration.Parent = this.guna2PanelProfil;
-            this.guna2PanelProfil.Size = new System.Drawing.Size(787, 50);
+            this.guna2PanelProfil.Size = new System.Drawing.Size(998, 50);
             this.guna2PanelProfil.TabIndex = 1;
             // 
             // labelhour
@@ -338,7 +339,7 @@ namespace Mutualite.WinForm
             this.guna2GradientCreateAccount.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientCreateAccount.HoverState.Parent = this.guna2GradientCreateAccount;
             this.guna2GradientCreateAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientCreateAccount.Location = new System.Drawing.Point(452, 3);
+            this.guna2GradientCreateAccount.Location = new System.Drawing.Point(663, 3);
             this.guna2GradientCreateAccount.Name = "guna2GradientCreateAccount";
             this.guna2GradientCreateAccount.ShadowDecoration.Parent = this.guna2GradientCreateAccount;
             this.guna2GradientCreateAccount.Size = new System.Drawing.Size(167, 42);
@@ -351,7 +352,7 @@ namespace Mutualite.WinForm
             this.guna2Panel4.Controls.Add(this.lblusers);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel4.Location = new System.Drawing.Point(625, 0);
+            this.guna2Panel4.Location = new System.Drawing.Point(836, 0);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(162, 50);
@@ -368,20 +369,9 @@ namespace Mutualite.WinForm
             this.lblusers.Text = "Username Online";
             this.lblusers.Click += new System.EventHandler(this.label2_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2CustomGradientPanelMenu
             // 
+            this.guna2CustomGradientPanelMenu.Controls.Add(this.guna2BtnAssembleGenerale);
             this.guna2CustomGradientPanelMenu.Controls.Add(this.guna2Panel1);
             this.guna2CustomGradientPanelMenu.Controls.Add(this.guna2ButtonAcceuil);
             this.guna2CustomGradientPanelMenu.Controls.Add(this.guna2ButtonExit);
@@ -398,7 +388,7 @@ namespace Mutualite.WinForm
             this.guna2CustomGradientPanelMenu.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanelMenu.Name = "guna2CustomGradientPanelMenu";
             this.guna2CustomGradientPanelMenu.ShadowDecoration.Parent = this.guna2CustomGradientPanelMenu;
-            this.guna2CustomGradientPanelMenu.Size = new System.Drawing.Size(183, 687);
+            this.guna2CustomGradientPanelMenu.Size = new System.Drawing.Size(183, 745);
             this.guna2CustomGradientPanelMenu.TabIndex = 9;
             // 
             // guna2Panel1
@@ -412,6 +402,28 @@ namespace Mutualite.WinForm
             this.guna2Panel1.Size = new System.Drawing.Size(183, 100);
             this.guna2Panel1.TabIndex = 9;
             // 
+            // guna2PanelContainer
+            // 
+            this.guna2PanelContainer.AutoScroll = true;
+            this.guna2PanelContainer.Location = new System.Drawing.Point(183, 50);
+            this.guna2PanelContainer.Name = "guna2PanelContainer";
+            this.guna2PanelContainer.ShadowDecoration.Parent = this.guna2PanelContainer;
+            this.guna2PanelContainer.Size = new System.Drawing.Size(998, 695);
+            this.guna2PanelContainer.TabIndex = 10;
+            this.guna2PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelContainer_Paint);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Image = global::Mutualite.WinForm.Properties.Resources.expand_arrow_50px;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(131, 19);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 18);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = global::Mutualite.WinForm.Properties.Resources.User2;
@@ -423,21 +435,47 @@ namespace Mutualite.WinForm
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2PanelContainer
+            // guna2BtnAssembleGenerale
             // 
-            this.guna2PanelContainer.Location = new System.Drawing.Point(183, 50);
-            this.guna2PanelContainer.Name = "guna2PanelContainer";
-            this.guna2PanelContainer.ShadowDecoration.Parent = this.guna2PanelContainer;
-            this.guna2PanelContainer.Size = new System.Drawing.Size(787, 625);
-            this.guna2PanelContainer.TabIndex = 10;
-            this.guna2PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelContainer_Paint);
+            this.guna2BtnAssembleGenerale.BackColor = System.Drawing.Color.Transparent;
+            this.guna2BtnAssembleGenerale.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.BorderRadius = 25;
+            this.guna2BtnAssembleGenerale.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.guna2BtnAssembleGenerale.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2BtnAssembleGenerale.Checked = true;
+            this.guna2BtnAssembleGenerale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.CheckedState.Image = global::Mutualite.WinForm.Properties.Resources.user_groups2_50px;
+            this.guna2BtnAssembleGenerale.CheckedState.Parent = this.guna2BtnAssembleGenerale;
+            this.guna2BtnAssembleGenerale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2BtnAssembleGenerale.CustomImages.Parent = this.guna2BtnAssembleGenerale;
+            this.guna2BtnAssembleGenerale.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(19)))), ((int)(((byte)(119)))));
+            this.guna2BtnAssembleGenerale.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2BtnAssembleGenerale.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnAssembleGenerale.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.HoverState.FillColor = System.Drawing.Color.FloralWhite;
+            this.guna2BtnAssembleGenerale.HoverState.Parent = this.guna2BtnAssembleGenerale;
+            this.guna2BtnAssembleGenerale.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2BtnAssembleGenerale.IndicateFocus = true;
+            this.guna2BtnAssembleGenerale.Location = new System.Drawing.Point(2, 451);
+            this.guna2BtnAssembleGenerale.Name = "guna2BtnAssembleGenerale";
+            this.guna2BtnAssembleGenerale.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(34)))), ((int)(((byte)(89)))));
+            this.guna2BtnAssembleGenerale.ShadowDecoration.Parent = this.guna2BtnAssembleGenerale;
+            this.guna2BtnAssembleGenerale.Size = new System.Drawing.Size(180, 50);
+            this.guna2BtnAssembleGenerale.TabIndex = 10;
+            this.guna2BtnAssembleGenerale.Text = "Assemble generale";
+            this.guna2BtnAssembleGenerale.Click += new System.EventHandler(this.guna2BtnAssembleGenerale_Click);
             // 
             // FrmParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(970, 687);
+            this.ClientSize = new System.Drawing.Size(1181, 745);
             this.Controls.Add(this.guna2PanelProfil);
             this.Controls.Add(this.guna2CustomGradientPanelMenu);
             this.Controls.Add(this.guna2PanelContainer);
@@ -449,9 +487,9 @@ namespace Mutualite.WinForm
             this.Load += new System.EventHandler(this.FrmParent_Load);
             this.guna2PanelProfil.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2CustomGradientPanelMenu.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -475,5 +513,6 @@ namespace Mutualite.WinForm
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label labelhour;
         private System.Windows.Forms.Label lblusers;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnAssembleGenerale;
     }
 }

@@ -103,8 +103,7 @@ namespace Mutualite.WinForm
                 guna2TxtMontant.Clear();
                 
                 guna2TxtTitre.Focus();
-                Form f = new FrmEcheanceList();
-                f.Show();
+
             }
             catch (TypingException ex)
             {

@@ -28,8 +28,8 @@ namespace Mutualite.WinForm
         public FrmMembre(Membre membre, Action callBack) : this(callBack)
         {
             this.oldMembre = membre;
-            txtbxnom.Text = membre.Username;
-            txtbxPassword.Text = membre.Password;
+            txtbxnom.Text = membre.Nom;
+            
             txtbxemail.Text = membre.Email.ToString();
             txtbxtelephone.Text = membre.Telephone.ToString();
         }
@@ -37,21 +37,17 @@ namespace Mutualite.WinForm
         {
             string text = string.Empty;
             txtbxnom.BackColor = Color.White;
-            txtbxPassword.BackColor = Color.White;
+            
             txtbxemail.BackColor = Color.White;
             txtbxtelephone.BackColor = Color.White;
 
             if (string.IsNullOrWhiteSpace(txtbxnom.Text))
             {
-                text += "- Please enter your firstname ! \n";
+                text += "- Please enter your name ! \n";
                 txtbxnom.BackColor = Color.Pink;
             }
            
-            if (string.IsNullOrWhiteSpace(txtbxPassword.Text))
-            {
-                text += "- Please enter your adress ! \n";
-                txtbxPassword.BackColor = Color.Pink;
-            }
+            
             if (string.IsNullOrWhiteSpace(txtbxemail.Text))
             {
                 text += "- Please enter your email ! \n";
@@ -75,9 +71,9 @@ namespace Mutualite.WinForm
                 Membre newMembre = new Membre
                 (
                     txtbxnom.Text.ToUpper(),     
-                    txtbxPassword.Text,
-                    guna2TextBoxConfirmPassword.Text,
-                    txtbxemail.Text,
+                      txtbxemail.Text,
+                  
+                   
                     int.Parse(txtbxtelephone.Text)
                 );
 
@@ -90,7 +86,7 @@ namespace Mutualite.WinForm
 
                 MessageBox.Show
                 (
-                    "Reunion creer !",
+                    "Membre ajouter !",
                     "Confirmation",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
@@ -103,13 +99,11 @@ namespace Mutualite.WinForm
                     Close();
 
                 txtbxnom.Clear();
-              
-                txtbxPassword.Clear();
+
+                txtbxnom.Focus(); ;
                 txtbxemail.Clear();
                 txtbxtelephone.Focus();
-                FrmMembresListe fml = new FrmMembresListe();
-                fml.Show();
-                this.Hide();
+               
             }
             catch (TypingException ex)
             {
